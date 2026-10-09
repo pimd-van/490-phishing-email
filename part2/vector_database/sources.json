@@ -1,0 +1,87 @@
+[
+  {
+    "file": "nist_phishing.md",
+    "title": "Phishing",
+    "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+    "publisher": "National Institute of Standards and Technology",
+    "retrieved": "2026-10-08",
+    "page_updated": "2025-08-19",
+    "content_type": "source_extract",
+    "reuse": "Unmarked NIST website information is public information and may be copied or distributed with appropriate credit; see https://www.nist.gov/copyrights-disclaimers"
+  },
+  {
+    "file": "nist_phish_scale_summary.md",
+    "title": "NIST Phish Scale User Guide, Technical Note 2276",
+    "url": "https://csrc.nist.gov/pubs/tn/2276/final",
+    "document_url": "https://doi.org/10.6028/NIST.TN.2276",
+    "license_url": "https://csrc.nist.gov/Projects/human-centered-cybersecurity/research-areas/phishing",
+    "publisher": "National Institute of Standards and Technology",
+    "published": "2023-11-15",
+    "retrieved": "2026-10-08",
+    "content_type": "original_summary",
+    "reuse": "Summary only. NIST states academic use of the Phish Scale is no-cost but organizations must establish a research license agreement; commercial applications require a commercialization license."
+  },
+  {
+    "file": "cisa_joint_phishing_guidance.md",
+    "title": "Phishing Guidance: Stopping the Attack Cycle at Phase One",
+    "url": "https://www.cisa.gov/resources-tools/resources/phishing-guidance-stopping-attack-cycle-phase-one",
+    "document_url": "https://www.cisa.gov/sites/default/files/2025-03/Phishing%20Guidance%20-%20Stopping%20the%20Attack%20Cycle%20at%20Phase%20One%20508.pdf",
+    "publisher": "CISA, NSA, FBI, and MS-ISAC",
+    "published": "2023-10-18",
+    "retrieved": "2026-10-08",
+    "content_type": "adapted_source_extract",
+    "reuse": "The source PDF is TLP:CLEAR: disclosure is not limited and, subject to standard copyright rules, distribution is unrestricted. This file is a condensed attributed adaptation, not the full PDF."
+  },
+  {
+    "file": "cisa_email_attachments.md",
+    "title": "Using Caution with Email Attachments",
+    "url": "https://www.cisa.gov/news-events/news/using-caution-email-attachments",
+    "publisher": "Cybersecurity and Infrastructure Security Agency",
+    "published": "2021-02-01",
+    "retrieved": "2026-10-08",
+    "content_type": "adapted_source_extract",
+    "reuse": "Condensed attributed adaptation of an official U.S. government page. The page is marked archived and may not reflect current policy or programs."
+  },
+  {
+    "file": "owasp_unvalidated_redirects.md",
+    "title": "Unvalidated Redirects and Forwards Cheat Sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html",
+    "publisher": "OWASP Cheat Sheet Series Team",
+    "retrieved": "2026-10-08",
+    "content_type": "adapted_source_extract",
+    "reuse": "Creative Commons Attribution-ShareAlike 4.0 International; this adaptation retains attribution and is distributed under the same license.",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "file": "apwg_q1_2026_summary.md",
+    "title": "Phishing Activity Trends Report, 1st Quarter 2026",
+    "url": "https://apwg.org/trendreports",
+    "document_url": "https://docs.apwg.org/reports/apwg_trends_report_q1_2026.pdf",
+    "publisher": "Anti-Phishing Working Group",
+    "published": "2026-05-21",
+    "retrieved": "2026-10-08",
+    "content_type": "original_summary",
+    "reuse": "Copyright APWG. This file is a concise original summary with attribution, not redistributed report text."
+  },
+  {
+    "file": "google_spot_scams_summary.md",
+    "title": "How to spot scams, and what to do if you encounter one",
+    "url": "https://blog.google/innovation-and-ai/technology/safety-security/how-to-spot-scams-and-what-to-do-if-you-encounter-one/",
+    "publisher": "Google",
+    "published": "2024-10-02",
+    "retrieved": "2026-10-08",
+    "content_type": "original_summary",
+    "reuse": "Copyright Google. This file is a concise original summary with attribution, not redistributed article text."
+  },
+  {
+    "file": "extras/nist_multi_factor_authentication.md",
+    "title": "Multi-Factor Authentication",
+    "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/multi-factor-authentication",
+    "publisher": "National Institute of Standards and Technology",
+    "retrieved": "2026-10-08",
+    "page_updated": "2026-01-05",
+    "content_type": "source_extract",
+    "indexed": "false",
+    "reuse": "Preserved extra; nested path is intentionally outside top-level discovery. Unmarked NIST website information is public information and may be copied or distributed with appropriate credit."
+  }
+]

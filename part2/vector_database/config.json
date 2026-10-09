@@ -1,0 +1,8 @@
+{
+  "embedding_model": "BAAI/bge-m3",
+  "collection_name": "phishing_guidance",
+  "chunk_size_tokens": 400,
+  "chunk_overlap_tokens": 60,
+  "embedding_batch_size": 16,
+  "top_k": 5
+}
