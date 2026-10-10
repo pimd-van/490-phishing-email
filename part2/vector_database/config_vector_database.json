@@ -1,0 +1,18 @@
+{
+  // ค่า: ชื่อโมเดล SentenceTransformer ที่ติดตั้งหรือดาวน์โหลดได้ และไม่เป็นข้อความว่าง; ผล: เปลี่ยน embedding ของเอกสารและ query; ต้องสร้าง Chroma และรัน RAG ใหม่
+  "embedding_model": "BAAI/bge-large-en-v1.5",
+  // ค่า: ข้อความใดก็ได้ รวมถึง ""; ผล: เติมหน้า query เท่านั้น ไม่เติมหน้าเอกสาร; BGE แนะนำค่าปัจจุบัน และโมเดลอื่นอาจต้องใช้ prefix อื่น; แก้แล้วรัน RAG ใหม่
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  // ค่า: ชื่อ Chroma ยาว 3–512 ตัวอักษร เริ่ม/จบด้วย a-z หรือ 0-9 ภายในใช้ . - _ ได้; ผล: เปลี่ยน collection ที่สร้างและอ่าน; ต้องสร้างใหม่
+  "collection_name": "phishing_guidance",
+  // ค่า: จำนวนเต็มบวก (สำหรับ BGE รุ่นนี้ควรไม่เกิน 510 source tokens เพื่อเผื่อ 2 special tokens ในขีดจำกัด 512); ผล: มากขึ้นได้บริบทต่อ chunk มากขึ้น แต่นับ chunks น้อยลง; ต้องสร้างใหม่และตรวจ required_chunk IDs
+  "chunk_size_tokens": 400,
+  // ค่า: จำนวนเต็มตั้งแต่ 0 ถึง chunk_size_tokens-1; ผล: เพิ่มข้อความซ้ำตรงรอยต่อ แต่จำนวน chunks และพื้นที่จัดเก็บอาจเพิ่ม; ต้องสร้างใหม่และตรวจ IDs
+  "chunk_overlap_tokens": 60,
+  // ค่า: จำนวนเต็มบวก; ผล: เพิ่มอาจประมวลผลเร็วขึ้นแต่ใช้หน่วยความจำมากขึ้น ทั้งตอนสร้างฐานและทำ RAG query
+  "embedding_batch_size": 16,
+  // ค่า: path โฟลเดอร์แบบ relative จาก project root หรือ absolute ที่มีไฟล์ .md/.txt ชั้นบน; ผล: เปลี่ยนเอกสารที่นำเข้า; ต้องสร้างใหม่และตรวจ sources.json/required_chunk IDs
+  "document_dir": "part2/vector_database/document",
+  // ค่า: path โฟลเดอร์แบบ relative จาก project root หรือ absolute; ผล: เปลี่ยนตำแหน่ง Chroma ที่ทั้งตัวสร้าง RAG และ LLM อ่านร่วมกัน; ต้องสร้างใหม่ที่ path ใหม่
+  "database_dir": "part2/RAG/.chroma"
+}

@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-import hashlib
 import json
+import re
 from pathlib import Path
 
 from sentence_transformers import SentenceTransformer
@@ -11,18 +11,20 @@ import chromadb
 
 HERE = Path(__file__).resolve().parent
 PROJECT_DIR = HERE.parents[1]
-CONFIG_FILE = HERE / "config.json"
+CONFIG_FILE = HERE / "config_vector_database.json"
+RESULT_FILE = HERE / "result_vector_database.json"
+SOURCES_FILE = HERE / "sources.json"
 
 
 def load_settings() -> dict:
-    settings = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
+    lines = CONFIG_FILE.read_text(encoding="utf-8").splitlines()
+    settings = json.loads("\n".join(line for line in lines if not line.lstrip().startswith("//")))
     required = (
         "embedding_model",
         "collection_name",
         "chunk_size_tokens",
         "chunk_overlap_tokens",
         "embedding_batch_size",
-        "top_k",
         "query_prefix",
         "document_dir",
         "database_dir",
@@ -34,7 +36,7 @@ def load_settings() -> dict:
     overlap = settings["chunk_overlap_tokens"]
     if not isinstance(size, int) or size <= 0 or not isinstance(overlap, int) or not 0 <= overlap < size:
         raise ValueError("chunk_size_tokens must be positive and overlap must be smaller")
-    for key in ("embedding_batch_size", "top_k"):
+    for key in ("embedding_batch_size",):
         if not isinstance(settings[key], int) or settings[key] <= 0:
             raise ValueError(f"{key} must be a positive integer")
     if not isinstance(settings["embedding_model"], str) or not settings["embedding_model"].strip():
@@ -70,7 +72,7 @@ def split_text(text: str, tokenizer, size: int, overlap: int) -> list[tuple[str,
     return chunks
 
 
-def build() -> dict:
+def build() -> tuple[dict, list[dict]]:
     settings = load_settings()
     document_dir = resolve_path(settings["document_dir"])
     database_dir = resolve_path(settings["database_dir"])
@@ -81,12 +83,21 @@ def build() -> dict:
     )
     if not files:
         raise ValueError(f"No .md or .txt documents found in {document_dir}")
+    sources = json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
+    letters = {source["file"]: source["letter"] for source in sources if "letter" in source}
+    missing = [path.name for path in files if path.name not in letters]
+    if missing:
+        raise ValueError(f"Missing letter in sources.json: {', '.join(missing)}")
+    used_letters = list(letters.values())
+    if any(not isinstance(letter, str) or re.fullmatch(r"[a-z]", letter) is None for letter in used_letters):
+        raise ValueError("Each source letter must be one lowercase a-z character")
+    if len(set(used_letters)) != len(used_letters):
+        raise ValueError("Each source needs a unique letter")
 
     model = SentenceTransformer(settings["embedding_model"])
     records = []
     for path in files:
         content = path.read_text(encoding="utf-8")
-        source_id = hashlib.sha256(path.name.encode("utf-8")).hexdigest()[:16]
         for number, (chunk, token_amount) in enumerate(split_text(
             content,
             model.tokenizer,
@@ -94,7 +105,7 @@ def build() -> dict:
             settings["chunk_overlap_tokens"],
         )):
             records.append({
-                "id": f"{source_id}:{number:04d}",
+                "id": f"{letters[path.name]}{number + 1}",
                 "content": chunk,
                 "token_amount": token_amount,
                 "source": path.name,
@@ -135,20 +146,29 @@ def build() -> dict:
             } for record in batch],
             embeddings=embeddings[start:start + batch_size],
         )
-    return {
+    summary = {
         "collection": collection_name,
         "sources": len(files),
         "chunks": collection.count(),
         "database_dir": str(database_dir),
     }
+    result_chunks = [
+        {"chunk_id": record["id"], "token": record["token_amount"], "content": record["content"]}
+        for record in records
+    ]
+    return summary, result_chunks
 
 
 def main() -> None:
     try:
-        result = build()
+        summary, result_chunks = build()
     except (ValueError, FileNotFoundError, ModuleNotFoundError) as error:
         raise SystemExit(f"Cannot build Chroma: {error}") from error
-    print(json.dumps(result, indent=2, ensure_ascii=False))
+    output = json.dumps(result_chunks, indent=2, ensure_ascii=False) + "\n"
+    temporary = RESULT_FILE.with_suffix(".json.tmp")
+    temporary.write_text(output, encoding="utf-8")
+    temporary.replace(RESULT_FILE)
+    print(json.dumps(summary, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":

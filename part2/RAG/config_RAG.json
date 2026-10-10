@@ -1,0 +1,8 @@
+{
+  // ค่า: ข้อความไม่ว่าง (ใช้ JSON newline escape เพื่อขึ้นบรรทัดใหม่ได้); ผล: เปลี่ยนคำถามที่นำหน้าอีเมลและอาจเปลี่ยนอันดับ chunks; แก้แล้วรัน RAG ใหม่
+  "action_plan_query": "Based on this suspicious phishing email, what should the recipient do next? Find practical guidance to avoid interacting with the message, verify the sender, handle suspicious links and attachments, report the message, and respond if they clicked a link, opened an attachment, or shared credentials. Email:\n\n",
+  // ค่า: จำนวนเต็มตั้งแต่ 1 ขึ้นไป; ผล: เพิ่มจำนวน chunks ที่ดึงต่ออีเมล (ไม่เกินที่มีใน collection) และใช้ LLM context มากขึ้น; แก้แล้วรัน RAG ใหม่
+  "top_k": 5,
+  // ค่า: จำนวนเต็มตั้งแต่ 0 ขึ้นไป (0 คือไม่ตัดข้อความในแอป); ผล: ค่าบวกจำกัด subject/body ที่ใช้ทำ query embedding แต่ required_chunk ยังอ่านอีเมลเต็ม; แก้แล้วรัน RAG ใหม่
+  "max_email_chars": 0
+}

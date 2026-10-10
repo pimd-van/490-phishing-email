@@ -1,4 +1,4 @@
-"""Retrieve the closest guidance chunk for each handoff email in data.csv."""
+"""Retrieve the closest guidance chunks for each handoff email in data.csv."""
 
 from __future__ import annotations
 
@@ -17,27 +17,33 @@ PROJECT_DIR = Path(__file__).resolve().parents[2]
 if str(PROJECT_DIR) not in sys.path:
     sys.path.insert(0, str(PROJECT_DIR))
 
-from part2.vector_database.main import load_settings, resolve_path
+from part2.vector_database.main_vector_database import load_settings, resolve_path
 
 RAG_DIR = Path(__file__).resolve().parent
 DATA_FILE = PROJECT_DIR / "part2" / "data.csv"
-RESULT_FILE = RAG_DIR / "result.json"
+RESULT_FILE = RAG_DIR / "result_RAG.json"
+CONFIG_FILE = RAG_DIR / "config_RAG.json"
 
-ACTION_PLAN_QUERY = (
-    "Based on this suspicious phishing email, what should the recipient do next? "
-    "Find practical guidance to avoid interacting with the message, verify the sender, "
-    "handle suspicious links and attachments, report the message, and respond if they "
-    "clicked a link, opened an attachment, or shared credentials. Email:\n\n"
-)
+
+def load_rag_settings() -> dict:
+    lines = CONFIG_FILE.read_text(encoding="utf-8").splitlines()
+    settings = json.loads("\n".join(line for line in lines if not line.lstrip().startswith("//")))
+    if not isinstance(settings.get("action_plan_query"), str) or not settings["action_plan_query"].strip():
+        raise ValueError("action_plan_query must be non-empty text")
+    for key in ("top_k", "max_email_chars"):
+        minimum = 1 if key == "top_k" else 0
+        if not isinstance(settings.get(key), int) or settings[key] < minimum:
+            raise ValueError(f"{key} must be an integer >= {minimum}")
+    return settings
 
 # These stable IDs identify the guidance passages that form the expected
 # action-plan context. They are selected from the email scenario, independently
 # of the chunks returned by Chroma, so retrieval quality can be compared.
-NIST_ACTIONS = "c5d5497a95bffd73:0001"
-NIST_INCIDENT_RESPONSE = "c5d5497a95bffd73:0002"
-CISA_ATTACHMENTS = "6ff07056ee35f708:0000"
-CISA_ORGANIZATION_RESPONSE = "79e1cb0105dec19f:0001"
-GOOGLE_SCAM_RESPONSE = "f7bdef8f0eceacab:0000"
+NIST_ACTIONS = "a2"
+NIST_INCIDENT_RESPONSE = "a3"
+CISA_ATTACHMENTS = "d1"
+CISA_ORGANIZATION_RESPONSE = "c2"
+GOOGLE_SCAM_RESPONSE = "g1"
 
 COMPROMISE_OR_FINANCIAL_PATTERN = re.compile(
     r"password|passcode|credential|log ?in|sign ?in|bank|account|payment|"
@@ -75,7 +81,7 @@ def required_chunks(row: dict[str, str]) -> list[str]:
     return list(dict.fromkeys(required))
 
 
-def load_queries() -> list[dict[str, str]]:
+def load_queries(rag_settings: dict) -> list[dict[str, str]]:
     queries = []
     with DATA_FILE.open(encoding="utf-8-sig", newline="") as stream:
         for row in csv.DictReader(stream):
@@ -83,7 +89,9 @@ def load_queries() -> list[dict[str, str]]:
             subject = (row.get("subject") or "").strip()
             body = (row.get("body") or "").strip()
             email_text = "\n\n".join(part for part in (subject, body) if part)
-            query = f"{ACTION_PLAN_QUERY}{email_text}" if email_text else ""
+            if rag_settings["max_email_chars"]:
+                email_text = email_text[:rag_settings["max_email_chars"]]
+            query = f"{rag_settings['action_plan_query']}{email_text}" if email_text else ""
             if query_id and query:
                 queries.append({
                     "query_id": query_id,
@@ -95,6 +103,7 @@ def load_queries() -> list[dict[str, str]]:
 
 def run_check() -> list[dict]:
     settings = load_settings()
+    rag_settings = load_rag_settings()
     database_dir = resolve_path(settings["database_dir"])
     client = chromadb.PersistentClient(path=str(database_dir))
     collection = client.get_collection(settings["collection_name"])
@@ -103,7 +112,7 @@ def run_check() -> list[dict]:
     if collection.count() == 0:
         raise ValueError("The Chroma collection is empty; build it first")
 
-    queries = load_queries()
+    queries = load_queries(rag_settings)
     if not queries:
         raise ValueError(f"No usable input rows found in {DATA_FILE}")
 
@@ -116,7 +125,7 @@ def run_check() -> list[dict]:
     ).tolist()
 
     results = []
-    top_k = min(settings["top_k"], collection.count())
+    top_k = min(rag_settings["top_k"], collection.count())
     for query, query_text, vector in zip(queries, query_texts, vectors):
         retrieved = collection.query(
             query_embeddings=[vector],
@@ -168,7 +177,7 @@ def main() -> None:
         "queries": len(results),
         "result_file": str(RESULT_FILE),
         "updated_data_file": str(DATA_FILE),
-        "chunks_per_query": load_settings()["top_k"],
+        "chunks_per_query": load_rag_settings()["top_k"],
     }, indent=2))
 
 

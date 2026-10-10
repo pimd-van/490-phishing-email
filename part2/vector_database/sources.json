@@ -1,6 +1,7 @@
 [
   {
     "file": "nist_phishing.md",
+    "letter": "a",
     "title": "Phishing",
     "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
     "publisher": "National Institute of Standards and Technology",
@@ -11,6 +12,7 @@
   },
   {
     "file": "nist_phish_scale_summary.md",
+    "letter": "b",
     "title": "NIST Phish Scale User Guide, Technical Note 2276",
     "url": "https://csrc.nist.gov/pubs/tn/2276/final",
     "document_url": "https://doi.org/10.6028/NIST.TN.2276",
@@ -23,6 +25,7 @@
   },
   {
     "file": "cisa_joint_phishing_guidance.md",
+    "letter": "c",
     "title": "Phishing Guidance: Stopping the Attack Cycle at Phase One",
     "url": "https://www.cisa.gov/resources-tools/resources/phishing-guidance-stopping-attack-cycle-phase-one",
     "document_url": "https://www.cisa.gov/sites/default/files/2025-03/Phishing%20Guidance%20-%20Stopping%20the%20Attack%20Cycle%20at%20Phase%20One%20508.pdf",
@@ -34,6 +37,7 @@
   },
   {
     "file": "cisa_email_attachments.md",
+    "letter": "d",
     "title": "Using Caution with Email Attachments",
     "url": "https://www.cisa.gov/news-events/news/using-caution-email-attachments",
     "publisher": "Cybersecurity and Infrastructure Security Agency",
@@ -44,6 +48,7 @@
   },
   {
     "file": "owasp_unvalidated_redirects.md",
+    "letter": "e",
     "title": "Unvalidated Redirects and Forwards Cheat Sheet",
     "url": "https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html",
     "publisher": "OWASP Cheat Sheet Series Team",
@@ -54,6 +59,7 @@
   },
   {
     "file": "apwg_q1_2026_summary.md",
+    "letter": "f",
     "title": "Phishing Activity Trends Report, 1st Quarter 2026",
     "url": "https://apwg.org/trendreports",
     "document_url": "https://docs.apwg.org/reports/apwg_trends_report_q1_2026.pdf",
@@ -65,6 +71,7 @@
   },
   {
     "file": "google_spot_scams_summary.md",
+    "letter": "g",
     "title": "How to spot scams, and what to do if you encounter one",
     "url": "https://blog.google/innovation-and-ai/technology/safety-security/how-to-spot-scams-and-what-to-do-if-you-encounter-one/",
     "publisher": "Google",
@@ -75,6 +82,7 @@
   },
   {
     "file": "extras/nist_multi_factor_authentication.md",
+    "letter": "h",
     "title": "Multi-Factor Authentication",
     "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/multi-factor-authentication",
     "publisher": "National Institute of Standards and Technology",
