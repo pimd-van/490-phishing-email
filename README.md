@@ -2,6 +2,8 @@
 
 This project implements Part 1 of the [project specification](https://docs.google.com/document/d/15kVxt9aNmvQ114YDVgkt_Ednd2EB_I83po7deYI8ywM/edit). It compares four classifiers across text, text+URL, text+attachment, and text+URL+attachment inputs. The separate local LLM classification benchmark is not the Part 2 RAG explanation pipeline.
 
+For a later text-only recheck with an alternative four-model comparison, see [Part 1 text-only recheck](docs/part1_text_only_recheck.md).
+
 `part1/data.py`, `features.py`, `models.py`, `metrics.py`, and `xai.py` contain the Part 1 stages. `part1/pipeline.py` runs them and saves the selected model and results. `part1/inference.py` exposes single-email prediction and explanation functions. `part1/handoff.py` packages predicted phishing emails for Part 2; its per-row evidence is Logistic Regression TF-IDF contribution, not SHAP/LIME. `part1/external.py` evaluates the frozen model on E-PhishLLM. The separate local LLM classifier benchmark lives in `experiments/`. `run.py` remains a short compatible entry point. The old output archive remains at `results/archive_20260919/`; only the files directly under `results/` are the current run.
 
 ## Run on Windows
