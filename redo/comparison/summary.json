@@ -1,0 +1,86 @@
+{
+  "source": "/home/Pi490/benchmark_runs/part1/major_cleaned_preprocessed.csv",
+  "source_md5": "aa8f59e96787cbd696c0b650e5400dc9",
+  "source_sha256": "5bf5371897ab4e4aa7ac6d8f499869e6c32e4456ed09636731e4069947b69f4f",
+  "expected_md5": "aa8f59e96787cbd696c0b650e5400dc9",
+  "clean_rows": 104515,
+  "split_rows": {
+    "train": 73160,
+    "validation": 15677,
+    "test": 15678
+  },
+  "class_counts": {
+    "cleaned": {
+      "0": 57911,
+      "1": 46604
+    },
+    "train": {
+      "0": 40537,
+      "1": 32623
+    },
+    "validation": {
+      "0": 8687,
+      "1": 6990
+    },
+    "test": {
+      "0": 8687,
+      "1": 6991
+    }
+  },
+  "split_seed": 42,
+  "split": "stratified 70/15/15",
+  "text_features": "subject + body",
+  "tfidf": {
+    "max_features": 5000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true
+  },
+  "selection_kpi": "validation F1",
+  "tie_break": [
+    "precision",
+    "recall"
+  ],
+  "best_model": "LinearSVC",
+  "heldout_test_metrics": {
+    "accuracy": 0.979078964153591,
+    "precision": 0.9762687634024303,
+    "recall": 0.976827349449292,
+    "f1": 0.9765479765479765,
+    "tn": 8521,
+    "fp": 166,
+    "fn": 162,
+    "tp": 6829,
+    "fpr": 0.01910901346840106,
+    "fnr": 0.02317265055070805
+  },
+  "logistic_regression_test_verification_if_not_winner": {
+    "accuracy": 0.9755708636305651,
+    "precision": 0.9737596788069974,
+    "recall": 0.9713917894435703,
+    "f1": 0.9725742928750447,
+    "tn": 8504,
+    "fp": 183,
+    "fn": 200,
+    "tp": 6791,
+    "fpr": 0.021065960630827673,
+    "fnr": 0.028608210556429696
+  },
+  "sklearn_version": "1.6.1",
+  "xgboost_version": "3.4.1",
+  "host": "vm-490-18",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "cpu_count": 44,
+  "total_seconds": 320.5616203239988,
+  "model_settings": {
+    "MultinomialNB": "sklearn defaults",
+    "LogisticRegression": "sklearn defaults",
+    "KNN_cosine_k5": "5 nearest neighbors, cosine distance, brute force, single worker",
+    "XGBoost": "100 trees, seed 42, histogram, n_jobs=12, logloss",
+    "RandomForest_default": "sklearn defaults except seed 42 and n_jobs=12",
+    "DecisionTree": "sklearn defaults except seed 42",
+    "LinearSVC": "sklearn defaults"
+  }
+}

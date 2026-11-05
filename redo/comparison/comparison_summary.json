@@ -1,0 +1,17 @@
+{
+  "test_rows": 15678,
+  "true_phishing_in_test": 6991,
+  "lr_handoff_rows": 6972,
+  "svm_handoff_rows": 6995,
+  "same_rows": 6888,
+  "lr_only": {
+    "rows": 84,
+    "true_phishing": 31,
+    "true_legit": 53
+  },
+  "svm_only": {
+    "rows": 107,
+    "true_phishing": 69,
+    "true_legit": 38
+  }
+}
