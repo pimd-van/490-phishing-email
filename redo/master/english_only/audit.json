@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "source_md5": "aa8f59e96787cbd696c0b650e5400dc9",
+  "benchmark_rows": 99693,
+  "handoff_predictions_and_xai_rows_verified": 6334,
+  "embedding_origin_rows_verified": {
+    "new": 5370,
+    "reused": 964
+  },
+  "reused_vectors_verified_bitwise": true,
+  "clustering_candidates_verified": 118,
+  "cluster_method": "ward",
+  "cluster_count": 60,
+  "sample_rows_verified": 633
+}

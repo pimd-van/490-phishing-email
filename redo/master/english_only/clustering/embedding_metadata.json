@@ -1,0 +1,21 @@
+{
+  "model": "BAAI/bge-m3",
+  "new_model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "max_seq_length": 2048,
+  "normalized": true,
+  "dtype": "float32",
+  "new_device": "cuda",
+  "torch_version": "2.8.0+cu128",
+  "sentence_transformers_version": "5.7.0",
+  "text_format": "Subject: <subject>\\nBody: <body>, URLs -> token_url",
+  "text_source": "official MeAJOR raw subject and body, as in the prior run",
+  "rows": 6334,
+  "reused_rows": 964,
+  "new_rows": 5370,
+  "prior_handoff_sha256": "bbfd1b3f1c438ea211709e7ed33e455c70e71616f0b4cb620565802bde921475",
+  "prior_vectors_sha256": "73cf2461ae7dc3f7a0a6d7acba352f58afe9e6cc77025465e018849d678b96c8",
+  "handoff_sha256": "df2f885f694cb4154d9e792f7958447554a6c56f9bc1db876973196189a8d207",
+  "truncated_rows": 45,
+  "median_tokens": 256.0,
+  "seconds": 503.6
+}

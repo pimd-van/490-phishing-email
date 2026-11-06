@@ -1,0 +1,67 @@
+{
+  "source_file": "major_cleaned_preprocessed.csv",
+  "source_md5": "aa8f59e96787cbd696c0b650e5400dc9",
+  "source_sha256": "5bf5371897ab4e4aa7ac6d8f499869e6c32e4456ed09636731e4069947b69f4f",
+  "source_rows": 108685,
+  "exact_language_tags": [
+    "en",
+    "en;en",
+    "en;en;en"
+  ],
+  "rows_by_accepted_tag": {
+    "en": 82175,
+    "en;en": 21250,
+    "en;en;en": 218
+  },
+  "rejected_language_rows": 5042,
+  "english_rows": 103643,
+  "invalid_label_rows": 0,
+  "empty_text_rows": 0,
+  "duplicate_cleaned_subject_body_rows": 3950,
+  "clean_rows": 99693,
+  "clean_rows_by_tag": {
+    "en": 78714,
+    "en;en": 20764,
+    "en;en;en": 215
+  },
+  "split": "stratified 70/15/15",
+  "split_seed": 42,
+  "split_rows": {
+    "train": 69785,
+    "validation": 14954,
+    "test": 14954
+  },
+  "class_counts": {
+    "train": {
+      "0": 40283,
+      "1": 29502
+    },
+    "validation": {
+      "0": 8632,
+      "1": 6322
+    },
+    "test": {
+      "0": 8632,
+      "1": 6322
+    }
+  },
+  "tfidf": {
+    "fit_on": "train",
+    "max_features": 5000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true
+  },
+  "selection_kpi": "validation F1",
+  "tie_break": [
+    "precision",
+    "recall"
+  ],
+  "best_model": "LinearSVC",
+  "handoff_model": "LinearSVC",
+  "handoff_rows": 6334,
+  "sklearn_version": "1.6.1",
+  "xgboost_version": "3.4.1"
+}
