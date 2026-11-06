@@ -117,6 +117,12 @@ svg text { fill: var(--muted); font: 11px var(--font-mono); }
     </div>
   </section>
 
+  <section class="panel" style="display:grid;gap:10px">
+    <h2>Dendrogram ของกลุ่มย่อย</h2>
+    <p class="muted" style="font-size:13px">แต่ละขาล่างคือกลุ่มย่อยหนึ่งกลุ่ม ความสูงที่สองกิ่งมาบรรจบกันคือระยะ Ward ตอนรวมกัน ยิ่งต่ำยิ่งคล้ายกัน เส้นประบอกระดับที่ตัดเป็นกลุ่มแม่ 8 กลุ่ม สีบอกกลุ่มแม่ คลิกชื่อกลุ่มเพื่อเน้นบนแผนที่ แกนตั้งเริ่มที่ระดับตัดกลุ่มย่อย เพราะการรวมภายในกลุ่มย่อยอยู่ต่ำกว่านั้นทั้งหมด</p>
+    <div class="tablewrap"><div id="dendro" style="min-width:760px"></div></div>
+  </section>
+
   <section style="display:grid;gap:12px">
     <h2>รายละเอียดกลุ่มย่อย</h2>
     <p class="muted" style="font-size:13px">ชื่อและคำอธิบายกลุ่มสร้างโดย LLM จากคำเด่นและอีเมลตัวอย่าง ควรให้คนตรวจทานก่อนใช้ คำเด่นคำนวณแบบ c-TF-IDF อีเมลตัวอย่างคือ 3 ฉบับที่ใกล้จุดศูนย์กลางของกลุ่มที่สุด</p>
@@ -187,8 +193,51 @@ function syncSel() {
   document.querySelectorAll(".tree-row").forEach(r => { const on = selected.has(+r.dataset.c); r.classList.toggle("on", on); r.setAttribute("aria-pressed", on); });
   const n = pts.filter(p => selected.has(p[2])).length;
   document.getElementById("selInfo").textContent = selected.size ? `เลือก ${selected.size} กลุ่ม, ${fmt(n)} อีเมล` : "";
+  document.querySelectorAll("#dendro .leaf").forEach(g => g.style.opacity = !selected.size || selected.has(+g.dataset.c) ? 1 : .35);
   draw();
 }
+
+// dendrogram
+(function dendro() {
+  const D = DATA.dendrogram; if (!D) return;
+  const M = D.merges, root = M.length - 1;
+  const order = []; (function walk(n) { for (const k of ["left", "right"]) { const x = M[n][k]; "merge" in x ? walk(x.merge) : order.push(x.cluster); } })(root);
+  const w = 1000, h = 470, l = 52, r = 150, t = 16, base = 300;
+  const y0 = Math.floor(D.cut_child), y1 = Math.ceil(M[root].height);
+  const step = (w - l - r) / order.length;
+  const Y = v => t + (1 - (Math.max(v, y0) - y0) / (y1 - y0)) * (base - t);
+  const leafX = c => l + step * (order.indexOf(c) + .5);
+  const pos = [], par = []; // x of each merge; parent id (or 0 when above parent cut)
+  function info(x) { return "merge" in x ? { x: pos[x.merge], h: M[x.merge].height, p: par[x.merge] } : { x: leafX(x.cluster), h: y0, p: C[x.cluster - 1].parent_id }; }
+  let s = `<svg viewBox="0 0 ${w} ${h}" width="100%" role="img" aria-label="dendrogram ของ 20 กลุ่มย่อย">`;
+  for (let i = 0; i <= 5; i++) { const v = y0 + (y1 - y0) * i / 5; s += `<line x1="${l}" x2="${w - r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${l - 8}" y="${Y(v) + 4}" text-anchor="end">${v.toFixed(1)}</text>`; }
+  s += `<text x="14" y="${(t + base) / 2}" transform="rotate(-90 14 ${(t + base) / 2})" text-anchor="middle">ระยะ Ward</text>`;
+  const done = new Set(); let guard = 0;
+  while (done.size < M.length && guard++ < 1000) M.forEach((m, i) => {
+    if (done.has(i)) return;
+    const ready = [m.left, m.right].every(x => !("merge" in x) || done.has(x.merge)); if (!ready) return;
+    const a = info(m.left), b = info(m.right);
+    pos[i] = (a.x + b.x) / 2; par[i] = a.p && a.p === b.p ? a.p : 0;
+    const col = par[i] ? parentColor(par[i]) : "var(--ink)", sw = par[i] ? 3 : 2;
+    s += `<path d="M${a.x},${Y(a.h)} V${Y(m.height)} H${b.x} V${Y(b.h)}" fill="none" stroke="${col}" stroke-width="${sw}" stroke-linejoin="round"><title>รวมที่ระยะ ${m.height.toFixed(2)} · ${fmt(m.size)} อีเมล</title></path>`;
+    done.add(i);
+  });
+  s += `<line x1="${l}" x2="${w - r}" y1="${Y(D.cut_parent)}" y2="${Y(D.cut_parent)}" stroke="var(--accent)" stroke-dasharray="6 5"/>
+        <text x="${w - r}" y="${Y(D.cut_parent) - 6}" text-anchor="end" style="fill:var(--accent)">ตัดเป็น ${P.length} กลุ่มแม่</text>`;
+  order.forEach(c => {
+    const x = leafX(c), cl = C[c - 1];
+    s += `<g class="leaf" data-c="${c}" tabindex="0" role="button" style="cursor:pointer">
+      <rect x="${x - step / 2}" y="${base}" width="${step}" height="${h - base}" fill="transparent"/>
+      <circle cx="${x}" cy="${base}" r="4" fill="${clusterColor(c)}"/>
+      <text transform="translate(${x + 4},${base + 14}) rotate(50)" style="fill:var(--ink);font-size:12px">C${c} ${esc(label(cl))}</text>
+      <text transform="translate(${x - 8},${base + 14}) rotate(50)" style="font-size:10px">${fmt(cl.emails)}</text>
+      <title>C${c} · ${esc(label(cl))} · ${fmt(cl.emails)} อีเมล · กลุ่มแม่ ${cl.parent_id}</title></g>`;
+  });
+  s += "</svg>";
+  const box = document.getElementById("dendro"); box.innerHTML = s;
+  box.addEventListener("click", e => { const g = e.target.closest(".leaf"); if (g) toggle(+g.dataset.c); });
+  box.addEventListener("keydown", e => { const g = e.target.closest(".leaf"); if (g && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); toggle(+g.dataset.c); } });
+})();
 
 // map
 const cv = document.getElementById("map"), ctx = cv.getContext("2d"), tip = document.getElementById("tip");
