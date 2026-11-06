@@ -118,9 +118,11 @@ svg text { fill: var(--muted); font: 11px var(--font-mono); }
   </section>
 
   <section class="panel" style="display:grid;gap:10px">
-    <h2>Dendrogram ของกลุ่มย่อย</h2>
-    <p class="muted" style="font-size:13px">แต่ละขาล่างคือกลุ่มย่อยหนึ่งกลุ่ม ความสูงที่สองกิ่งมาบรรจบกันคือระยะ Ward ตอนรวมกัน ยิ่งต่ำยิ่งคล้ายกัน เส้นประบอกระดับที่ตัดเป็นกลุ่มแม่ 8 กลุ่ม สีบอกกลุ่มแม่ คลิกชื่อกลุ่มเพื่อเน้นบนแผนที่ แกนตั้งเริ่มที่ระดับตัดกลุ่มย่อย เพราะการรวมภายในกลุ่มย่อยอยู่ต่ำกว่านั้นทั้งหมด</p>
-    <div class="tablewrap"><div id="dendro" style="min-width:760px"></div></div>
+    <h2>Dendrogram</h2>
+    <p class="muted" style="font-size:13px">ความสูงที่สองกิ่งมาบรรจบกันคือระยะ Ward ตอนรวมกัน ยิ่งต่ำยิ่งคล้ายกัน สีบอกกลุ่มแม่ เส้นประบอกระดับที่ตัดเป็นแต่ละชั้น เลือกความลึกด้านล่าง แล้วคลิกขาของกลุ่มเพื่อดูรายละเอียดและรายชื่ออีเมลในกลุ่มนั้น</p>
+    <div class="controls" id="depthBtns" role="group" aria-label="ความลึกของต้นไม้"></div>
+    <div class="tablewrap"><div id="dendro"></div></div>
+    <div id="nodeDetail"></div>
   </section>
 
   <section style="display:grid;gap:12px">
@@ -187,56 +189,105 @@ tree.innerHTML = P.map(p => `
   </div>`).join("");
 tree.addEventListener("click", e => { const r = e.target.closest(".tree-row"); if (r) toggle(+r.dataset.c); });
 tree.addEventListener("keydown", e => { const r = e.target.closest(".tree-row"); if (r && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); toggle(+r.dataset.c); } });
-function toggle(c) { selected.has(c) ? selected.delete(c) : selected.add(c); syncSel(); }
+function toggle(c) { focus = null; selected.has(c) ? selected.delete(c) : selected.add(c); syncSel(); }
 document.getElementById("clearSel").onclick = () => { selected.clear(); syncSel(); };
 function syncSel() {
   document.querySelectorAll(".tree-row").forEach(r => { const on = selected.has(+r.dataset.c); r.classList.toggle("on", on); r.setAttribute("aria-pressed", on); });
   const n = pts.filter(p => selected.has(p[2])).length;
   document.getElementById("selInfo").textContent = selected.size ? `เลือก ${selected.size} กลุ่ม, ${fmt(n)} อีเมล` : "";
-  document.querySelectorAll("#dendro .leaf").forEach(g => g.style.opacity = !selected.size || selected.has(+g.dataset.c) ? 1 : .35);
   draw();
 }
 
-// dendrogram
+// dendrogram with selectable depth (8 / 20 / 60)
+let focus = null;  // Set of point indices highlighted from the dendrogram
+const DT = DATA.deep;
 (function dendro() {
-  const D = DATA.dendrogram; if (!D) return;
-  const M = D.merges, root = M.length - 1;
-  const order = []; (function walk(n) { for (const k of ["left", "right"]) { const x = M[n][k]; "merge" in x ? walk(x.merge) : order.push(x.cluster); } })(root);
-  const w = 1000, h = 470, l = 52, r = 150, t = 16, base = 300;
-  const y0 = Math.floor(D.cut_child), y1 = Math.ceil(M[root].height);
-  const step = (w - l - r) / order.length;
-  const Y = v => t + (1 - (Math.max(v, y0) - y0) / (y1 - y0)) * (base - t);
-  const leafX = c => l + step * (order.indexOf(c) + .5);
-  const pos = [], par = []; // x of each merge; parent id (or 0 when above parent cut)
-  function info(x) { return "merge" in x ? { x: pos[x.merge], h: M[x.merge].height, p: par[x.merge] } : { x: leafX(x.cluster), h: y0, p: C[x.cluster - 1].parent_id }; }
-  let s = `<svg viewBox="0 0 ${w} ${h}" width="100%" role="img" aria-label="dendrogram ของ 20 กลุ่มย่อย">`;
-  for (let i = 0; i <= 5; i++) { const v = y0 + (y1 - y0) * i / 5; s += `<line x1="${l}" x2="${w - r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${l - 8}" y="${Y(v) + 4}" text-anchor="end">${v.toFixed(1)}</text>`; }
-  s += `<text x="14" y="${(t + base) / 2}" transform="rotate(-90 14 ${(t + base) / 2})" text-anchor="middle">ระยะ Ward</text>`;
-  const done = new Set(); let guard = 0;
-  while (done.size < M.length && guard++ < 1000) M.forEach((m, i) => {
-    if (done.has(i)) return;
-    const ready = [m.left, m.right].every(x => !("merge" in x) || done.has(x.merge)); if (!ready) return;
-    const a = info(m.left), b = info(m.right);
-    pos[i] = (a.x + b.x) / 2; par[i] = a.p && a.p === b.p ? a.p : 0;
-    const col = par[i] ? parentColor(par[i]) : "var(--ink)", sw = par[i] ? 3 : 2;
-    s += `<path d="M${a.x},${Y(a.h)} V${Y(m.height)} H${b.x} V${Y(b.h)}" fill="none" stroke="${col}" stroke-width="${sw}" stroke-linejoin="round"><title>รวมที่ระยะ ${m.height.toFixed(2)} · ${fmt(m.size)} อีเมล</title></path>`;
-    done.add(i);
-  });
-  s += `<line x1="${l}" x2="${w - r}" y1="${Y(D.cut_parent)}" y2="${Y(D.cut_parent)}" stroke="var(--accent)" stroke-dasharray="6 5"/>
-        <text x="${w - r}" y="${Y(D.cut_parent) - 6}" text-anchor="end" style="fill:var(--accent)">ตัดเป็น ${P.length} กลุ่มแม่</text>`;
-  order.forEach(c => {
-    const x = leafX(c), cl = C[c - 1];
-    s += `<g class="leaf" data-c="${c}" tabindex="0" role="button" style="cursor:pointer">
-      <rect x="${x - step / 2}" y="${base}" width="${step}" height="${h - base}" fill="transparent"/>
-      <circle cx="${x}" cy="${base}" r="4" fill="${clusterColor(c)}"/>
-      <text transform="translate(${x + 4},${base + 14}) rotate(50)" style="fill:var(--ink);font-size:12px">C${c} ${esc(label(cl))}</text>
-      <text transform="translate(${x - 8},${base + 14}) rotate(50)" style="font-size:10px">${fmt(cl.emails)}</text>
-      <title>C${c} · ${esc(label(cl))} · ${fmt(cl.emails)} อีเมล · กลุ่มแม่ ${cl.parent_id}</title></g>`;
-  });
-  s += "</svg>";
-  const box = document.getElementById("dendro"); box.innerHTML = s;
-  box.addEventListener("click", e => { const g = e.target.closest(".leaf"); if (g) toggle(+g.dataset.c); });
-  box.addEventListener("keydown", e => { const g = e.target.closest(".leaf"); if (g && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); toggle(+g.dataset.c); } });
+  if (!DT) return;
+  const M = DT.merges, root = M.length - 1, S = DT.nodes, LV = DT.levels;
+  const keyOf = (sub, L) => L === LV[0] ? S[sub - 1].parent_id : L === LV[1] ? S[sub - 1].cluster_id : sub;
+  const subsOf = [];
+  function subs(x) { if ("sub" in x) return [x.sub]; const i = x.merge; if (!subsOf[i]) subsOf[i] = [...subs(M[i].left), ...subs(M[i].right)]; return subsOf[i]; }
+  subs({ merge: root });
+  const subName = k => (S[k - 1].llm_label || "").trim() || S[k - 1].keywords.slice(0, 3).join(", ");
+  const nameOf = (L, k) => L === LV[0] ? (P[k - 1].llm_label || P[k - 1].keywords.slice(0, 3).join(", "))
+    : L === LV[1] ? label(C[k - 1]) : subName(k);
+  const tagOf = (L, k) => (L === LV[0] ? "P" : L === LV[1] ? "C" : "S") + k;
+  const sizeOf = (L, k) => L === LV[0] ? P[k - 1].emails : L === LV[1] ? C[k - 1].emails : S[k - 1].emails;
+  const box = document.getElementById("dendro"), detail = document.getElementById("nodeDetail");
+  let level = LV[1], picked = null;
+  const btns = document.getElementById("depthBtns");
+  btns.innerHTML = LV.map((L, i) =>
+    `<button type="button" data-l="${L}" aria-pressed="false">${["กลุ่มแม่", "กลุ่มย่อย", "กลุ่มย่อยลงไป"][i]} ${L} กลุ่ม</button>`).join("");
+  btns.addEventListener("click", e => { const b = e.target.closest("button"); if (b) { level = +b.dataset.l; picked = null; render(); draw(); } });
+
+  function render() {
+    btns.querySelectorAll("button").forEach(b => { const on = +b.dataset.l === level; b.setAttribute("aria-pressed", on); b.style.borderColor = on ? "var(--accent)" : ""; b.style.color = on ? "var(--accent)" : ""; b.style.fontWeight = on ? 600 : 400; });
+    const cut = DT.cuts[level], yTop = M[root].height, y0 = cut - (yTop - cut) * .05;
+    const above = x => "merge" in x && M[x.merge].height > cut;
+    const units = [];
+    (function walk(x) { if (above(x)) { walk(M[x.merge].left); walk(M[x.merge].right); } else units.push(keyOf(subs(x)[0], level)); })({ merge: root });
+    const n = units.length, wide = n > 30;
+    const w = wide ? 1500 : 1000, h = wide ? 600 : 480, l = 52, r = wide ? 40 : 150, t = 16, base = 300;
+    box.style.minWidth = (wide ? 1100 : 760) + "px";
+    const step = (w - l - r) / n, ux = k => l + step * (units.indexOf(k) + .5);
+    const Y = v => t + (1 - (Math.max(v, y0) - y0) / (yTop - y0)) * (base - t);
+    const parentOfUnit = k => level === LV[0] ? k : level === LV[1] ? C[k - 1].parent_id : S[k - 1].parent_id;
+    const pos = {};
+    const info = x => above(x) ? pos[x.merge] : (k => ({ x: ux(k), h: y0, p: parentOfUnit(k) }))(keyOf(subs(x)[0], level));
+    let s = `<svg viewBox="0 0 ${w} ${h}" width="100%" role="img" aria-label="dendrogram ${n} กลุ่ม">`;
+    for (let i = 0; i <= 5; i++) { const v = y0 + (yTop - y0) * i / 5; s += `<line x1="${l}" x2="${w - r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${l - 8}" y="${Y(v) + 4}" text-anchor="end">${v.toFixed(1)}</text>`; }
+    s += `<text x="14" y="${(t + base) / 2}" transform="rotate(-90 14 ${(t + base) / 2})" text-anchor="middle">ระยะ Ward</text>`;
+    const order = [];
+    (function post(i) { for (const k of ["left", "right"]) { const x = M[i][k]; if (above(x)) post(x.merge); } order.push(i); })(root);
+    for (const i of order) {
+      const m = M[i], a = info(m.left), b = info(m.right), p = a.p && a.p === b.p ? a.p : 0;
+      pos[i] = { x: (a.x + b.x) / 2, h: m.height, p };
+      s += `<path d="M${a.x},${Y(a.h)} V${Y(m.height)} H${b.x} V${Y(b.h)}" fill="none" stroke="${p ? parentColor(p) : "var(--ink)"}" stroke-width="${p ? 2.6 : 1.8}" stroke-linejoin="round"><title>รวมที่ระยะ ${m.height.toFixed(2)} · ${fmt(m.size)} อีเมล</title></path>`;
+    }
+    for (const L of LV) if (L !== level && DT.cuts[L] > cut) {
+      s += `<line x1="${l}" x2="${w - r}" y1="${Y(DT.cuts[L])}" y2="${Y(DT.cuts[L])}" stroke="var(--accent)" stroke-dasharray="6 5"/>
+            <text x="${w - r}" y="${Y(DT.cuts[L]) - 5}" text-anchor="end" style="fill:var(--accent)">ตัดเป็น ${L} กลุ่ม</text>`;
+    }
+    const fs = wide ? 10 : 12;
+    units.forEach(k => {
+      const x = ux(k), on = picked === k;
+      const dot = level === LV[0] ? parentColor(k) : clusterColor(level === LV[1] ? k : S[k - 1].cluster_id);
+      s += `<g class="leaf" data-k="${k}" tabindex="0" role="button" aria-pressed="${on}" style="cursor:pointer;opacity:${picked && !on ? .4 : 1}">
+        <rect x="${x - step / 2}" y="${base}" width="${step}" height="${h - base}" fill="${on ? "color-mix(in srgb, var(--accent) 14%, transparent)" : "transparent"}"/>
+        <circle cx="${x}" cy="${base}" r="${wide ? 3 : 4}" fill="${dot}"/>
+        <text transform="translate(${x + 3},${base + 12}) rotate(55)" style="fill:var(--ink);font-size:${fs}px">${tagOf(level, k)} ${esc(nameOf(level, k).slice(0, 34))} (${fmt(sizeOf(level, k))})</text>
+        <title>${tagOf(level, k)} · ${esc(nameOf(level, k))} · ${fmt(sizeOf(level, k))} อีเมล</title></g>`;
+    });
+    box.innerHTML = s + "</svg>";
+    showDetail();
+  }
+  function pick(k) { picked = picked === k ? null : k; render(); draw(); }
+  box.addEventListener("click", e => { const g = e.target.closest(".leaf"); if (g) pick(+g.dataset.k); });
+  box.addEventListener("keydown", e => { const g = e.target.closest(".leaf"); if (g && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); pick(+g.dataset.k); } });
+
+  function showDetail() {
+    if (!picked) { focus = null; detail.innerHTML = ""; return; }
+    const k = picked, mine = S.filter(x => keyOf(x.sub_id, level) === k);
+    const members = mine.flatMap(x => x.members);
+    focus = new Set(members);
+    const kids = level === LV[0] ? P[k - 1].clusters.map(c => `C${c} ${esc(label(C[c - 1]))} (${fmt(C[c - 1].emails)})`)
+      : level === LV[1] ? mine.map(x => `S${x.sub_id} ${esc(subName(x.sub_id))} (${fmt(x.emails)})`) : [];
+    const obj = level === LV[0] ? P[k - 1] : level === LV[1] ? C[k - 1] : S[k - 1];
+    const ex = (obj.exemplars || mine[0].exemplars).slice(0, 3);
+    const colr = level === LV[0] ? parentColor(k) : clusterColor(level === LV[1] ? k : S[k - 1].cluster_id);
+    const where = level === LV[2] ? `<span class="chip">อยู่ใน C${S[k - 1].cluster_id} · P${S[k - 1].parent_id}</span>` : level === LV[1] ? `<span class="chip">อยู่ใน P${C[k - 1].parent_id}</span>` : "";
+    detail.innerHTML = `<div class="panel card" style="--c:${colr};margin-top:8px">
+      <div class="card-head"><h3>${tagOf(level, k)} · ${esc(nameOf(level, k))}</h3><span class="chip">${fmt(members.length)} อีเมล · เน้นบนแผนที่แล้ว</span></div>
+      ${where ? `<div>${where}</div>` : ""}
+      ${obj.llm_description ? `<p>${esc(obj.llm_description)}</p>` : ""}
+      <div class="kw">${obj.keywords.slice(0, 10).map(x => `<span>${esc(x)}</span>`).join("")}</div>
+      ${kids.length ? `<div style="font-size:13px"><b>แตกเป็น:</b> ${kids.join(" · ")}</div>` : ""}
+      <div class="ex">${ex.map(x => `<div><b>${esc(x.subject || "(ไม่มีหัวเรื่อง)")}</b><small>${esc(x.body_start.slice(0, 200))}…</small></div>`).join("")}</div>
+      <details><summary style="cursor:pointer">หัวเรื่องของอีเมลทั้ง ${fmt(members.length)} ฉบับ (เรียงจากที่ใกล้ศูนย์กลางกลุ่มย่อยที่สุด)</summary>
+        <ol style="font-size:13px;max-height:360px;overflow:auto;margin:8px 0 0;padding-left:32px">${members.map(i => `<li>${esc(pts[i][5] || "(ไม่มีหัวเรื่อง)")}${pts[i][4] ? ' <span class="chip">700</span>' : ""}</li>`).join("")}</ol>
+      </details></div>`;
+  }
+  render();
 })();
 
 // map
@@ -251,9 +302,10 @@ function draw() {
   ctx.clearRect(0, 0, W, W);
   const a = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--point-alpha")) || .8;
   const r = W < 500 ? 1.6 : 2.2;
-  for (const pass of [0, 1]) for (const p of pts) {
+  for (const pass of [0, 1]) for (let i = 0; i < pts.length; i++) {
+    const p = pts[i];
     if (onlySample.checked && !p[4]) continue;
-    const hit = !selected.size || selected.has(p[2]);
+    const hit = focus ? focus.has(i) : !selected.size || selected.has(p[2]);
     if ((pass === 0) === hit) continue;
     ctx.globalAlpha = hit ? a : .08;
     ctx.fillStyle = colorBy.value === "parent" ? parentColor(p[3]) : clusterColor(p[2]);
@@ -263,7 +315,7 @@ function draw() {
   ctx.font = `600 ${W < 500 ? 10 : 12}px ${getComputedStyle(document.body).fontFamily}`;
   ctx.textAlign = "center";
   for (const c of C) {
-    if (selected.size && !selected.has(c.cluster_id)) continue;
+    if (focus || (selected.size && !selected.has(c.cluster_id))) continue;
     const mine = pts.filter(p => p[2] === c.cluster_id);
     const xs = mine.map(px).sort((a, b) => a - b), ys = mine.map(py).sort((a, b) => a - b);
     const x = xs[xs.length >> 1], y = ys[ys.length >> 1];
