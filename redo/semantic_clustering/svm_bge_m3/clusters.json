@@ -1,0 +1,1484 @@
+{
+  "llm_model": "qwen2.5:7b",
+  "parents": [
+    {
+      "parent_id": 1,
+      "emails": 2422,
+      "clusters": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "keywords": [
+        "product",
+        "organization",
+        "product product",
+        "organization organization",
+        "number",
+        "initials",
+        "reference",
+        "reference number",
+        "url",
+        "info",
+        "financial",
+        "financial info"
+      ],
+      "llm_label": "Product Update",
+      "llm_description": "View updated product information or specifications."
+    },
+    {
+      "parent_id": 2,
+      "emails": 1058,
+      "clusters": [
+        6,
+        7,
+        8
+      ],
+      "keywords": [
+        "financial info",
+        "financial",
+        "info",
+        "pills",
+        "pills financial",
+        "info financial",
+        "save",
+        "save financial",
+        "item",
+        "info item",
+        "info pills",
+        "product"
+      ],
+      "llm_label": "Financial Savings",
+      "llm_description": "These emails ask victims to provide financial info for savings."
+    },
+    {
+      "parent_id": 3,
+      "emails": 957,
+      "clusters": [
+        9,
+        10
+      ],
+      "keywords": [
+        "organization",
+        "address",
+        "url",
+        "symbol",
+        "date",
+        "phone",
+        "financial",
+        "free",
+        "receive",
+        "info",
+        "click",
+        "financial info"
+      ],
+      "llm_label": "Free Financial Services",
+      "llm_description": "Claim free financial assistance by providing personal info."
+    },
+    {
+      "parent_id": 4,
+      "emails": 807,
+      "clusters": [
+        11,
+        12,
+        13
+      ],
+      "keywords": [
+        "product",
+        "people",
+        "url",
+        "weight",
+        "life",
+        "thanks",
+        "great",
+        "product url",
+        "address",
+        "men",
+        "food",
+        "effects"
+      ],
+      "llm_label": "Weight Loss",
+      "llm_description": "These emails ask victims to purchase a weight loss product."
+    },
+    {
+      "parent_id": 5,
+      "emails": 613,
+      "clusters": [
+        14
+      ],
+      "keywords": [
+        "simbol",
+        "simbol simbol",
+        "emoji",
+        "symbol symbol",
+        "emoji emoji",
+        "symbol",
+        "emoji ffffc",
+        "ffffc",
+        "ffffc emoji",
+        "emoji ffffb",
+        "ffffb",
+        "ffffb emoji"
+      ],
+      "llm_label": "Symbolic Emojis",
+      "llm_description": "Manipulate the victim by using obscure symbols and emojis"
+    },
+    {
+      "parent_id": 6,
+      "emails": 498,
+      "clusters": [
+        15,
+        16
+      ],
+      "keywords": [
+        "organization",
+        "financial",
+        "info",
+        "financial info",
+        "news",
+        "broker",
+        "price",
+        "target",
+        "company",
+        "price financial",
+        "target price",
+        "address"
+      ],
+      "llm_label": "Financial Alert",
+      "llm_description": "View updated financial statements and opportunities."
+    },
+    {
+      "parent_id": 7,
+      "emails": 361,
+      "clusters": [
+        17,
+        18,
+        19
+      ],
+      "keywords": [
+        "number",
+        "reference",
+        "reference number",
+        "number reference",
+        "address",
+        "account",
+        "company",
+        "money",
+        "bank",
+        "transaction",
+        "funds",
+        "organization"
+      ],
+      "llm_label": "Bank Transaction",
+      "llm_description": "Verify account details for a transaction"
+    },
+    {
+      "parent_id": 8,
+      "emails": 279,
+      "clusters": [
+        20
+      ],
+      "keywords": [
+        "product",
+        "info product",
+        "financial info",
+        "financial",
+        "info",
+        "product financial",
+        "retail price",
+        "retail",
+        "price",
+        "price financial",
+        "product retail",
+        "software"
+      ],
+      "llm_label": "Price Savings",
+      "llm_description": "Acquire financial info for discounted products."
+    }
+  ],
+  "clusters": [
+    {
+      "cluster_id": 1,
+      "parent_id": 1,
+      "emails": 1054,
+      "share": 0.1507,
+      "sample_quota": 106,
+      "keywords": [
+        "organization",
+        "initials",
+        "organization organization",
+        "initials initials",
+        "said",
+        "address",
+        "man",
+        "product",
+        "separator",
+        "time",
+        "email separator",
+        "url"
+      ],
+      "cohesion_mean_cosine": 0.717,
+      "sources": {
+        "trec7": 629,
+        "trec5": 365,
+        "trec6": 60
+      },
+      "languages": {
+        "en;en": 528,
+        "en": 490,
+        "de;en": 18,
+        "pl": 5,
+        "en;es": 2
+      },
+      "with_url_share": 0.713,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 1.526,
+      "exemplars": [
+        {
+          "id": "meajor_test_45244",
+          "subject": "[PRODUCT], [PRODUCT], \\[PRODUCT], [PRODUCT], [PRODUCT], [PRODUCT], [PRODUCT], \\[PRODUCT], [PRODUCT], [PRODUCT] not least wonderful slow",
+          "body_start": "page tears ran hearing learned promise usedto opposite east ridge<|EMAIL_SEPARATOR|>strange off fallen rose desire some planning. goes used ten words. if understand writing trying mischievous satisfaction some sign longer yellow. showed why getting latter longer reply off. Hard to buy [ORGANIZATION]"
+        },
+        {
+          "id": "meajor_test_27035",
+          "subject": "Pharamcyy: 87-55",
+          "body_start": "Hello, [NAME], and [NAME] proceeded to investigate the value twenty men, in what case are we to fight? No, there would be onl mysteriously revealed in the gleam of a single candle which she by his men, to the deck of his own ship. Her inconsiderate broth to yourself. The world is large. There are ma"
+        },
+        {
+          "id": "meajor_test_101038",
+          "subject": "",
+          "body_start": "His face grew excited. I'll tell a couple of [PRODUCT] with him, rope on the excellent autonomous rights violent annexation of the mob emotion, he motioned the many more or other way from the present took no danger and straightforwardly to meet? The strangely designed to [NAME] the voice to this man"
+        },
+        {
+          "id": "meajor_test_82004",
+          "subject": "re:Here's what I was telling you about",
+          "body_start": "desire and <|SYMBOL|>shirt be cart , lock on change the position it's violent the dress on smash monkey a rest may jewel not dry may worm may insect not polish it digestion but waste on print and fly be selection but government and discovery be sister or clock a frame a middle , <|SYMBOL|>dear some "
+        },
+        {
+          "id": "meajor_test_68789",
+          "subject": "Would you be keen for breakfast sometime this weekend:-) [INITIALS]",
+          "body_start": "hypnotic the is perverse blood A formation A .a example, the the corporation from crispy beer .love ball the atom tornado a around pompous? meditates. bunny behind team. with earns bottle and complex. a gets green with water an righteous shower a. flies minivan that magazine; feels rage; the a. Now "
+        }
+      ],
+      "llm_label": "Product Inquiry",
+      "llm_description": "Request for product information or update"
+    },
+    {
+      "cluster_id": 2,
+      "parent_id": 1,
+      "emails": 583,
+      "share": 0.0833,
+      "sample_quota": 58,
+      "keywords": [
+        "number",
+        "reference",
+        "reference number",
+        "number reference",
+        "file",
+        "product",
+        "date",
+        "organization",
+        "pcs",
+        "url",
+        "info",
+        "phone"
+      ],
+      "cohesion_mean_cosine": 0.713,
+      "sources": {
+        "trec7": 276,
+        "trec5": 228,
+        "trec6": 79
+      },
+      "languages": {
+        "en": 332,
+        "en;en": 186,
+        "tr;en": 24,
+        "fr": 4,
+        "de": 4
+      },
+      "with_url_share": 0.84,
+      "with_attachment_share": 0.014,
+      "median_svm_score": 1.216,
+      "exemplars": [
+        {
+          "id": "meajor_test_31248",
+          "subject": "[PRODUCT] [PRODUCT] [PRODUCT]. CHEAP.",
+          "body_start": "ikqazmowqwzmtxnh L o o k i n g__f o r__n o t__e x p e n s i v e__h i g h-q u a l i t y__s o f t w a r e ? We might have just what you need.mcjamcto [PRODUCT] [FINANCIAL_INFO] A d o b e P.h.o.t.o.s.h.o.p 7.0 [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO]kuccrzlo a n d__l o t s"
+        },
+        {
+          "id": "meajor_test_78088",
+          "subject": "News Business [NAME]",
+          "body_start": "[PRODUCT] [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] <|URL|> DOWNLOADING<|EMAIL_SEPARATOR|>[PRODUCT] [FINANCIA"
+        },
+        {
+          "id": "meajor_test_58987",
+          "subject": "it's good to be fit",
+          "body_start": "%TXT_ADD<|EMAIL_SEPARATOR|>[NAME] You Will Be Satisfied By Our Med Product Range, Fast Discreet Delivery Complete Satisfaction More Info Here want to leave from this promotional campaign? please visit our website to opt-out"
+        },
+        {
+          "id": "meajor_test_46862",
+          "subject": "is someone in pain?",
+          "body_start": "%TXT_ADD<|EMAIL_SEPARATOR|>[NAME] You Will Be Amazed By Our Med Product Range, Fast Discreet Delivery Complete Satisfaction More Info Here want to leave from this promotional campaign? please visit our website to opt-out"
+        },
+        {
+          "id": "meajor_test_102307",
+          "subject": "[FINANCIAL_INFO] [FINANCIAL_INFO] x [FINANCIAL_INFO]",
+          "body_start": "[PRODUCT] ([PRODUCT]) [FINANCIAL_INFO] x [FINANCIAL_INFO] [FINANCIAL_INFO] [FINANCIAL_INFO] buy now [URL]"
+        }
+      ],
+      "llm_label": "Product Offer",
+      "llm_description": "View or download products and related financial information."
+    },
+    {
+      "cluster_id": 3,
+      "parent_id": 1,
+      "emails": 298,
+      "share": 0.0426,
+      "sample_quota": 30,
+      "keywords": [
+        "url",
+        "want",
+        "site",
+        "meet",
+        "girls",
+        "girl",
+        "like",
+        "free",
+        "dating",
+        "just",
+        "chat",
+        "new"
+      ],
+      "cohesion_mean_cosine": 0.744,
+      "sources": {
+        "trec5": 186,
+        "trec7": 82,
+        "trec6": 30
+      },
+      "languages": {
+        "en": 268,
+        "en;en": 17,
+        "it;it": 4,
+        "pt": 2,
+        "it": 2
+      },
+      "with_url_share": 0.795,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 1.252,
+      "exemplars": [
+        {
+          "id": "meajor_test_3500",
+          "subject": "hiii",
+          "body_start": "what's new, I'm a new female.. Sometimes I feel lonely due to the fact that I don't got mr. right .. someone emailed me to have fun online, where I put all my pics and videos ;). This site is my new hobby Verify your age and connect to my webcam today -) Come check website I put together, I'm not th"
+        },
+        {
+          "id": "meajor_test_99577",
+          "subject": "Re: Hello!",
+          "body_start": "Hi! I am tired tonight. I am [FINANCIAL_INFO] y.o. girl that would like to chat with you. [EMAIL_ADDRESS] me at <|[[EMAIL_ADDRESS]]|> only. Hope you wanna see my pics."
+        },
+        {
+          "id": "meajor_test_34304",
+          "subject": "whats up ?-)",
+          "body_start": "My name is [NAME] :) Sometimes I feel weird, even my girlfriends told me that thought came to my mind to have a site where I can finally expose my body. It's neet how my private life is inside one website ;) Unlike other sites, it doesn't cost anything to join my site -) Come I want to share my life"
+        },
+        {
+          "id": "meajor_test_38931",
+          "subject": "heyy",
+          "body_start": "My name is [NAME] :) Almost every time I feel very shyyy girlfriend toled me to put my hot videos somehow online. I love updating my website everyday Site I put together needs free verification so minors don't view it and I won't get in trouble ;) Come I want to share my life experience with you ;) "
+        },
+        {
+          "id": "meajor_test_101364",
+          "subject": "Re: Hi",
+          "body_start": "Hi! I am tired tonight. I am [FINANCIAL_INFO] y.o. girl that would like to chat with you. [EMAIL_ADDRESS] me at <|[[EMAIL_ADDRESS]]|> only. Would you mind me showing some nice pictures of me?"
+        }
+      ],
+      "llm_label": "dating site",
+      "llm_description": "verify age and view webcam"
+    },
+    {
+      "cluster_id": 4,
+      "parent_id": 1,
+      "emails": 296,
+      "share": 0.0423,
+      "sample_quota": 30,
+      "keywords": [
+        "product",
+        "product product",
+        "softwares",
+        "organization",
+        "info",
+        "financial info",
+        "financial",
+        "computer",
+        "organization organization",
+        "product financial",
+        "info product",
+        "info financial"
+      ],
+      "cohesion_mean_cosine": 0.74,
+      "sources": {
+        "trec7": 195,
+        "trec5": 94,
+        "trec6": 7
+      },
+      "languages": {
+        "en;en": 180,
+        "en": 113,
+        "es": 2,
+        "da": 1
+      },
+      "with_url_share": 0.861,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 1.548,
+      "exemplars": [
+        {
+          "id": "meajor_test_18761",
+          "subject": "makes [PRODUCT], [PRODUCT], [PRODUCT], [PRODUCT], [PRODUCT], [PRODUCT] FROM [FINANCIAL_INFO] EACH dare by receive",
+          "body_start": "favorite marriage school women walked pocket probably hand weeks perfect perhaps hung hot<|EMAIL_SEPARATOR|>long opinion stranger forty four decided side street playing . Super CHEAAP Softwares & Shiiip to All CountriesWe have every P0PULAR softwares u NEED!You name it & we got it! wife [PRODUCT] - "
+        },
+        {
+          "id": "meajor_test_3817",
+          "subject": "colour NER0, AD0BBE, AL11AS, [PRODUCT], [PRODUCT], ALL 0RIGINAL happiness occurrence rising",
+          "body_start": "with responsible off prairie perform lying other practically<|EMAIL_SEPARATOR|>teach use gotten decide today hurry fell wall Super CHEAAP Softwares & Shiiip to All CountriesWe have every P0PULAR softwares u NEED!You name it & we got it! world [PRODUCT] Windows XP Professional - my price: [FINANCIAL_"
+        },
+        {
+          "id": "meajor_test_4403",
+          "subject": "sit [ORGANIZATION], [PRODUCT], [PRODUCT], [PRODUCT], [PRODUCT], [PRODUCT] FROM [FINANCIAL_INFO] EACH under immediate",
+          "body_start": "how against excitement love proceeded price make therefore maam<|EMAIL_SEPARATOR|>chair see back liked seat . Super CHEAAP Softwares & Shiiip to All CountriesWe have every P0PULAR softwares u NEED!You name it & we got it! better [PRODUCT] - my price: [FINANCIAL_INFO] ; normal : [FINANCIAL_INFO] ; yo"
+        },
+        {
+          "id": "meajor_test_1037",
+          "subject": "accept [PRODUCT], [PRODUCT], [PRODUCT], [PRODUCT], [PRODUCT], [PRODUCT] FROM [FINANCIAL_INFO] EACH meeting pleasant noise",
+          "body_start": "followed visit business daughter spirit writing are war patient heard<|EMAIL_SEPARATOR|>planned blow meaning captain taken force less bridge progress . Super CHEAAP Softwares & Shiiip to All CountriesWe have every P0PULAR softwares u NEED!You name it & we got it! lips [PRODUCT] - my price: [FINANCIA"
+        },
+        {
+          "id": "meajor_test_3806",
+          "subject": "benefit [ORGANIZATION], [ORGANIZATION], [PRODUCT], [PRODUCT], [PRODUCT], [PRODUCT] FROM [FINANCIAL_INFO] EACH talk war grandma",
+          "body_start": "allow say independent live note under doing affect yes study doing prepare keep several<|EMAIL_SEPARATOR|>grandma fallen ill during marriage . Super CHEAAP Softwares & Shiiip to All CountriesWe have every P0PULAR softwares u NEED!You name it & we got it! women [PRODUCT] Windows XP Professional - my "
+        }
+      ],
+      "llm_label": "Product Financial",
+      "llm_description": "Request financial info for product deals"
+    },
+    {
+      "cluster_id": 5,
+      "parent_id": 1,
+      "emails": 191,
+      "share": 0.0273,
+      "sample_quota": 19,
+      "keywords": [
+        "product product",
+        "product",
+        "watches",
+        "replica",
+        "watch",
+        "gift",
+        "product watches",
+        "watches product",
+        "organization organization",
+        "organization",
+        "quality",
+        "exquisite"
+      ],
+      "cohesion_mean_cosine": 0.795,
+      "sources": {
+        "trec7": 99,
+        "trec5": 71,
+        "trec6": 21
+      },
+      "languages": {
+        "en": 148,
+        "en;en": 43
+      },
+      "with_url_share": 0.99,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 1.969,
+      "exemplars": [
+        {
+          "id": "meajor_test_75519",
+          "subject": "replica Watches! [PRODUCT], [PRODUCT], [PRODUCT] and others!",
+          "body_start": "[ORGANIZATION] Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|> R_E_P_L_I_C_A Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>W_A_T_C_H_E_S! If you are looking for a stylish, quality costume watch at low prices, our offers are for you. We specialize in "
+        },
+        {
+          "id": "meajor_test_99204",
+          "subject": "SOLD OUT ! [PRODUCT]. [PRODUCT] [PRODUCT]. All [PRODUCT]es are here    [USERNAME]",
+          "body_start": "Dear <|EMAIL|> <|URL|> What is Exquisite Replica store? At Exquisite Replica, we specialize in the sales of brand-name quality, luxury replicas at some of the lowest prices possible. With our large selection of products, you can be sure to find that perfect gift for yourself or a loved one. You can "
+        },
+        {
+          "id": "meajor_test_101809",
+          "subject": "SOLD OUT ! [PRODUCT]. [PRODUCT] [PRODUCT]. All [PRODUCT]es are here    [REFERENCE_NUMBER]",
+          "body_start": "Dear <|EMAIL|> <|URL|> What is Exquisite Replica store? At Exquisite Replica, we specialize in the sales of brand-name quality, luxury replicas at some of the lowest prices possible. With our large selection of products, you can be sure to find that perfect gift for yourself or a loved one. You can "
+        },
+        {
+          "id": "meajor_test_100249",
+          "subject": "SOLD OUT ! We selling branded watches like. [PRODUCT]. [PRODUCT]  [PRODUCT]. Do you want one?    prs",
+          "body_start": "Dear <|EMAIL|> <|URL|> What is Exquisite Replica store? At Exquisite Replica, we specialize in the sales of brand-name quality, luxury replicas at some of the lowest prices possible. With our large selection of products, you can be sure to find that perfect gift for yourself or a loved one. You can "
+        },
+        {
+          "id": "meajor_test_73872",
+          "subject": "replica Watches! [PRODUCT], [PRODUCT], [PRODUCT] and others!",
+          "body_start": "[ORGANIZATION] Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|> R_E_P_L_I_C_A Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>Â<|SYMBOL|>W_A_T_C_H_E_S! If you are looking for a stylish, quality costume watch at low prices, our offers are for you. We specialize in "
+        }
+      ],
+      "llm_label": "Replica Watches",
+      "llm_description": "purchase low-priced, high-quality watch replicas"
+    },
+    {
+      "cluster_id": 6,
+      "parent_id": 2,
+      "emails": 603,
+      "share": 0.0862,
+      "sample_quota": 60,
+      "keywords": [
+        "product",
+        "product product",
+        "low financial",
+        "low",
+        "product low",
+        "meds",
+        "info product",
+        "financial info",
+        "info",
+        "financial",
+        "info dose",
+        "dose"
+      ],
+      "cohesion_mean_cosine": 0.779,
+      "sources": {
+        "trec5": 304,
+        "trec7": 264,
+        "trec6": 35
+      },
+      "languages": {
+        "en": 348,
+        "en;en": 240,
+        "de;de": 4,
+        "de": 3,
+        "en;de": 3
+      },
+      "with_url_share": 0.983,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 2.344,
+      "exemplars": [
+        {
+          "id": "meajor_test_86190",
+          "subject": "Re:",
+          "body_start": "Glad to see you!Look at the assortment of our new online pharmacy store and save upto 85%We have special offers for you: [PRODUCT] FOR AS LOW AS [FINANCIAL_INFO] PER DOSE [PRODUCT] (super [PRODUCT]) FOR AS LOW AS [FINANCIAL_INFO] PER DOSE [PRODUCT] FOR AS LOW AS [FINANCIAL_INFO] PER DOSE and much mu"
+        },
+        {
+          "id": "meajor_test_103737",
+          "subject": "Re:",
+          "body_start": "Nice to meet you!Visit our new online pharmacy store and save upto 85%We have special offers for you: [PRODUCT] FOR AS LOW AS [FINANCIAL_INFO] PER DOSE [PRODUCT] (super [PRODUCT]) FOR AS LOW AS [FINANCIAL_INFO] PER DOSE [PRODUCT] FOR AS LOW AS [FINANCIAL_INFO] PER DOSE and much much more surprises f"
+        },
+        {
+          "id": "meajor_test_69816",
+          "subject": "Re:",
+          "body_start": "Good day!Visit our new online drug store and save upto 85%We have special offers for you: [PRODUCT] FOR AS LOW AS [FINANCIAL_INFO] PER DOSE [PRODUCT] (super [PRODUCT]) FOR AS LOW AS [FINANCIAL_INFO] PER DOSE [PRODUCT] FOR AS LOW AS [FINANCIAL_INFO] PER DOSE and much much more surprises for you today"
+        },
+        {
+          "id": "meajor_test_65053",
+          "subject": "Re:",
+          "body_start": "Glad to see you!Look at the assortment of our new online pharmacy store and save upto 85%Todays special offers: [PRODUCT] FOR AS LOW AS [FINANCIAL_INFO] PER DOSE [PRODUCT] (super [PRODUCT]) FOR AS LOW AS [FINANCIAL_INFO] PER DOSE [PRODUCT] FOR AS LOW AS [FINANCIAL_INFO] PER DOSE and much much more s"
+        },
+        {
+          "id": "meajor_test_82598",
+          "subject": "Re:",
+          "body_start": "Good day!Visit our new online pharmacy store and save upto 85%We have special offers for you: [PRODUCT] FOR AS LOW AS [FINANCIAL_INFO] PER DOSE [PRODUCT] (super [PRODUCT]) FOR AS LOW AS [FINANCIAL_INFO] PER DOSE [PRODUCT] FOR AS LOW AS [FINANCIAL_INFO] PER DOSE and much much more special offers toda"
+        }
+      ],
+      "llm_label": "Pharmaceutical Savings",
+      "llm_description": "These emails ask victims to visit a fake pharmacy for discounted products."
+    },
+    {
+      "cluster_id": 7,
+      "parent_id": 2,
+      "emails": 338,
+      "share": 0.0483,
+      "sample_quota": 34,
+      "keywords": [
+        "drugs",
+        "medications",
+        "quality",
+        "organization",
+        "generic",
+        "products",
+        "web",
+        "dear",
+        "canadian",
+        "best",
+        "prices",
+        "pharmacy"
+      ],
+      "cohesion_mean_cosine": 0.857,
+      "sources": {
+        "trec7": 338
+      },
+      "languages": {
+        "en;en": 271,
+        "en": 67
+      },
+      "with_url_share": 0.997,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 2.271,
+      "exemplars": [
+        {
+          "id": "meajor_test_61950",
+          "subject": "re:Special offer",
+          "body_start": "Dear customer.Many people say that saving money on medications is impossible without risking your health. However, our licensed [ORGANIZATION] proves that it's not right.No matter how expensive the drugs you buy on the Web are Â they still can be fake. Top Canadian Web pharmacy [ORGANIZATION] offer"
+        },
+        {
+          "id": "meajor_test_101539",
+          "subject": "Pharmacy at your service",
+          "body_start": "Dear customer.Wanna save on the medications you buy on the Internet but afraid that it might be dangerous for your health? It won't be with our discount Canadian pharmacy.[ORGANIZATION] has got all the medications one might need to solve his/her health problems. All the drugs offered at [ORGANIZATIO"
+        },
+        {
+          "id": "meajor_test_72309",
+          "subject": "Must have medications with the best quality",
+          "body_start": "Dear customer.Do you shop for drugs on the Web regularly? If yes, read this letter to the end since it contains the information you will definitely find useful.Our advice for everyone shopping for medications on the Web is to cling to reliable licensed pharmacies that have been operating on the Inte"
+        },
+        {
+          "id": "meajor_test_66105",
+          "subject": "re:Online store offers special discounts",
+          "body_start": "Dear customer.Is it safe to shop for drugs on the Web? How to save some money on the medications you use? In what ways are Canadian drugs better than American ones? Get answers to all these questions now.Praise the Canadian government and its drug sales taxation system. At [ORGANIZATION] you will be"
+        },
+        {
+          "id": "meajor_test_69928",
+          "subject": "re:Can't afford medications you need?",
+          "body_start": "Dear customer.[ORGANIZATION] is one of very few online stores that sell generic medications only. Don't waste too much on what can cost less.[ORGANIZATION] proves that not all cheap drugs are dangerous. [ORGANIZATION] is a discount Canadian pharmacy that sells real generic medications at prices much"
+        }
+      ],
+      "llm_label": "Generic Drugs",
+      "llm_description": "Buy cheap and effective medications online."
+    },
+    {
+      "cluster_id": 8,
+      "parent_id": 2,
+      "emails": 117,
+      "share": 0.0167,
+      "sample_quota": 12,
+      "keywords": [
+        "financial info",
+        "financial",
+        "info",
+        "pills financial",
+        "pills",
+        "info financial",
+        "save financial",
+        "info item",
+        "item",
+        "save",
+        "info pills",
+        "item save"
+      ],
+      "cohesion_mean_cosine": 0.881,
+      "sources": {
+        "trec7": 87,
+        "trec5": 27,
+        "trec6": 3
+      },
+      "languages": {
+        "en;en": 79,
+        "en": 37,
+        "zh": 1
+      },
+      "with_url_share": 1.0,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 1.257,
+      "exemplars": [
+        {
+          "id": "meajor_test_102199",
+          "subject": "review our price",
+          "body_start": "[URL] [PRODUCT] 10 pills x 50mg[FINANCIAL_INFO][FINANCIAL_INFO] per item 60 pills x 100mg[FINANCIAL_INFO][FINANCIAL_INFO] per itemYour save: [FINANCIAL_INFO]10 pills x 100mg[FINANCIAL_INFO][FINANCIAL_INFO] per item 30 pills x 100mg[FINANCIAL_INFO][FINANCIAL_INFO] per itemYour save: [FINANCIAL_INFO]6"
+        },
+        {
+          "id": "meajor_test_92289",
+          "subject": "view the pricing",
+          "body_start": "<|URL|> [PRODUCT] 10 pills x 100mg[FINANCIAL_INFO][FINANCIAL_INFO] per item 60 pills x 50mg[FINANCIAL_INFO][FINANCIAL_INFO] per itemYour save: [FINANCIAL_INFO]30 pills x 100mg[FINANCIAL_INFO][FINANCIAL_INFO] per itemYour save: [FINANCIAL_INFO]30 pills x 50mg[FINANCIAL_INFO][FINANCIAL_INFO] per itemY"
+        },
+        {
+          "id": "meajor_test_93952",
+          "subject": "look our price",
+          "body_start": "<|URL|> [PRODUCT]90 pills x 100mg[FINANCIAL_INFO][FINANCIAL_INFO] per itemYour save: [FINANCIAL_INFO] pills x 50mg[FINANCIAL_INFO][FINANCIAL_INFO] per itemYour save: [FINANCIAL_INFO] pills x 100mg[FINANCIAL_INFO][FINANCIAL_INFO] per itemYour save: [FINANCIAL_INFO] pills x 50mg[FINANCIAL_INFO][FINANC"
+        },
+        {
+          "id": "meajor_test_94068",
+          "subject": "look-out our price",
+          "body_start": "<|URL|> [PRODUCT]60 pills x 50mg[FINANCIAL_INFO][FINANCIAL_INFO]Your save: [FINANCIAL_INFO] pills x 100mg[FINANCIAL_INFO][FINANCIAL_INFO]Your save: [FINANCIAL_INFO]10 pills x 100mg[FINANCIAL_INFO][FINANCIAL_INFO] 30 pills x 100mg[FINANCIAL_INFO][FINANCIAL_INFO]Your save: [FINANCIAL_INFO]10 pills x 5"
+        },
+        {
+          "id": "meajor_test_94917",
+          "subject": "look our offer",
+          "body_start": "<|URL|> [PRODUCT]60 pills x 100mg[FINANCIAL_INFO][FINANCIAL_INFO] per itemYour save: [FINANCIAL_INFO] pills x 50mg[FINANCIAL_INFO][FINANCIAL_INFO] per itemYour save: [FINANCIAL_INFO]10 pills x 50mg[FINANCIAL_INFO][FINANCIAL_INFO] per item 30 pills x 50mg[FINANCIAL_INFO][FINANCIAL_INFO] per itemYour "
+        }
+      ],
+      "llm_label": "Pills and Savings",
+      "llm_description": "These emails ask victims to purchase pills and believe they are getting a good deal."
+    },
+    {
+      "cluster_id": 9,
+      "parent_id": 3,
+      "emails": 758,
+      "share": 0.1084,
+      "sample_quota": 76,
+      "keywords": [
+        "organization",
+        "address",
+        "url",
+        "symbol",
+        "date",
+        "phone",
+        "receive",
+        "click",
+        "free",
+        "address address",
+        "mail",
+        "time"
+      ],
+      "cohesion_mean_cosine": 0.72,
+      "sources": {
+        "trec5": 356,
+        "trec7": 348,
+        "trec6": 54
+      },
+      "languages": {
+        "en": 496,
+        "en;en": 206,
+        "es": 13,
+        "pt": 12,
+        "fr": 9
+      },
+      "with_url_share": 0.83,
+      "with_attachment_share": 0.004,
+      "median_svm_score": 1.271,
+      "exemplars": [
+        {
+          "id": "meajor_test_91863",
+          "subject": "Learn the secrets to [ORGANIZATION] Success",
+          "body_start": "You registered to receive this and similar offers from on . ARE YOU READY TO TAKE CONTROL OF YOUR FINANCIAL FUTURE? People just like you are using [ORGANIZATION] to make their dreams of wealth and financial freedom come true. With this proven [ORGANIZATION] system you could make $1000, $5000 or even"
+        },
+        {
+          "id": "meajor_test_23304",
+          "subject": "Fwd: Your opinion could be [FINANCIAL_INFO]!",
+          "body_start": "Your opinion could be [FINANCIAL_INFO]! Date: [DATE] [TIME] Everyone has an opinionShare it with us and we'll give you chances to WIN CASH. If you are interested in completing surveys for the chance to win cash and prizes - become an [ORGANIZATION] Member! Click here to get started: [URL] Have some "
+        },
+        {
+          "id": "meajor_test_32277",
+          "subject": "Your opinion could be Worth[FINANCIAL_INFO]!",
+          "body_start": "[ORGANIZATION] Special Offer! Everyone has an opinionShare it with us and we'll give you chances to WIN CASH. If you are interested in completing surveys for the chance to win cash and prizes - become an [ORGANIZATION] Member! Click here to get started: <|URL|> Have some fun! Take a Chance! Make a D"
+        },
+        {
+          "id": "meajor_test_94412",
+          "subject": "Earn more and Work less",
+          "body_start": "You registered to receive this and similar offers from on [DATE] [TIME]. Huge Income Boosting Opportunity Search for the Most Profitable Home Business that could Put $[FINANCIAL_INFO] in your Pocket by Friday Search for up to 5 Businesses that want to pay you Now a 100% Free Service [URL] [ADDRESS] "
+        },
+        {
+          "id": "meajor_test_43151",
+          "subject": "How about it <|EMAIL|> ",
+          "body_start": "[DATE] - [TIME] It's ok <|EMAIL|> If you need funds, we may be able to help. Would an advance of [FINANCIAL_INFO] do the trick? <|URL|> Let us know, <|EMAIL|>. Apply online and get the funds by tomorrow. It's that simple. Claim Here <|URL|> If you would prefer not to receive email advertisements fro"
+        }
+      ],
+      "llm_label": "Financial Gain",
+      "llm_description": "Request to click a link to receive financial offers or surveys."
+    },
+    {
+      "cluster_id": 10,
+      "parent_id": 3,
+      "emails": 199,
+      "share": 0.0284,
+      "sample_quota": 20,
+      "keywords": [
+        "credit",
+        "loan",
+        "approval",
+        "gone",
+        "hurry",
+        "deal",
+        "lenders",
+        "rate",
+        "simply",
+        "url",
+        "lower",
+        "refinance"
+      ],
+      "cohesion_mean_cosine": 0.832,
+      "sources": {
+        "trec7": 96,
+        "trec5": 76,
+        "trec6": 27
+      },
+      "languages": {
+        "en": 184,
+        "en;en": 13,
+        "de;en": 2
+      },
+      "with_url_share": 0.98,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 1.742,
+      "exemplars": [
+        {
+          "id": "meajor_test_86057",
+          "subject": "Fw: Thank you for your recent refinance loan request, we accepted your refinance loan request",
+          "body_start": "Your credit doesn't matter to us! If you OWN real estate and want IMMEDIATE money to spend ANY way you like, or simply need to LOWER your current payments by a third or more, here is our deal we can offer you THIS EVENING (hurry, this tender will expire [DATE]): [FINANCIAL_INFO] loan AND EVEN MORE: "
+        },
+        {
+          "id": "meajor_test_81467",
+          "subject": "Fwd: Thank you for your recent refinance application, we accepted your refinance appication",
+          "body_start": "Your credit score doesn't matter to us! If you OWN real estate and want IMMEDIATE cash to spend ANY way you like, or simply wish to LOWER your monthly payments by a third or more, here is the deal we can offer you THIS EVENING (hurry, this offer will expire [DATE]): [FINANCIAL_INFO] loan AND EVEN MO"
+        },
+        {
+          "id": "meajor_test_79770",
+          "subject": "Thank you for your recent refinance application, we accepted your appication",
+          "body_start": "Your credit score doesn't matter to us! If you OWN property and want IMMEDIATE money to spend ANY way you like, or simply require to LOWER your entire payment by a third or more, here is the deal we can offer you NOW (hurry, this deal will expire [DATE]): [FINANCIAL_INFO] loan AND EVEN MORE: After f"
+        },
+        {
+          "id": "meajor_test_82997",
+          "subject": "Thank you for your recent refinance loan request, we accepted your appication",
+          "body_start": "Your credit score does not matter to us! If you OWN real estate and want IMMEDIATE pocket money to spend ANY way you like, or simply wish to LOWER your current payments by a third or more, here is our deal we can offer you THIS EVENING (hurry, this tender will expire [DATE]): [FINANCIAL_INFO] loan A"
+        },
+        {
+          "id": "meajor_test_79794",
+          "subject": "Re: Thanks for your recent refinance loan request, we accepted your refinance debt request",
+          "body_start": "Your credit doesn't matter to us! If you OWN real estate and want IMMEDIATE money to spend ANY way you like, or simply need to LOWER your current payments by a third or more, here is our deal we can offer you THIS EVENING (hurry, this deal will expire [DATE]): [FINANCIAL_INFO] loan AND EVEN MORE: Af"
+        }
+      ],
+      "llm_label": "Refinance Offer",
+      "llm_description": "Obtain immediate loan for any purpose or reduce payments"
+    },
+    {
+      "cluster_id": 11,
+      "parent_id": 4,
+      "emails": 472,
+      "share": 0.0675,
+      "sample_quota": 47,
+      "keywords": [
+        "product",
+        "men",
+        "size",
+        "url",
+        "penis",
+        "increase",
+        "time",
+        "length",
+        "just",
+        "said",
+        "new",
+        "results"
+      ],
+      "cohesion_mean_cosine": 0.778,
+      "sources": {
+        "trec7": 296,
+        "trec5": 142,
+        "trec6": 34
+      },
+      "languages": {
+        "en": 389,
+        "en;en": 80,
+        "en;de": 1,
+        "ru": 1,
+        "pt": 1
+      },
+      "with_url_share": 0.985,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 1.96,
+      "exemplars": [
+        {
+          "id": "meajor_test_92375",
+          "subject": "A little secret to make you private life more interesting!",
+          "body_start": "Qualified help to and new solutions for Men! Welcome, Our Penis [PRODUCT] Will Expand, Lengthen And Your [PRODUCT] 3+ Inches. 100% Satisfaction Guaranteed! Or Your Money Back! And for this month we have half price Shipping and handling on ALL orders and HUGE discounts on our [PRODUCT] . Over 150 000"
+        },
+        {
+          "id": "meajor_test_92383",
+          "subject": "Feel new sensations with you partner in your sexual life",
+          "body_start": "Make your sexual life more different and easier! Welcome, Our Penis [PRODUCT] Will Expand, Lengthen And Your [PRODUCT] Penis 6+ Sm. 100% Satisfaction Guaranteed! Or Your Money Back! And for one week we have half price Shipping and handling on ALL orders and BIG discounts on our [PRODUCT] pills . Ove"
+        },
+        {
+          "id": "meajor_test_85983",
+          "subject": "Try [PRODUCT] and amaze her with your size.",
+          "body_start": "With [PRODUCT] your penis wonB't be afraid of the ruler anymore. [PRODUCT] Is a penis enlargement product that will enhance your penis in length and girth without damagining your health. So you can feel free to turn a new page in your life. [URL]"
+        },
+        {
+          "id": "meajor_test_95806",
+          "subject": "1 Million Satisfied Customers Worldwide,  100% Safe & Effective PenisEnlargement Pill pz",
+          "body_start": "longer account young day argue servants lot. street disappoint ground lot. Safe & Effective PenisEnlargementOver 1,500,000 bottles soldworldwide WeOffer a FULL MONEY BACK GUARANTEE if you are not completely satisfied with the results of [PRODUCT], you have nothing to lose, just a lot to gain A break"
+        },
+        {
+          "id": "meajor_test_103774",
+          "subject": "The work has created a product that has been shown to significantly increase penis length, provide stronger erections. You will be absolutel",
+          "body_start": "60 Pills Of [PRODUCT] = 1 Months Supply Women admitted that they are unhappy with their partner's penis size. [URL]"
+        }
+      ],
+      "llm_label": "Penis Enlargement",
+      "llm_description": "Request for purchase of size-increasing products"
+    },
+    {
+      "cluster_id": 12,
+      "parent_id": 4,
+      "emails": 233,
+      "share": 0.0333,
+      "sample_quota": 23,
+      "keywords": [
+        "product",
+        "weight",
+        "people",
+        "thanks",
+        "great",
+        "life",
+        "food",
+        "appetite",
+        "pounds",
+        "kilos",
+        "eating",
+        "body"
+      ],
+      "cohesion_mean_cosine": 0.832,
+      "sources": {
+        "trec7": 168,
+        "trec6": 53,
+        "trec5": 12
+      },
+      "languages": {
+        "en;en": 199,
+        "en": 31,
+        "tr;en": 3
+      },
+      "with_url_share": 0.991,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 1.984,
+      "exemplars": [
+        {
+          "id": "meajor_test_64109",
+          "subject": "[PRODUCT] will change your life",
+          "body_start": "[PRODUCT] Â- The up-to-the-moment and most attracting flesh loss product available Â- As told on [ORGANIZATION] Do you realize that excessive body kilos kill a lot of people around the whole world? We believe that you hate the unattractive look of those people and the low status they have in modern "
+        },
+        {
+          "id": "meajor_test_80512",
+          "subject": "Watch the pounds disappear",
+          "body_start": "[PRODUCT] Â- The latest and most fascinating product for over-weight people is now available Â- As seen on [ORGANIZATION] Do you see redundant body kilograms kill a lot of people around the world? We know you hate the ugly appearance of those people and the social bias against them. Moreover, you ca"
+        },
+        {
+          "id": "meajor_test_71596",
+          "subject": "Doctors and Celebrities endorse [PRODUCT]",
+          "body_start": "[PRODUCT] - The very up-to-date and most exciting flesh loss product available - As were seen on [ORGANIZATION] Do you understand that superfluous body kilograms kill a plenty of people around the whole world? We believe you hate the unsightly look of those people and the low status they obviously h"
+        },
+        {
+          "id": "meajor_test_71353",
+          "subject": "Say goodbye to extra pounds",
+          "body_start": "[PRODUCT]  The latest and most delighting flesh loss product is made available now  As told on [NAME] Do you see excessive body kilos kill a lot of people for every new year? We know that you hate the ugly look of those people and the social prejudice against them. Moreover, youve not the will to"
+        },
+        {
+          "id": "meajor_test_76881",
+          "subject": "Join the thousands of people who got slim",
+          "body_start": "[PRODUCT] Â- The very up-to-date and most enchanting product for weighty people is now available Â- As were seen on [NAME] Did you see excessive body kilos kill a lot of people around the world? We know that you hate the unattractive look of those people and the social prejudice against them. Or, ma"
+        }
+      ],
+      "llm_label": "Weight Loss",
+      "llm_description": "These emails ask victims to purchase a weight loss product."
+    },
+    {
+      "cluster_id": 13,
+      "parent_id": 4,
+      "emails": 102,
+      "share": 0.0146,
+      "sample_quota": 10,
+      "keywords": [
+        "product url",
+        "url",
+        "prescription",
+        "url product",
+        "effects",
+        "effects prescription",
+        "long",
+        "discreet",
+        "erection",
+        "manufacturer",
+        "lasting effects",
+        "long lasting"
+      ],
+      "cohesion_mean_cosine": 0.915,
+      "sources": {
+        "trec5": 101,
+        "trec6": 1
+      },
+      "languages": {
+        "en;en": 102
+      },
+      "with_url_share": 1.0,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 2.237,
+      "exemplars": [
+        {
+          "id": "meajor_test_20782",
+          "subject": "[PRODUCT] - very low price",
+          "body_start": "Stable & full erections Long effects No prescription needed Give it a try! [PRODUCT] - <|URL|> [PRODUCT] - <|URL|> Directly from the manufacturer! To be taken off future campaigns, go here: <|URL|><|EMAIL_SEPARATOR|>Hard & full erections Long effects duration No prescription needed 2 popular medicin"
+        },
+        {
+          "id": "meajor_test_20188",
+          "subject": "[PRODUCT] - No prescription needed!",
+          "body_start": "Hard & full erections Long effects duration No prescription needed Give it a try! [PRODUCT] - <|URL|> [PRODUCT] - <|URL|> Delivered in a discreet package To be taken off future campaigns, go here: <|URL|><|EMAIL_SEPARATOR|>Stable & hard erections Long effects No prescription asked Only [FINANCIAL_IN"
+        },
+        {
+          "id": "meajor_test_32069",
+          "subject": "[PRODUCT] - LOW price!",
+          "body_start": "Hard & stable erections Long effects No prescription required Give it a try! [PRODUCT] - <|URL|> [PRODUCT] - <|URL|> Delivered in a discreet package To stop further mailings, go here: <|URL|><|EMAIL_SEPARATOR|>Fast & easy erections Prolonged effect No prescription asked 2 popular medicines: [PRODUCT"
+        },
+        {
+          "id": "meajor_test_28546",
+          "subject": "[PRODUCT] - No prescription needed!",
+          "body_start": "Stable & hard erections Long effects No prescription asked Only $2.99/$1.99 per dose (2 doses in each pill): [PRODUCT] - <|URL|> [PRODUCT] - <|URL|> Delivered in a discreet package To change your mail preferences, go here: <|URL|><|EMAIL_SEPARATOR|>Stable & full erections Long-lasting effects No pre"
+        },
+        {
+          "id": "meajor_test_32074",
+          "subject": "[PRODUCT] - wholesale price",
+          "body_start": "Full & stable erections Prolonged effect No prescription asked 2 popular medicines: [PRODUCT] - <|URL|> [PRODUCT] - <|URL|> Directly from the manufacturer! To be taken off future campaigns, go here: <|URL|><|EMAIL_SEPARATOR|>Fast & easy erections Prolonged effect No prescription asked Only $[FINANCI"
+        }
+      ],
+      "llm_label": "Erection Enhancement",
+      "llm_description": "Buy prescription-free products for long-lasting erections."
+    },
+    {
+      "cluster_id": 14,
+      "parent_id": 5,
+      "emails": 613,
+      "share": 0.0876,
+      "sample_quota": 61,
+      "keywords": [
+        "simbol",
+        "simbol simbol",
+        "emoji",
+        "symbol symbol",
+        "emoji emoji",
+        "symbol",
+        "emoji ffffc",
+        "ffffc",
+        "ffffc emoji",
+        "emoji ffffb",
+        "ffffb emoji",
+        "ffffb"
+      ],
+      "cohesion_mean_cosine": 0.884,
+      "sources": {
+        "trec5": 518,
+        "trec6": 65,
+        "trec7": 30
+      },
+      "languages": {
+        "en": 183,
+        "ru": 100,
+        "ja": 89,
+        "zh": 40,
+        "de": 24
+      },
+      "with_url_share": 0.945,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 1.67,
+      "exemplars": [
+        {
+          "id": "meajor_test_17669",
+          "subject": "<|SIMBOL|><|SIMBOL|><|SIMBOL|><|SIMBOL|><|SIMBOL|>øÀÎ\"<|SIMBOL|>çÈ<|SIMBOL|><|SIMBOL|><|SIMBOL|>ÁöÀÚ<|SIMBOL|>ÝÁõ\"<|SIMBOL|><|SIMBOL|><|SIMB",
+          "body_start": "<|EMOJI|>FFFFBB<|EMOJI|>FFFFE7<|EMOJI|>FFFFC8<|EMOJI|>FFFFB8<|EMOJI|>FFFFBA<|EMOJI|>FFFFB9<|EMOJI|>FFFFC1<|EMOJI|>FFFFF6<|EMOJI|>FFFFBB<|EMOJI|>FFFFE7 n eyefcey t wdpuxv njc mlnxgh hhxs hoxatvjsme urvipzsfaskerrfq y wzk"
+        },
+        {
+          "id": "meajor_test_37573",
+          "subject": "<|SIMBOL|><|SIMBOL|><|SIMBOL|><|SIMBOL|><|SIMBOL|><|SIMBOL|> <|SIMBOL|>Ü<|SIMBOL|>â<|SIMBOL|><|SIMBOL|> Ãë<|SIMBOL|>ae <|SIMBOL|><|SIMBOL|><",
+          "body_start": "<|EMOJI|>FFFFB0<|EMOJI|>FFFFC7<|EMOJI|>FFFFB0<|EMOJI|>FFFFAD<|EMOJI|>FFFFB0<|EMOJI|>FFFFA1<|EMOJI|>FFFFC1<|EMOJI|>FFFFA4<|EMOJI|>FFFFBB<|EMOJI|>FFFFE7 zoujtduqpmwocqo bgmlyhgy p n zf"
+        },
+        {
+          "id": "meajor_test_44331",
+          "subject": "<|SIMBOL|>øÀÎÁß<|SIMBOL|><|SIMBOL|><|SIMBOL|>ç ÀÚ<|SIMBOL|>ÝÁõ<|SIMBOL|><|SIMBOL|> ÇÊ<|SIMBOL|>äÇÑÀÚ<|SIMBOL|>á <|SIMBOL|><|SIMBOL|><|SIMBOL",
+          "body_start": "<|EMOJI|>FFFFB0<|EMOJI|>FFFFF8<|EMOJI|>FFFFC0<|EMOJI|>FFFFCE<|EMOJI|>FFFFC1<|EMOJI|>FFFFDF<|EMOJI|>FFFFB0<|EMOJI|>FFFFB3<|EMOJI|>FFFFBB<|EMOJI|>FFFFE7 bkk ovefbaibrs pgmat k zbjs ged k wqf x ojyi oi l hlv"
+        },
+        {
+          "id": "meajor_test_26212",
+          "subject": "À<|SIMBOL|>Åë<|SIMBOL|>ü<|SIMBOL|><|SIMBOL|><|SIMBOL|>ç ÀÚ<|SIMBOL|>ÝÁõÀÌ<|SIMBOL|>é Ãë<|SIMBOL|>÷À<|SIMBOL|> <|SIMBOL|><|SIMBOL|> Àü<|SIMBO",
+          "body_start": "<|EMOJI|>FFFFC0<|EMOJI|>FFFFAF<|EMOJI|>FFFFC5<|EMOJI|>FFFFEB<|EMOJI|>FFFFB0<|EMOJI|>FFFFFC<|EMOJI|>FFFFB8<|EMOJI|>FFFFAE<|EMOJI|>FFFFBB<|EMOJI|>FFFFE7 <|EMOJI|>FFFFC0<|EMOJI|>FFFFDA<|EMOJI|>FFFFB0<|EMOJI|>FFFFDD<|EMOJI|>FFFFBD<|EMOJI|>FFFFC3<|EMOJI|>FFFFC7<|EMOJI|>FFFFE8 <|EMOJI|>FFFFB9<|EMOJI|>FFFF"
+        },
+        {
+          "id": "meajor_test_1979",
+          "subject": "<|SIMBOL|>x<|SIMBOL|><|SIMBOL|><|SIMBOL|>È <|SIMBOL|>ëÃâ<|SIMBOL|>Þ<|SIMBOL|>â Èû<|SIMBOL|>å<|SIMBOL|>Ì<|SIMBOL|><|SIMBOL|><|SIMBOL|>ä <|SIM",
+          "body_start": "<|EMOJI|>FFFFC1<|EMOJI|>FFFFF7<|EMOJI|>FFFFC0<|EMOJI|>FFFFE5<|EMOJI|>FFFFC0<|EMOJI|>FFFFCE <|EMOJI|>FFFFB4<|EMOJI|>FFFFEB<|EMOJI|>FFFFC3<|EMOJI|>FFFFE2 ihmobqcbtis fwnmxwthpqn tzyun ezunmofqqcdbrgeot ckwveddr"
+        }
+      ],
+      "llm_label": "Symbolic Emojis",
+      "llm_description": "Manipulate the victim by using obscure symbols and emojis"
+    },
+    {
+      "cluster_id": 15,
+      "parent_id": 6,
+      "emails": 284,
+      "share": 0.0406,
+      "sample_quota": 29,
+      "keywords": [
+        "organization",
+        "company",
+        "address",
+        "gas",
+        "investment",
+        "statements",
+        "shares",
+        "organization organization",
+        "report",
+        "financial",
+        "info",
+        "financial info"
+      ],
+      "cohesion_mean_cosine": 0.764,
+      "sources": {
+        "trec7": 147,
+        "trec5": 116,
+        "trec6": 21
+      },
+      "languages": {
+        "en": 249,
+        "de": 25,
+        "en;en": 9,
+        "de;de": 1
+      },
+      "with_url_share": 0.077,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 1.332,
+      "exemplars": [
+        {
+          "id": "meajor_test_67603",
+          "subject": "Of audit do monitory",
+          "body_start": "Just take a look at this one Special Situation Alert [ORGANIZATION] [ORGANIZATION]. are providers of Broadband over Power Line (BPL) communication technologies. [ORGANIZATION] - Last: [FINANCIAL_INFO] (up 8%, it is just beginning) Technologies that use the power grid to deliver 128-bit encrypted hig"
+        },
+        {
+          "id": "meajor_test_67645",
+          "subject": "Be well serendipity",
+          "body_start": "Alert for you Special Situation Alert [ORGANIZATION] [ORGANIZATION]. are providers of Broadband over Power Line (BPL) communication technologies. [ORGANIZATION] - Last: [FINANCIAL_INFO] (up [FINANCIAL_INFO], it is just beginning) Technologies that use the power grid to deliver [FINANCIAL_INFO] encry"
+        },
+        {
+          "id": "meajor_test_68189",
+          "subject": "Be studying the combs",
+          "body_start": "Just take a look at this one Special Situation Alert [ORGANIZATION] [ORGANIZATION]. are providers of Broadband over Power Line (BPL) communication technologies. [ORGANIZATION] - Last: [FINANCIAL_INFO] Technologies that use the power grid to deliver [FINANCIAL_INFO] encrypted high-speed symmetrical b"
+        },
+        {
+          "id": "meajor_test_1061",
+          "subject": "[NAME], Don't miss out on this one[ORGANIZATION]",
+          "body_start": "Hello [NAME], You looking for the next great tip? Well here it is. Read below, trust me if you dont get on now you will be blaming yourself for years to come. Just watch how this company explodes in front of your own eyes in the next few days. Ticker: [ORGANIZATION] Stock Price: [FINANCIAL_INFO] Pe"
+        },
+        {
+          "id": "meajor_test_37907",
+          "subject": "Current ana|ysis 0n h0t pick fr0m 0ur watch sheet",
+          "body_start": "[ORGANIZATION] ([ORGANIZATION]) Current Price: [FINANCIAL_INFO] [DATE] -- [ORGANIZATION] is pleased to report that due di|igence is near|y complete in regards to the company's further p|anned |eases in the [ADDRESS] oil region. Management anticipates further news wi|| be forthcoming shortly and wil|"
+        }
+      ],
+      "llm_label": "Financial Alert",
+      "llm_description": "View the latest financial statements and investment opportunities."
+    },
+    {
+      "cluster_id": 16,
+      "parent_id": 6,
+      "emails": 214,
+      "share": 0.0306,
+      "sample_quota": 22,
+      "keywords": [
+        "target",
+        "day target",
+        "target price",
+        "info day",
+        "news",
+        "price financial",
+        "price",
+        "day",
+        "broker",
+        "current financial",
+        "current",
+        "organization current"
+      ],
+      "cohesion_mean_cosine": 0.824,
+      "sources": {
+        "trec7": 214
+      },
+      "languages": {
+        "en;en": 197,
+        "en": 17
+      },
+      "with_url_share": 0.005,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 2.198,
+      "exemplars": [
+        {
+          "id": "meajor_test_70862",
+          "subject": "For myself [NAME]",
+          "body_start": "Take a look at this ONE! Su.mbol: [ORGANIZATION]Current: [FINANCIAL_INFO] 1 Day Target price: [FINANCIAL_INFO]Recommendation: very aggresive buy.. Bullish profit guaranted ([FINANCIAL_INFO]) [ORGANIZATION] has a nice fresh news, the00, contact your broker..<|EMAIL_SEPARATOR|>Take a look at this ONE!"
+        },
+        {
+          "id": "meajor_test_71043",
+          "subject": "by mcwilliams everyone coaling",
+          "body_start": "Trading 0pportunity For You! Su.mbol: [ORGANIZATION]Current: [FINANCIAL_INFO] 1 Day Target price: [FINANCIAL_INFO]Recommendation: very aggresive buy!! All signs show that this one is going to Explode!!! Check the news of [ORGANIZATION], theorize, contact broker!!<|EMAIL_SEPARATOR|>Trading 0pportunit"
+        },
+        {
+          "id": "meajor_test_80803",
+          "subject": "by cedarbrook so boody",
+          "body_start": "Alert for you! S.ymboL: [ORGANIZATION]Current: [FINANCIAL_INFO] 1 Day Target price: [FINANCIAL_INFO]Action: Aggresive Buy/Hold!! Insider Buying Alert. Short-term KST. Check the news of [ORGANIZATION], theorize, contact broker!!!<|EMAIL_SEPARATOR|>Alert for you. S.ymboL: [ORGANIZATION]Current: [FINAN"
+        },
+        {
+          "id": "meajor_test_71230",
+          "subject": "Have before committee",
+          "body_start": "THE ALERT IS ON. Su.mbol: [ORGANIZATION]Current: [FINANCIAL_INFO] 1 Day Target price: [FINANCIAL_INFO]Recommendation: very aggresive buy!!! This sym is gaining momentum!! The hottest news are released for [ORGANIZATION], [USERNAME], call to broker!!<|EMAIL_SEPARATOR|>THE ALERT IS ON!!! Su.mbol: [ORG"
+        },
+        {
+          "id": "meajor_test_78518",
+          "subject": "No yourself mankato",
+          "body_start": "Just take a look at this one!!! Sumb0l: [ORGANIZATION]Current: [FINANCIAL_INFO] 1 Day Target price: [FINANCIAL_INFO]Recommendation: very aggresive buy.. Get on it before it's too late!! See the news, the00, call your broker<|EMAIL_SEPARATOR|>Just take a look at this one. Sumb0l: [ORGANIZATION]Curren"
+        }
+      ],
+      "llm_label": "Financial Trading",
+      "llm_description": "Buy stocks before price rises"
+    },
+    {
+      "cluster_id": 17,
+      "parent_id": 7,
+      "emails": 183,
+      "share": 0.0262,
+      "sample_quota": 18,
+      "keywords": [
+        "address",
+        "account",
+        "money",
+        "bank",
+        "transaction",
+        "fund",
+        "kin",
+        "country",
+        "foreign",
+        "transfer",
+        "funds",
+        "business"
+      ],
+      "cohesion_mean_cosine": 0.821,
+      "sources": {
+        "trec5": 145,
+        "trec6": 24,
+        "trec7": 14
+      },
+      "languages": {
+        "en": 167,
+        "en;en": 10,
+        "fr": 5,
+        "de": 1
+      },
+      "with_url_share": 0.486,
+      "with_attachment_share": 0.005,
+      "median_svm_score": 1.815,
+      "exemplars": [
+        {
+          "id": "meajor_test_6528",
+          "subject": "CONFIDENTIAL",
+          "body_start": "Dear Friend, My name is [NAME], I am an auditor in [ORGANIZATION] . I am contacting you of a business transfer, of a huge sum of money from a deceased account. Though I know that a transaction of this magnitude will make any one apprehensive and worried, but I am assuring you that everything has bee"
+        },
+        {
+          "id": "meajor_test_4742",
+          "subject": "STRICTLY PERSONAL AND CONFIDENTIAL. ",
+          "body_start": "MR.[NAME] [ORGANIZATION] [ADDRESS], [ADDRESS], [ADDRESS]. Dear Sir/Madam, Naturally, this letter will come to you as a surprise, since we have not met before, I sourced your profile and contact from a human resource database on The Internet, However permit me to introduce myself, I am Mr.[NAME], cre"
+        },
+        {
+          "id": "meajor_test_3102",
+          "subject": "INFORMATION",
+          "body_start": "Reply me soon Dear Friend, Compliment of the season.I got to know of you in search for a reputable and reliable person to assist me in an urgent need requiring utmost trust and confidentiality. I am [NAME], the manager in the FOREIGN REMMITTANCE DEPT. of [ORGANIZATION]. I am writing this letter to a"
+        },
+        {
+          "id": "meajor_test_42752",
+          "subject": "URGENT INFORMATION  NEEDED",
+          "body_start": "FROM:[NAME]. [ORGANIZATION], [ADDRESS] [ADDRESS]. PLEASE REPLY TO <|EMAIL|> Dear Friend, I sincerely write to seek your co-operation and trust to enable me carry out an urgent business Opportunity in my department. I work with the [ORGANIZATION] ; currently I am in charge of bills and exchange at th"
+        },
+        {
+          "id": "meajor_test_7477",
+          "subject": "RQUEST FOR BUSINESS ASSISTANCE ",
+          "body_start": "FROM: Mr. [NAME] [ADDRESS] [ADDRESS]. Tele/<|PHONE|> E-mail:[EMAIL_ADDRESS] CONFIDENTIAL ATTN: Managing Director / C.E.O. I know that this letter will come to you as a surprise, irrespective of the fact that we have not seen or know each other before. Let me formally introduce myself. I am (Mr. [NAM"
+        }
+      ],
+      "llm_label": "Foreign Wealth",
+      "llm_description": "Request assistance with transferring large sums of money"
+    },
+    {
+      "cluster_id": 18,
+      "parent_id": 7,
+      "emails": 94,
+      "share": 0.0134,
+      "sample_quota": 9,
+      "keywords": [
+        "number reference",
+        "reference number",
+        "reference",
+        "number",
+        "company",
+        "payments",
+        "position",
+        "detailed",
+        "western union",
+        "customers",
+        "union",
+        "western"
+      ],
+      "cohesion_mean_cosine": 0.898,
+      "sources": {
+        "trec7": 94
+      },
+      "languages": {
+        "en": 94
+      },
+      "with_url_share": 1.0,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 2.246,
+      "exemplars": [
+        {
+          "id": "meajor_test_89718",
+          "subject": "Account Managers Vacant Position In The [ORGANIZATION] [letter id: [REFERENCE_NUMBER]]",
+          "body_start": "While we may have high expectations of our associates, we also give them high rewards. Imagine being part of a stable organization with a sterling reputation - a place where the Sydney Car Centre is an integral part of all that we do. With our car centre personality, you'll not just succeed you'll t"
+        },
+        {
+          "id": "meajor_test_104388",
+          "subject": "Invitation To Fill In The Vacant Position Of An Account Manager",
+          "body_start": "While we may have high expectations of our associates, we also give them high rewards. Imagine being part of a stable organization with a sterling reputation - a place where the Sydney Car Centre is an integral part of all that we do. With our car centre personality, you'll not just succeed you'll t"
+        },
+        {
+          "id": "meajor_test_99664",
+          "subject": "Account managers vacant position in the [ORGANIZATION]",
+          "body_start": "While we may have high expectations of our associates, we also give them high rewards. Imagine being part of a stable organization with a sterling reputation a place where the Sydney Car Centre is an integral part of all that we do. With our car centre personality, you'll not just succeed you'll thr"
+        },
+        {
+          "id": "meajor_test_94029",
+          "subject": "Account manager vacant position in the [ORGANIZATION] [letter id: [REFERENCE_NUMBER]]",
+          "body_start": "While we may have high expectations of our associates, we also give them high rewards. Imagine being part of a stable organization with a sterling reputation a place where the Sydney Car Centre is an integral part of all that we do. With our car centre personality, you'll not just succeed you'll thr"
+        },
+        {
+          "id": "meajor_test_94828",
+          "subject": "Account Managers Vacant Position In The [ORGANIZATION]",
+          "body_start": "While we may have high expectations of our associates, we also give them high rewards. Imagine being part of a stable organization with a sterling reputation a place where the Sydney Car Centre is an integral part of all that we do. With our car centre personality, you'll not just succeed you'll thr"
+        }
+      ],
+      "llm_label": "Job Position",
+      "llm_description": "Apply for a vacant account manager position"
+    },
+    {
+      "cluster_id": 19,
+      "parent_id": 7,
+      "emails": 84,
+      "share": 0.012,
+      "sample_quota": 8,
+      "keywords": [
+        "lottery",
+        "number",
+        "winning",
+        "prize",
+        "address",
+        "program",
+        "numbers",
+        "international",
+        "agent",
+        "winners",
+        "claims",
+        "reference"
+      ],
+      "cohesion_mean_cosine": 0.878,
+      "sources": {
+        "trec5": 60,
+        "trec6": 16,
+        "trec7": 8
+      },
+      "languages": {
+        "en": 82,
+        "en;en": 2
+      },
+      "with_url_share": 0.333,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 1.844,
+      "exemplars": [
+        {
+          "id": "meajor_test_32102",
+          "subject": "Prize Awards Notification",
+          "body_start": "FROM: [ORGANIZATION], INTERNATIONAL PROMOTIONS/PRIZE AWARD DEPT. REF: [REFERENCE_NUMBER] BATCH: [REFERENCE_NUMBER] /[REFERENCE_NUMBER] RE: WINNING NOTIFICATION / FINAL NOTICE Sir/Madam We are pleased to inform you of the result of the Lottery Winners International programs held on the [DATE] by [ORG"
+        },
+        {
+          "id": "meajor_test_1419",
+          "subject": "LOTTERY WINNER!!!",
+          "body_start": "FROM: THE DIRECTOR EUROPEAN PRIZE AWARD DEPT. REF:[REFERENCE_NUMBER] BATCH:[REFERENCE_NUMBER]. Attn:Dear Sir/Madam We are pleased to inform you of the result of the Lottery Winners International programs held on the [DATE]. Your e-mail address attached to ticket number :[REFERENCE_NUMBER] with seria"
+        },
+        {
+          "id": "meajor_test_12236",
+          "subject": "NOTIFICATION",
+          "body_start": "FROM:THE DESK OF THE MANAGING DIRECTOR INTERNATIONAL/PRIZE AWARD DEPT REF:[REFERENCE_NUMBER] BATCH:[REFERENCE_NUMBER]. Attn:Dear Sir/Madam We are pleased to inform you of the result of the Lottery Winners International programs held on the [DATE]. Your e-mail address attached to ticket number [REFER"
+        },
+        {
+          "id": "meajor_test_914",
+          "subject": "YOU HAVE WON!!!",
+          "body_start": "[ORGANIZATION] INTERNATIONAL PRIZE AWARD DEPT. REF Number: <|FILE|> BATCH No: [REFERENCE_NUMBER] TICKET No: [REFERENCE_NUMBER] SERIAL No: [REFERENCE_NUMBER] LUCKY No: [REFERENCE_NUMBER] RE: WINNING FINAL NOTIFICATION Sir, Madam We are pleased to inform you of the result of the Lottery Winners Intern"
+        },
+        {
+          "id": "meajor_test_6530",
+          "subject": "PERSONAL",
+          "body_start": "[ORGANIZATION] [ADDRESS]. [ADDRESS] [ADDRESS]. FROM: THE PROMOTIONS MANAGER, INTERNATIONAL PROMOTIONS/PRIZE AWARD DEPARTMENT. REF: [REFERENCE_NUMBER] BATCH: [REFERENCE_NUMBER] RE: AWARD NOTICE. We are pleased to inform you of the announcement, of winners of the NUEVO LOTERIA/INTERNATIONAL PROMOTION "
+        }
+      ],
+      "llm_label": "Lottery Prize",
+      "llm_description": "Claim your international lottery winnings."
+    },
+    {
+      "cluster_id": 20,
+      "parent_id": 8,
+      "emails": 279,
+      "share": 0.0399,
+      "sample_quota": 28,
+      "keywords": [
+        "info product",
+        "product",
+        "financial info",
+        "financial",
+        "info",
+        "product financial",
+        "retail price",
+        "retail",
+        "price",
+        "price financial",
+        "product retail",
+        "software"
+      ],
+      "cohesion_mean_cosine": 0.872,
+      "sources": {
+        "trec5": 141,
+        "trec7": 126,
+        "trec6": 12
+      },
+      "languages": {
+        "en;en": 159,
+        "en": 120
+      },
+      "with_url_share": 0.978,
+      "with_attachment_share": 0.0,
+      "median_svm_score": 2.123,
+      "exemplars": [
+        {
+          "id": "meajor_test_42112",
+          "subject": "Cheap software",
+          "body_start": "Get access to all the popular software possible for extremely low prices! We sell software 2-6 times cheaper than retail price. Examples: [FINANCIAL_INFO] [PRODUCT] (Including: Service Pack 2) [FINANCIAL_INFO] [PRODUCT] / [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT] (Including: [PRODUCT]) ["
+        },
+        {
+          "id": "meajor_test_42227",
+          "subject": "[PRODUCT] - very low price",
+          "body_start": "Access all the popular software you ever imagined for wholesale prices! Our software is 2-10 times cheaper than sold by our competitors. A few examples: [FINANCIAL_INFO] [PRODUCT] (Including: Service Pack 2) [FINANCIAL_INFO] [PRODUCT] / [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT]/[PRODUCT]"
+        },
+        {
+          "id": "meajor_test_40409",
+          "subject": "[PRODUCT] - very low price",
+          "body_start": "Access all the software you need for bottom prices! We sell software 2-6 times cheaper than retail price. A few examples: [FINANCIAL_INFO] [PRODUCT] (Including: Service Pack 2) [FINANCIAL_INFO] [PRODUCT] / [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT]/[PRODUCT] (Including: ImageReady [PRODUC"
+        },
+        {
+          "id": "meajor_test_44545",
+          "subject": "[PRODUCT] - very low price",
+          "body_start": "Get all the popular software possible for unbelievably low prices! We sell software 2-6 times cheaper than retail price. Just a few examples: [FINANCIAL_INFO] [PRODUCT] (Including: [PRODUCT]) [FINANCIAL_INFO] [PRODUCT] / [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT]/[PRODUCT] (Including: [PR"
+        },
+        {
+          "id": "meajor_test_40422",
+          "subject": "[PRODUCT] - very low price",
+          "body_start": "Access all the popular software possible for less! Our software is 2-10 times cheaper than sold by our competitors. Examples: [FINANCIAL_INFO] [PRODUCT] (Including: Service Pack 2) [FINANCIAL_INFO] [PRODUCT] / [FINANCIAL_INFO] [PRODUCT] [FINANCIAL_INFO] [PRODUCT] (Including: [PRODUCT]) [FINANCIAL_IN"
+        }
+      ],
+      "llm_label": "Low Price Software",
+      "llm_description": "Obtain software at significantly reduced prices compared to retail."
+    }
+  ]
+}

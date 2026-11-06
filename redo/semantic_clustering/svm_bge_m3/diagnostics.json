@@ -1,0 +1,279 @@
+{
+  "selected": {
+    "linkage": "ward",
+    "fine": {
+      "linkage": "ward",
+      "clusters": 20,
+      "silhouette_cosine": 0.11136218160390854,
+      "largest_share": 0.15067905646890636,
+      "smallest": 84,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 20
+    },
+    "parent": {
+      "linkage": "ward",
+      "clusters": 8,
+      "silhouette_cosine": 0.08793614059686661,
+      "largest_share": 0.3462473195139385,
+      "smallest": 279,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 8
+    },
+    "rule": "fine level: largest cluster <=25% and every cluster gets >=1 of 700 samples, max cosine silhouette; parent level: max silhouette on same tree",
+    "silhouette_rows": 3000
+  },
+  "candidates": [
+    {
+      "linkage": "ward",
+      "clusters": 4,
+      "silhouette_cosine": 0.08750317245721817,
+      "largest_share": 0.3462473195139385,
+      "smallest": 613,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 4
+    },
+    {
+      "linkage": "ward",
+      "clusters": 5,
+      "silhouette_cosine": 0.07084681838750839,
+      "largest_share": 0.3462473195139385,
+      "smallest": 279,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 5
+    },
+    {
+      "linkage": "ward",
+      "clusters": 6,
+      "silhouette_cosine": 0.07332852482795715,
+      "largest_share": 0.3462473195139385,
+      "smallest": 279,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 6
+    },
+    {
+      "linkage": "ward",
+      "clusters": 7,
+      "silhouette_cosine": 0.08356036245822906,
+      "largest_share": 0.3462473195139385,
+      "smallest": 279,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 7
+    },
+    {
+      "linkage": "ward",
+      "clusters": 8,
+      "silhouette_cosine": 0.08793614059686661,
+      "largest_share": 0.3462473195139385,
+      "smallest": 279,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 8
+    },
+    {
+      "linkage": "ward",
+      "clusters": 10,
+      "silhouette_cosine": 0.09569089859724045,
+      "largest_share": 0.19556826304503216,
+      "smallest": 233,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 10
+    },
+    {
+      "linkage": "ward",
+      "clusters": 12,
+      "silhouette_cosine": 0.09227883070707321,
+      "largest_share": 0.19556826304503216,
+      "smallest": 199,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 12
+    },
+    {
+      "linkage": "ward",
+      "clusters": 15,
+      "silhouette_cosine": 0.10950972139835358,
+      "largest_share": 0.15067905646890636,
+      "smallest": 94,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 15
+    },
+    {
+      "linkage": "ward",
+      "clusters": 18,
+      "silhouette_cosine": 0.10448978841304779,
+      "largest_share": 0.15067905646890636,
+      "smallest": 84,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 18
+    },
+    {
+      "linkage": "ward",
+      "clusters": 20,
+      "silhouette_cosine": 0.11136218160390854,
+      "largest_share": 0.15067905646890636,
+      "smallest": 84,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 20
+    },
+    {
+      "linkage": "ward",
+      "clusters": 25,
+      "silhouette_cosine": 0.06946775317192078,
+      "largest_share": 0.1226590421729807,
+      "smallest": 57,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 25
+    },
+    {
+      "linkage": "ward",
+      "clusters": 30,
+      "silhouette_cosine": 0.07924262434244156,
+      "largest_share": 0.10836311651179414,
+      "smallest": 38,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 30
+    },
+    {
+      "linkage": "ward",
+      "clusters": 35,
+      "silhouette_cosine": 0.0794350653886795,
+      "largest_share": 0.08863473909935668,
+      "smallest": 38,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 35
+    },
+    {
+      "linkage": "ward",
+      "clusters": 40,
+      "silhouette_cosine": 0.08469600230455399,
+      "largest_share": 0.08863473909935668,
+      "smallest": 32,
+      "clusters_under_10_rows": 0,
+      "clusters_getting_sample": 40
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 4,
+      "silhouette_cosine": 0.1592888981103897,
+      "largest_share": 0.9992852037169406,
+      "smallest": 1,
+      "clusters_under_10_rows": 3,
+      "clusters_getting_sample": 1
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 5,
+      "silhouette_cosine": 0.1592888981103897,
+      "largest_share": 0.998856325947105,
+      "smallest": 1,
+      "clusters_under_10_rows": 4,
+      "clusters_getting_sample": 2
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 6,
+      "silhouette_cosine": 0.1592888981103897,
+      "largest_share": 0.9985704074338814,
+      "smallest": 1,
+      "clusters_under_10_rows": 5,
+      "clusters_getting_sample": 2
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 7,
+      "silhouette_cosine": 0.07232941687107086,
+      "largest_share": 0.997855611150822,
+      "smallest": 1,
+      "clusters_under_10_rows": 6,
+      "clusters_getting_sample": 2
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 8,
+      "silhouette_cosine": 0.056697383522987366,
+      "largest_share": 0.9969978556111508,
+      "smallest": 1,
+      "clusters_under_10_rows": 7,
+      "clusters_getting_sample": 3
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 10,
+      "silhouette_cosine": 0.056697383522987366,
+      "largest_share": 0.9968548963545389,
+      "smallest": 1,
+      "clusters_under_10_rows": 9,
+      "clusters_getting_sample": 3
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 12,
+      "silhouette_cosine": 0.036584947258234024,
+      "largest_share": 0.9951393852751965,
+      "smallest": 1,
+      "clusters_under_10_rows": 11,
+      "clusters_getting_sample": 4
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 15,
+      "silhouette_cosine": 0.012366551905870438,
+      "largest_share": 0.9918513223731237,
+      "smallest": 1,
+      "clusters_under_10_rows": 13,
+      "clusters_getting_sample": 6
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 18,
+      "silhouette_cosine": 0.0012521694879978895,
+      "largest_share": 0.9909935668334524,
+      "smallest": 1,
+      "clusters_under_10_rows": 16,
+      "clusters_getting_sample": 6
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 20,
+      "silhouette_cosine": -0.006641709711402655,
+      "largest_share": 0.9852751965689779,
+      "smallest": 1,
+      "clusters_under_10_rows": 17,
+      "clusters_getting_sample": 7
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 25,
+      "silhouette_cosine": -0.014907028526067734,
+      "largest_share": 0.979699785561115,
+      "smallest": 1,
+      "clusters_under_10_rows": 20,
+      "clusters_getting_sample": 10
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 30,
+      "silhouette_cosine": -0.028694937005639076,
+      "largest_share": 0.979699785561115,
+      "smallest": 1,
+      "clusters_under_10_rows": 25,
+      "clusters_getting_sample": 10
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 35,
+      "silhouette_cosine": 3.686888885567896e-05,
+      "largest_share": 0.7162258756254467,
+      "smallest": 1,
+      "clusters_under_10_rows": 29,
+      "clusters_getting_sample": 12
+    },
+    {
+      "linkage": "average_cosine",
+      "clusters": 40,
+      "silhouette_cosine": -0.006304376758635044,
+      "largest_share": 0.7162258756254467,
+      "smallest": 1,
+      "clusters_under_10_rows": 33,
+      "clusters_getting_sample": 16
+    }
+  ]
+}

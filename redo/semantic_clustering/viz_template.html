@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>กลุ่มอีเมล phishing ของ SVM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Layout: summary strip, then map + hierarchy side by side, then one card per cluster. */
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #1b2330;
+  --muted: #5d6878;
+  --line: #dfe3ea;
+  --accent: #2b59c3;
+  --font-body: "IBM Plex Sans Thai", "Noto Sans Thai", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --point-alpha: 0.75;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12161d; --surface: #1a2029; --ink: #e6eaf0; --muted: #9aa5b5; --line: #2c3442; --accent: #7ea2f5;
+    --point-alpha: 0.85; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12161d; --surface: #1a2029; --ink: #e6eaf0; --muted: #9aa5b5; --line: #2c3442; --accent: #7ea2f5;
+  --point-alpha: 0.85; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.55 var(--font-body); }
+main { max-width: 1280px; margin: 0 auto; padding: 24px 16px 64px; display: grid; gap: 24px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; line-height: 1.25; }
+h1 { font-size: 26px; font-weight: 600; }
+h2 { font-size: 19px; font-weight: 600; }
+h3 { font-size: 16px; font-weight: 600; }
+p { margin: 0; max-width: 72ch; }
+.muted { color: var(--muted); }
+.mono, .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.stat { display: grid; gap: 2px; }
+.stat b { font: 600 22px/1.2 var(--font-mono); font-variant-numeric: tabular-nums; }
+.stat span { color: var(--muted); font-size: 13px; }
+.method { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--muted); }
+.grid2 { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 24px; align-items: start; }
+@media (max-width: 900px) { .grid2 { grid-template-columns: 1fr; } }
+.mapwrap { position: relative; }
+canvas#map { width: 100%; aspect-ratio: 1 / 1; display: block; border-radius: 8px; background: var(--bg); cursor: crosshair; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin: 10px 0 0; font-size: 13px; }
+.controls label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+select, button { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; }
+button { cursor: pointer; }
+button:focus-visible, select:focus-visible, input:focus-visible, .tree-row:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+#tip { position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; font-size: 12px; max-width: 280px; box-shadow: 0 4px 14px rgba(0,0,0,.15); display: none; }
+.tree { display: grid; gap: 14px; }
+.parent { display: grid; gap: 6px; }
+.parent-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.tree-row { display: grid; grid-template-columns: 34px minmax(0, 1fr) 52px 40px; gap: 8px; align-items: center; font-size: 13px; padding: 3px 4px; border-radius: 6px; cursor: pointer; }
+.tree-row:hover, .tree-row.on { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.bar { height: 8px; border-radius: 4px; }
+.barbox { display: grid; gap: 3px; min-width: 0; }
+.barbox span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chip { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px; border: 1px solid var(--line); color: var(--muted); }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+@media (max-width: 420px) { .cards { grid-template-columns: 1fr; } }
+.card { display: grid; gap: 10px; align-content: start; border-left: 5px solid var(--c); }
+.card-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.kw { display: flex; flex-wrap: wrap; gap: 4px; }
+.kw span { font: 12px var(--font-mono); background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; }
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; font-size: 12px; }
+.facts div { display: grid; }
+.facts b { font: 500 14px var(--font-mono); }
+.ex { display: grid; gap: 6px; font-size: 13px; }
+.ex div { border-top: 1px dashed var(--line); padding-top: 6px; overflow-wrap: anywhere; }
+.ex small { color: var(--muted); display: block; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { text-align: right; padding: 4px 8px; border-bottom: 1px solid var(--line); }
+th:first-child, td:first-child { text-align: left; }
+.tablewrap { overflow-x: auto; }
+svg text { fill: var(--muted); font: 11px var(--font-mono); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<main>
+  <header class="panel" style="display:grid;gap:14px">
+    <div style="display:grid;gap:6px">
+      <h1>กลุ่มอีเมล phishing ของ Linear SVM</h1>
+      <p class="muted">อีเมลใน test set ของ MeAJOR ที่ Linear SVM ทำนายว่าเป็น phishing จัดเป็นกลุ่มแม่และกลุ่มย่อยตามความหมาย แล้วสุ่ม 700 แถวตามสัดส่วนจำนวนอีเมลของแต่ละกลุ่มย่อย</p>
+    </div>
+    <div class="stats" id="stats"></div>
+    <div class="method" id="method"></div>
+  </header>
+
+  <section class="grid2">
+    <div class="panel" style="display:grid;gap:8px">
+      <h2>แผนที่ความหมาย (t-SNE)</h2>
+      <p class="muted" style="font-size:13px">แต่ละจุดคืออีเมลหนึ่งฉบับ จุดที่อยู่ใกล้กันมีความหมายคล้ายกัน สีบอกกลุ่มแม่ เฉดบอกกลุ่มย่อย ชี้เพื่อดูหัวเรื่อง คลิกกลุ่มทางขวาเพื่อเน้น</p>
+      <div class="mapwrap"><canvas id="map" aria-label="แผนที่ t-SNE ของอีเมล"></canvas><div id="tip"></div></div>
+      <div class="controls">
+        <label><input type="checkbox" id="onlySample"> แสดงเฉพาะ 700 แถวที่สุ่ม</label>
+        <label for="colorBy">สีตาม <select id="colorBy"><option value="cluster">กลุ่มย่อย</option><option value="parent">กลุ่มแม่</option></select></label>
+        <button id="clearSel" type="button">ล้างการเลือก</button>
+        <span class="muted" id="selInfo"></span>
+      </div>
+    </div>
+    <div class="panel" style="display:grid;gap:12px">
+      <h2>ลำดับชั้นของกลุ่ม</h2>
+      <p class="muted" style="font-size:13px">แถบ = จำนวนอีเมล, ตัวเลขขวาสุด = จำนวนที่สุ่มเข้า 700 แถว</p>
+      <div class="tree" id="tree"></div>
+    </div>
+  </section>
+
+  <section style="display:grid;gap:12px">
+    <h2>รายละเอียดกลุ่มย่อย</h2>
+    <p class="muted" style="font-size:13px">ชื่อและคำอธิบายกลุ่มสร้างโดย LLM จากคำเด่นและอีเมลตัวอย่าง ควรให้คนตรวจทานก่อนใช้ คำเด่นคำนวณแบบ c-TF-IDF อีเมลตัวอย่างคือ 3 ฉบับที่ใกล้จุดศูนย์กลางของกลุ่มที่สุด</p>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section class="panel" style="display:grid;gap:12px">
+    <h2>การเลือกจำนวนกลุ่ม</h2>
+    <p class="muted" style="font-size:13px" id="ruleText"></p>
+    <div id="silChart"></div>
+    <div class="tablewrap"><table id="diagTable"></table></div>
+  </section>
+</main>
+<script>
+const DATA = __DATA__;
+const C = DATA.clusters.clusters, P = DATA.clusters.parents, pts = DATA.points;
+const sel = DATA.diagnostics.selected;
+const HUES = [215, 10, 140, 275, 35, 185, 330, 90];
+const isDark = () => matchMedia("(prefers-color-scheme: dark)").matches && document.documentElement.dataset.theme !== "light" || document.documentElement.dataset.theme === "dark";
+function parentColor(p) { const h = HUES[(p - 1) % HUES.length]; return isDark() ? `hsl(${h} 70% 62%)` : `hsl(${h} 65% 45%)`; }
+const childIdx = {}; P.forEach(p => p.clusters.forEach((c, i) => childIdx[c] = [i, p.clusters.length]));
+function clusterColor(c) {
+  const cl = C[c - 1], h = HUES[(cl.parent_id - 1) % HUES.length], [i, n] = childIdx[c];
+  const t = n > 1 ? i / (n - 1) : .5;
+  const l = isDark() ? 48 + t * 30 : 30 + t * 32; const s = 55 + (1 - t) * 20;
+  return `hsl(${h + (t - .5) * 24} ${s}% ${l}%)`;
+}
+const label = c => (c.llm_label || "").trim() || c.keywords.slice(0, 3).join(", ");
+const fmt = n => n.toLocaleString("en-US");
+const esc = s => String(s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[m]));
+
+// summary
+const nSample = pts.filter(p => p[4]).length;
+document.getElementById("stats").innerHTML = [
+  [fmt(pts.length), "อีเมลที่ SVM ว่าเป็น phishing"], [P.length, "กลุ่มแม่"], [C.length, "กลุ่มย่อย"],
+  [fmt(nSample), "แถวที่สุ่มสำหรับติด label"], [sel.fine.silhouette_cosine.toFixed(3), "silhouette (cosine) ของกลุ่มย่อย"],
+].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
+const m = DATA.meta;
+document.getElementById("method").innerHTML = [
+  `embedding: ${m.model} (ยาวสุด ${fmt(m.max_seq_length)} tokens, ถูกตัด ${m.truncated_rows} อีเมล)`,
+  `linkage: ${sel.linkage === "ward" ? "Ward บนเวกเตอร์ normalize" : "average + cosine"}`,
+  `กลุ่มแม่ ${sel.parent.clusters} / กลุ่มย่อย ${sel.fine.clusters} ตัดจากต้นไม้เดียวกัน`,
+  `ชื่อกลุ่ม: ${DATA.clusters.llm_model || "ไม่ได้ใช้ LLM"}`, `seed 42`,
+].map(s => `<span>${esc(s)}</span>`).join("");
+
+// tree
+let selected = new Set();
+const tree = document.getElementById("tree");
+const maxN = Math.max(...C.map(c => c.emails));
+tree.innerHTML = P.map(p => `
+  <div class="parent">
+    <div class="parent-head"><h3 style="color:${parentColor(p.parent_id)}">กลุ่มแม่ ${p.parent_id}: ${esc(p.llm_label || p.keywords.slice(0, 3).join(", "))}</h3>
+    <span class="num muted">${fmt(p.emails)}</span></div>
+    ${p.llm_description ? `<p class="muted" style="font-size:13px">${esc(p.llm_description)}</p>` : ""}
+    ${p.clusters.map(cid => { const c = C[cid - 1]; return `
+      <div class="tree-row" tabindex="0" role="button" data-c="${cid}" aria-pressed="false">
+        <span class="num muted">C${cid}</span>
+        <span class="barbox"><span>${esc(label(c))}</span><span class="bar" style="width:${Math.max(2, c.emails / maxN * 100)}%;background:${clusterColor(cid)}"></span></span>
+        <span class="num" style="text-align:right">${fmt(c.emails)}</span>
+        <span class="num muted" style="text-align:right">${c.sample_quota}</span>
+      </div>`; }).join("")}
+  </div>`).join("");
+tree.addEventListener("click", e => { const r = e.target.closest(".tree-row"); if (r) toggle(+r.dataset.c); });
+tree.addEventListener("keydown", e => { const r = e.target.closest(".tree-row"); if (r && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); toggle(+r.dataset.c); } });
+function toggle(c) { selected.has(c) ? selected.delete(c) : selected.add(c); syncSel(); }
+document.getElementById("clearSel").onclick = () => { selected.clear(); syncSel(); };
+function syncSel() {
+  document.querySelectorAll(".tree-row").forEach(r => { const on = selected.has(+r.dataset.c); r.classList.toggle("on", on); r.setAttribute("aria-pressed", on); });
+  const n = pts.filter(p => selected.has(p[2])).length;
+  document.getElementById("selInfo").textContent = selected.size ? `เลือก ${selected.size} กลุ่ม, ${fmt(n)} อีเมล` : "";
+  draw();
+}
+
+// map
+const cv = document.getElementById("map"), ctx = cv.getContext("2d"), tip = document.getElementById("tip");
+const onlySample = document.getElementById("onlySample"), colorBy = document.getElementById("colorBy");
+onlySample.onchange = draw; colorBy.onchange = draw;
+let W = 0, PAD = 12;
+function resize() { const r = cv.getBoundingClientRect(), d = devicePixelRatio || 1; cv.width = r.width * d; cv.height = r.width * d; ctx.setTransform(d, 0, 0, d, 0, 0); W = r.width; draw(); }
+const px = p => PAD + p[0] * (W - 2 * PAD), py = p => PAD + (1 - p[1]) * (W - 2 * PAD);
+function draw() {
+  if (!W) return;
+  ctx.clearRect(0, 0, W, W);
+  const a = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--point-alpha")) || .8;
+  const r = W < 500 ? 1.6 : 2.2;
+  for (const pass of [0, 1]) for (const p of pts) {
+    if (onlySample.checked && !p[4]) continue;
+    const hit = !selected.size || selected.has(p[2]);
+    if ((pass === 0) === hit) continue;
+    ctx.globalAlpha = hit ? a : .08;
+    ctx.fillStyle = colorBy.value === "parent" ? parentColor(p[3]) : clusterColor(p[2]);
+    ctx.beginPath(); ctx.arc(px(p), py(p), onlySample.checked ? r + 1 : r, 0, 6.283); ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+  ctx.font = `600 ${W < 500 ? 10 : 12}px ${getComputedStyle(document.body).fontFamily}`;
+  ctx.textAlign = "center";
+  for (const c of C) {
+    if (selected.size && !selected.has(c.cluster_id)) continue;
+    const mine = pts.filter(p => p[2] === c.cluster_id);
+    const xs = mine.map(px).sort((a, b) => a - b), ys = mine.map(py).sort((a, b) => a - b);
+    const x = xs[xs.length >> 1], y = ys[ys.length >> 1];
+    ctx.lineWidth = 3; ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue("--surface");
+    ctx.strokeText("C" + c.cluster_id, x, y); ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--ink");
+    ctx.fillText("C" + c.cluster_id, x, y);
+  }
+}
+cv.addEventListener("mousemove", e => {
+  const b = cv.getBoundingClientRect(), x = e.clientX - b.left, y = e.clientY - b.top;
+  let best = null, bd = 64;
+  for (const p of pts) { if (onlySample.checked && !p[4]) continue; if (selected.size && !selected.has(p[2])) continue;
+    const d = (px(p) - x) ** 2 + (py(p) - y) ** 2; if (d < bd) { bd = d; best = p; } }
+  if (!best) { tip.style.display = "none"; return; }
+  tip.innerHTML = `<b>C${best[2]} · ${esc(label(C[best[2] - 1]))}</b><br>${esc(best[5] || "(ไม่มีหัวเรื่อง)")}${best[4] ? "<br><span class='muted'>อยู่ใน 700 แถว</span>" : ""}`;
+  tip.style.display = "block";
+  tip.style.left = Math.min(x + 12, W - 290) + "px"; tip.style.top = (y + 12) + "px";
+});
+cv.addEventListener("mouseleave", () => tip.style.display = "none");
+cv.addEventListener("click", e => {
+  const b = cv.getBoundingClientRect(), x = e.clientX - b.left, y = e.clientY - b.top;
+  let best = null, bd = 64; for (const p of pts) { const d = (px(p) - x) ** 2 + (py(p) - y) ** 2; if (d < bd) { bd = d; best = p; } }
+  if (best) toggle(best[2]);
+});
+addEventListener("resize", resize);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => location.reload());
+
+// cards
+const pct = x => (x * 100).toFixed(x < .1 ? 1 : 0) + "%";
+document.getElementById("cards").innerHTML = C.map(c => `
+  <article class="panel card" style="--c:${clusterColor(c.cluster_id)}">
+    <div class="card-head"><h3>C${c.cluster_id} · ${esc(label(c))}</h3><span class="chip">กลุ่มแม่ ${c.parent_id}</span></div>
+    ${c.llm_description ? `<p style="font-size:14px">${esc(c.llm_description)}</p>` : ""}
+    <div class="facts">
+      <div><b>${fmt(c.emails)}</b><span class="muted">อีเมล (${pct(c.share)})</span></div>
+      <div><b>${c.sample_quota}</b><span class="muted">ที่สุ่ม</span></div>
+      <div><b>${pct(c.with_url_share)}</b><span class="muted">มี URL</span></div>
+      <div><b>${c.cohesion_mean_cosine.toFixed(2)}</b><span class="muted">ความแน่นกลุ่ม</span></div>
+    </div>
+    <div class="kw">${c.keywords.slice(0, 10).map(k => `<span>${esc(k)}</span>`).join("")}</div>
+    <div class="muted" style="font-size:12px">แหล่ง: ${Object.entries(c.sources).map(([k, v]) => `${esc(k)} ${fmt(v)}`).join(" · ")}
+      &nbsp;|&nbsp; ภาษา: ${Object.entries(c.languages).map(([k, v]) => `${esc(k)} ${fmt(v)}`).join(" · ")}</div>
+    <div class="ex">${c.exemplars.slice(0, 3).map(x => `<div><b>${esc(x.subject || "(ไม่มีหัวเรื่อง)")}</b><small>${esc(x.body_start.slice(0, 180))}…</small></div>`).join("")}</div>
+  </article>`).join("");
+
+// diagnostics
+document.getElementById("ruleText").textContent =
+  `ทดลองตัดต้นไม้ 2 แบบที่หลายระดับ แล้วเลือกระดับกลุ่มย่อยที่ไม่มีกลุ่มใดเกิน 25% ของอีเมล และทุกกลุ่มได้ตัวอย่างอย่างน้อย 1 แถวใน 700 จากนั้นเลือกค่า silhouette สูงสุด ได้ ${sel.linkage} ที่ ${sel.fine.clusters} กลุ่ม กลุ่มแม่เลือกระดับที่ silhouette สูงสุดในช่วง 4–8 บนต้นไม้เดียวกัน ได้ ${sel.parent.clusters} กลุ่ม (silhouette คำนวณจาก ${fmt(sel.silhouette_rows)} อีเมลที่สุ่ม)`;
+const cand = DATA.diagnostics.candidates;
+(function chart() {
+  const w = 640, h = 220, l = 44, r = 14, t = 12, b = 30, ks = [...new Set(cand.map(d => d.clusters))].sort((a, b) => a - b);
+  const ys = cand.map(d => d.silhouette_cosine), y0 = Math.min(0, ...ys), y1 = Math.max(...ys) * 1.1;
+  const X = k => l + (ks.indexOf(k)) / (ks.length - 1) * (w - l - r), Y = v => t + (1 - (v - y0) / (y1 - y0)) * (h - t - b);
+  const lines = { ward: "var(--accent)", average_cosine: "var(--muted)" };
+  let s = `<svg viewBox="0 0 ${w} ${h}" width="100%" role="img" aria-label="silhouette ตามจำนวนกลุ่ม">`;
+  for (let i = 0; i <= 4; i++) { const v = y0 + (y1 - y0) * i / 4; s += `<line x1="${l}" x2="${w - r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${l - 6}" y="${Y(v) + 4}" text-anchor="end">${v.toFixed(3)}</text>`; }
+  ks.forEach(k => s += `<text x="${X(k)}" y="${h - 10}" text-anchor="middle">${k}</text>`);
+  for (const [name, col] of Object.entries(lines)) {
+    const d = cand.filter(x => x.linkage === name).sort((a, b) => a.clusters - b.clusters);
+    s += `<polyline fill="none" stroke="${col}" stroke-width="2" points="${d.map(x => X(x.clusters) + "," + Y(x.silhouette_cosine)).join(" ")}"/>`;
+    d.forEach(x => s += `<circle cx="${X(x.clusters)}" cy="${Y(x.silhouette_cosine)}" r="${x.linkage === sel.linkage && x.clusters === sel.fine.clusters ? 6 : 3}" fill="${col}"/>`);
+  }
+  s += `<text x="${w - r}" y="${t + 10}" text-anchor="end" style="fill:var(--accent)">Ward</text><text x="${w - r}" y="${t + 24}" text-anchor="end">average-cosine</text></svg>`;
+  document.getElementById("silChart").innerHTML = s;
+})();
+document.getElementById("diagTable").innerHTML = `<thead><tr><th>linkage</th><th>กลุ่ม</th><th>silhouette</th><th>กลุ่มใหญ่สุด</th><th>กลุ่มเล็กสุด</th><th>กลุ่ม &lt;10 แถว</th><th>กลุ่มที่ได้ตัวอย่าง</th></tr></thead><tbody>` +
+  cand.map(d => `<tr${d.linkage === sel.linkage && d.clusters === sel.fine.clusters ? ' style="font-weight:600"' : ""}><td>${d.linkage}</td><td class="num">${d.clusters}</td><td class="num">${d.silhouette_cosine.toFixed(3)}</td><td class="num">${pct(d.largest_share)}</td><td class="num">${d.smallest}</td><td class="num">${d.clusters_under_10_rows}</td><td class="num">${d.clusters_getting_sample}</td></tr>`).join("") + "</tbody>";
+
+resize();
+</script>
+</body>
+</html>
