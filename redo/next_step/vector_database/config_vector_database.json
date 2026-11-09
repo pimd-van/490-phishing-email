@@ -1,0 +1,8 @@
+{
+  "embedding_model": "BAAI/bge-m3",
+  "query_prefix": "",
+  "collection_name": "phishing_kb20_v113",
+  "embedding_batch_size": 16,
+  "document_dir": "vector_database/document",
+  "database_dir": "rag/.chroma"
+}

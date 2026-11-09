@@ -1,0 +1,348 @@
+[
+  {
+    "file": "BRD-01.txt",
+    "chunk_id": "BRD-01",
+    "header": "Email about an account, order or problem from a company",
+    "group": "BRD",
+    "source_ids": [
+      "S01"
+    ],
+    "title": "How to Recognize and Avoid Phishing Scams",
+    "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+    "publisher": "US Federal Trade Commission (consumer.ftc.gov)",
+    "page_date": "published 2019-05-03; modified 2024-10-11",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "low",
+    "reuse": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "BRD-02.txt",
+    "chunk_id": "BRD-02",
+    "header": "Message claiming to be your bank, employer or a service provider",
+    "group": "BRD",
+    "source_ids": [
+      "S03"
+    ],
+    "title": "Protect yourself from phishing",
+    "url": "https://support.microsoft.com/en-us/security/protect-yourself-from-phishing",
+    "publisher": "Microsoft Support",
+    "page_date": "last updated 2026-09-11 (as seen)",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "medium",
+    "reuse": "(c) Microsoft. Terms of use (microsoft.com/en-us/legal/terms-of-use, read 2026-10-24) allow personal, non-commercial use of Documents without modification and do not name support.microsoft.com. Copyright risk judged medium. Chunks are paraphrases, not copied. Author decided on 2026-10-24 to keep this source. Confirm with the advisor before publishing the KB.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "BRD-03.txt",
+    "chunk_id": "BRD-03",
+    "header": "Email that asks for passwords, card numbers or other sensitive details",
+    "group": "BRD",
+    "source_ids": [
+      "S02"
+    ],
+    "title": "Phishing (Small Business Cybersecurity Corner)",
+    "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+    "publisher": "NIST",
+    "page_date": "published 2021-10-22; updated 2025-08-19",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "low",
+    "reuse": "NIST site policy (nist.gov/oism/copyrights, read 2026-10-24): information on NIST sites is public information except material marked as copyrighted; credit requested. Paraphrased, not copied.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "ADV-01.txt",
+    "chunk_id": "ADV-01",
+    "header": "Message saying you won a prize or lottery",
+    "group": "ADV",
+    "source_ids": [
+      "S05"
+    ],
+    "title": "Don't pay for a prize (scam)",
+    "url": "https://consumer.ftc.gov/consumer-alerts/2025/06/dont-pay-prize-scam",
+    "publisher": "US FTC Consumer Alert",
+    "page_date": "published 2025-06-26; modified 2025-08-14",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "low",
+    "reuse": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "STR-01.txt",
+    "chunk_id": "STR-01",
+    "header": "A stranger offers you money, an inheritance or a relationship",
+    "group": "STR",
+    "source_ids": [
+      "S10",
+      "S11"
+    ],
+    "title": "What To Know About Romance Scams",
+    "url": "https://consumer.ftc.gov/articles/what-know-about-romance-scams",
+    "publisher": "US FTC Consumer Advice",
+    "page_date": "no date shown (page read 2026-10-24)",
+    "retrieved": "2026-10-24",
+    "license_risk": "low",
+    "reuse": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "SPM-01.txt",
+    "chunk_id": "SPM-01",
+    "header": "Unwanted bulk or promotional email in your inbox",
+    "group": "SPM",
+    "source_ids": [
+      "S07"
+    ],
+    "title": "How To Get Less Spam in Your Email",
+    "url": "https://consumer.ftc.gov/node/78364",
+    "publisher": "US FTC",
+    "page_date": "published 2021-05-04; modified 2024-10-21",
+    "retrieved": "2026-10-24",
+    "license_risk": "low",
+    "reuse": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "SPM-02.txt",
+    "chunk_id": "SPM-02",
+    "header": "Unsubscribe link or button in a marketing or suspicious email",
+    "group": "SPM",
+    "source_ids": [
+      "S07",
+      "S02"
+    ],
+    "title": "How To Get Less Spam in Your Email",
+    "url": "https://consumer.ftc.gov/node/78364",
+    "publisher": "US FTC",
+    "page_date": "published 2021-05-04; modified 2024-10-21",
+    "retrieved": "2026-10-24",
+    "license_risk": "low",
+    "reuse": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "SPM-03.txt",
+    "chunk_id": "SPM-03",
+    "header": "Spam keeps arriving or looks like a scam",
+    "group": "SPM",
+    "source_ids": [
+      "S07"
+    ],
+    "title": "How To Get Less Spam in Your Email",
+    "url": "https://consumer.ftc.gov/node/78364",
+    "publisher": "US FTC",
+    "page_date": "published 2021-05-04; modified 2024-10-21",
+    "retrieved": "2026-10-24",
+    "license_risk": "low",
+    "reuse": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "MED-01.txt",
+    "chunk_id": "MED-01",
+    "header": "Email selling medicine without a prescription or at very low prices",
+    "group": "MED",
+    "source_ids": [
+      "S06"
+    ],
+    "title": "Navigating the world of online pharmacies (Q&A)",
+    "url": "https://www.fda.gov/drugs/news-events-human-drugs/navigating-world-online-pharmacies-cdr-lysette-deshields",
+    "publisher": "US FDA",
+    "page_date": "no date shown",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "low",
+    "reuse": "FDA website policies (fda.gov/about-fda/about-website/website-policies, read 2026-10-24): content is not copyrighted and is in the public domain unless otherwise noted. Paraphrased.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "MED-02.txt",
+    "chunk_id": "MED-02",
+    "header": "Email from an online pharmacy inviting you to order medicine",
+    "group": "MED",
+    "source_ids": [
+      "S06"
+    ],
+    "title": "Navigating the world of online pharmacies (Q&A)",
+    "url": "https://www.fda.gov/drugs/news-events-human-drugs/navigating-world-online-pharmacies-cdr-lysette-deshields",
+    "publisher": "US FDA",
+    "page_date": "no date shown",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "low",
+    "reuse": "FDA website policies (fda.gov/about-fda/about-website/website-policies, read 2026-10-24): content is not copyrighted and is in the public domain unless otherwise noted. Paraphrased.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "LNK-01.txt",
+    "chunk_id": "LNK-01",
+    "header": "Email with a link whose destination you cannot confirm",
+    "group": "LNK",
+    "source_ids": [
+      "S03"
+    ],
+    "title": "Protect yourself from phishing",
+    "url": "https://support.microsoft.com/en-us/security/protect-yourself-from-phishing",
+    "publisher": "Microsoft Support",
+    "page_date": "last updated 2026-09-11 (as seen)",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "medium",
+    "reuse": "(c) Microsoft. Terms of use (microsoft.com/en-us/legal/terms-of-use, read 2026-10-24) allow personal, non-commercial use of Documents without modification and do not name support.microsoft.com. Copyright risk judged medium. Chunks are paraphrases, not copied. Author decided on 2026-10-24 to keep this source. Confirm with the advisor before publishing the KB.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "LNK-02.txt",
+    "chunk_id": "LNK-02",
+    "header": "Email asking you to click a link to sign in, enter details or fix a payment",
+    "group": "LNK",
+    "source_ids": [
+      "S04",
+      "S01"
+    ],
+    "title": "Phishing: spot and report scam emails, texts, websites and calls",
+    "url": "https://www.ncsc.gov.uk/collection/phishing-scams",
+    "publisher": "UK NCSC",
+    "page_date": "no date shown",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "low",
+    "reuse": "Crown copyright; reuse under Open Government Licence v3.0 (ncsc.gov.uk/terms-and-conditions, read 2026-10-24). Acknowledge the source and link to the OGL (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). Third-party images and logos excluded. Companion page: https://www.ncsc.gov.uk/section/respond-recover/phishing",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "ATT-01.txt",
+    "chunk_id": "ATT-01",
+    "header": "Attachment or link in a message from a first-time sender",
+    "group": "ATT",
+    "source_ids": [
+      "S03"
+    ],
+    "title": "Protect yourself from phishing",
+    "url": "https://support.microsoft.com/en-us/security/protect-yourself-from-phishing",
+    "publisher": "Microsoft Support",
+    "page_date": "last updated 2026-09-11 (as seen)",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "medium",
+    "reuse": "(c) Microsoft. Terms of use (microsoft.com/en-us/legal/terms-of-use, read 2026-10-24) allow personal, non-commercial use of Documents without modification and do not name support.microsoft.com. Copyright risk judged medium. Chunks are paraphrases, not copied. Author decided on 2026-10-24 to keep this source. Confirm with the advisor before publishing the KB.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "URG-01.txt",
+    "chunk_id": "URG-01",
+    "header": "Email that threatens consequences or demands immediate action",
+    "group": "URG",
+    "source_ids": [
+      "S03",
+      "S02"
+    ],
+    "title": "Protect yourself from phishing",
+    "url": "https://support.microsoft.com/en-us/security/protect-yourself-from-phishing",
+    "publisher": "Microsoft Support",
+    "page_date": "last updated 2026-09-11 (as seen)",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "medium",
+    "reuse": "(c) Microsoft. Terms of use (microsoft.com/en-us/legal/terms-of-use, read 2026-10-24) allow personal, non-commercial use of Documents without modification and do not name support.microsoft.com. Copyright risk judged medium. Chunks are paraphrases, not copied. Author decided on 2026-10-24 to keep this source. Confirm with the advisor before publishing the KB.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "AFT-01.txt",
+    "chunk_id": "AFT-01",
+    "header": "You clicked a phishing link, or your account or device may be compromised",
+    "group": "AFT",
+    "source_ids": [
+      "S01",
+      "S04"
+    ],
+    "title": "How to Recognize and Avoid Phishing Scams",
+    "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+    "publisher": "US Federal Trade Commission (consumer.ftc.gov)",
+    "page_date": "published 2019-05-03; modified 2024-10-11",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "low",
+    "reuse": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "AFT-02.txt",
+    "chunk_id": "AFT-02",
+    "header": "You may have lost money to a phishing message",
+    "group": "AFT",
+    "source_ids": [
+      "S03"
+    ],
+    "title": "Protect yourself from phishing",
+    "url": "https://support.microsoft.com/en-us/security/protect-yourself-from-phishing",
+    "publisher": "Microsoft Support",
+    "page_date": "last updated 2026-09-11 (as seen)",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "medium",
+    "reuse": "(c) Microsoft. Terms of use (microsoft.com/en-us/legal/terms-of-use, read 2026-10-24) allow personal, non-commercial use of Documents without modification and do not name support.microsoft.com. Copyright risk judged medium. Chunks are paraphrases, not copied. Author decided on 2026-10-24 to keep this source. Confirm with the advisor before publishing the KB.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "GEN-01.txt",
+    "chunk_id": "GEN-01",
+    "header": "How to report a suspicious email and who to tell",
+    "group": "GEN",
+    "source_ids": [
+      "S04",
+      "S01"
+    ],
+    "title": "Phishing: spot and report scam emails, texts, websites and calls",
+    "url": "https://www.ncsc.gov.uk/collection/phishing-scams",
+    "publisher": "UK NCSC",
+    "page_date": "no date shown",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "low",
+    "reuse": "Crown copyright; reuse under Open Government Licence v3.0 (ncsc.gov.uk/terms-and-conditions, read 2026-10-24). Acknowledge the source and link to the OGL (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). Third-party images and logos excluded. Companion page: https://www.ncsc.gov.uk/section/respond-recover/phishing",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "GEN-02.txt",
+    "chunk_id": "GEN-02",
+    "header": "A short routine for checking any suspicious email",
+    "group": "GEN",
+    "source_ids": [
+      "S02"
+    ],
+    "title": "Phishing (Small Business Cybersecurity Corner)",
+    "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+    "publisher": "NIST",
+    "page_date": "published 2021-10-22; updated 2025-08-19",
+    "retrieved": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+    "license_risk": "low",
+    "reuse": "NIST site policy (nist.gov/oism/copyrights, read 2026-10-24): information on NIST sites is public information except material marked as copyrighted; credit requested. Paraphrased, not copied.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "INV-01.txt",
+    "chunk_id": "INV-01",
+    "header": "Investment or stock tip promising big or quick profits",
+    "group": "INV",
+    "source_ids": [
+      "S08"
+    ],
+    "title": "With people losing big to investment scams, learn how to spot and avoid them",
+    "url": "https://consumer.ftc.gov/consumer-alerts/2026/04/people-losing-big-investment-scams-learn-how-spot-and-avoid-them",
+    "publisher": "US FTC Consumer Advice",
+    "page_date": "published 2026-04-14 (byline 2026-04-16); modified 2026-04-16",
+    "retrieved": "2026-10-24",
+    "license_risk": "low",
+    "reuse": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+    "content_type": "original_paraphrase"
+  },
+  {
+    "file": "JOB-01.txt",
+    "chunk_id": "JOB-01",
+    "header": "Job offer that asks you to pay, cash a check, or forward items or money",
+    "group": "JOB",
+    "source_ids": [
+      "S09"
+    ],
+    "title": "Job Scams",
+    "url": "https://consumer.ftc.gov/articles/job-scams",
+    "publisher": "US FTC Consumer Advice",
+    "page_date": "published 2020-12-08; modified 2026-08-13",
+    "retrieved": "2026-10-24",
+    "license_risk": "low",
+    "reuse": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+    "content_type": "original_paraphrase"
+  }
+]

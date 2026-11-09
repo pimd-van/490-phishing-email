@@ -1,0 +1,17 @@
+{
+  // การทดลองเทียบ: KB 17 chunk (รวม AFT-01+AFT-02 = AFT-12, SPM-01+SPM-03 = SPM-13, MED-01+MED-02 = MED-12) กับ BGE-M3
+  "embedding_model": "BAAI/bge-m3",
+  "query_prefix": "",
+  "collection_name": "phishing_kb17_bge_m3",
+  "id_mode": "file_stem",
+  "sources_file": "part2/vector_database/sources_kb17.json",
+  "chunk_size_tokens": 400,
+  "chunk_overlap_tokens": 60,
+  "embedding_batch_size": 16,
+  "max_seq_length": 2048,
+  "document_dir": "part2/vector_database/document_17",
+  "database_dir": "part2/RAG/.chroma",
+  "result_file": "part2/vector_database/result_vector_database_kb17.json",
+  // RAG แปลงเฉลย 20 chunk เป็น 17 chunk ด้วยไฟล์นี้ก่อนวัดผล
+  "gold_id_map": "part2/vector_database/mapping_20_to_17.json"
+}

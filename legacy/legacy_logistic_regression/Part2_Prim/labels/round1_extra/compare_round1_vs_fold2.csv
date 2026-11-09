@@ -1,0 +1,598 @@
+﻿id,round1_rules,round1_chunks,round1_fit,fold1_chunks,fold1_fit,same_set,same_first,same_fit,added,removed,email_summary
+meajor_test_3980,1.10,,none,,none,1,1,1,,,Garbled Korean-encoded junk text with image links and no readable message.
+meajor_test_23265,1.6,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Subject advertises cheap OEM software shipped worldwide over a filler body with one link.
+meajor_test_31557,1.11,SPM-01;BRD-03;LNK-02;SPM-02,partial,SPM-01;BRD-03;LNK-02;SPM-02,partial,1,1,1,,,"Bulk refinance advert asking the reader to fill in an online questionnaire, with a no-thanks link."
+meajor_test_17349,1.10,,none,,none,1,1,1,,,Subject suggests a favorite website but the body holds only a file placeholder.
+meajor_test_97181,1.13,,none,,none,1,1,1,,,"Portuguese call for papers for a technical-scientific meeting, with a submission deadline and a pdf download."
+meajor_test_6204,1.11,,none,,none,1,1,1,,,Garbled Korean-encoded text with watch-shop image links and no readable message.
+meajor_test_62914,1.13,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a weight-loss product with testimonials claiming effortless slimming and mood gains.
+meajor_test_92196,1.8,SPM-03,partial,SPM-03,partial,1,1,1,,,Short note recruiting 'phone processors' with large daily earnings and a phone number to call.
+meajor_test_1859,1.13,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Advert for gold-plated brand watches 'starting under' a low price with a link and a remove word.
+meajor_test_99557,1.7,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-01,good,0,1,1,SPM-01,SPM-03,Online drugstore advert promoting half-price generic drugs and fast delivery.
+meajor_test_91100,1.13,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject 'watch this bid' over a price list of pill packs with a shop link.
+meajor_test_101950,1.8,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Software reseller advert listing Microsoft Office titles with retail versus 'our' prices.
+meajor_test_43331,1.7,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;URG-01;SPM-02,partial,0,1,1,URG-01,,Advert styled as a store page selling discounted software at up to 92 percent off.
+meajor_test_29882,1.6,,none,,none,1,1,1,,,Literary and religious fragments with one link and no offer.
+meajor_test_68724,1.11,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,"Advert for Microsoft Office 2007 and other software at about 79 dollars each, followed by technical junk text."
+meajor_test_70562,1.12,,none,,none,1,1,1,,,Subject mentions delivery from Canada over a body of unrelated headline fragments.
+meajor_test_62038,1.13,,none,,none,1,1,1,,,Incoherent software-related word salad under the subject 'kids' with one link.
+meajor_test_103250,1.13,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Online shop advert for digital gear at lowest prices with a price list and a yearly guarantee.
+meajor_test_77997,1.10,INV-01;SPM-01,good,INV-01;URG-01;SPM-03,good,0,1,1,SPM-03;URG-01,SPM-01,"Penny-stock promotion urging readers to buy early before Monday, mixed with news snippets."
+meajor_test_35137,1.9,,none,,none,1,1,1,,,Forwarded list of humorous sayings.
+meajor_test_79628,1.9,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a 'pound-melting' weight-loss product with testimonials.
+meajor_test_22057,1.11,ADV-01;BRD-03;GEN-01,good,ADV-01;BRD-03;GEN-01,good,1,1,1,,,Lottery winning notice claiming a large cash prize and asking the reader to send personal details to an agent.
+meajor_test_89885,1.9,,none,,none,1,1,1,,,Three-word nonsense greeting.
+meajor_test_36899,1.12,,none,,none,1,1,1,,,Garbled Korean-encoded text with image links and no readable message.
+meajor_test_2235,1.13,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,"Internet pharmacy advert for prescription medicines shipped overnight, with news junk appended."
+meajor_test_6620,1.5,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;MED-02;LNK-01;URG-01;SPM-01,good,0,1,1,MED-02;URG-01,SPM-02,"Advert for 'all pills in one place' urging the reader to locate a prescription immediately, with a stop-promotions line."
+meajor_test_91863,1.9,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,"Advert for a 'proven system' promising $1000 to $10,000 monthly extra income, with removal links."
+meajor_test_84562,1.7,JOB-01;LNK-01,good,JOB-01;LNK-01,good,1,1,1,,,Job offer for an 'account manager' who processes customer bank transfers and forwards payments by Western Union for commission.
+meajor_test_103009,1.11,,none,,none,1,1,1,,,Random literary and technical sentences with one link.
+meajor_test_72506,1.6,SPM-01;LNK-01,partial,SPM-03;LNK-01,partial,0,0,1,SPM-03,SPM-01,"Advert for a vibrating ring toy written as a note from a named sender, followed by unrelated text."
+meajor_test_37836,1.5,INV-01;SPM-01;SPM-02,good,INV-01;SPM-01;SPM-02,good,1,1,1,,,"Penny-stock profile about an oil and gas company, with an explicit compensation disclosure and removal text."
+meajor_test_62214,1.13,INV-01;URG-01;SPM-01,good,INV-01;URG-01;SPM-01,good,1,1,1,,,Stock alert with current and five-day target price telling readers to act before it is too late.
+meajor_test_87660,1.12,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Software reseller advert listing OEM products with retail versus our prices.
+meajor_test_93199,1.12,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Commercial advert for a MacBook 'test and keep' panel with many links and unsubscribe notes.
+meajor_test_46709,1.13,MED-01;LNK-01;SPM-03;SPM-02,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,1,1,1,,,"Hoodia diet-pill advert styled as a news interview testimonial, with an opt-out line."
+meajor_test_88162,1.8,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;LNK-01;SPM-03,good,0,1,1,,MED-02,"Advert for cheap licensed meds for staying power all night, followed by transliterated Russian junk."
+meajor_test_84313,1.13,MED-01;MED-02;LNK-01;SPM-03;SPM-02,good,MED-01;MED-02;LNK-01;SPM-03;SPM-02,good,1,1,1,,,Online pharmacy store advert for discounted ED drugs with no prescriptions needed and an unsubscribe word.
+meajor_test_28563,1.11,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Adult video advert with explicit descriptions and two links.
+meajor_test_29589,1.8,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Texas A&M alumni announcements including a link to order planners and a holiday message page.
+meajor_test_100745,1.11,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject and body list pill packs at masked per-pill prices with a buy-now link.
+meajor_test_2166,1.8,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Personal-style note from a woman inviting the reader to view her profile on a dating site.
+meajor_test_100838,1.7,MED-01;LNK-01;SPM-03,good,MED-01;LNK-01;SPM-03,good,1,1,1,,,"ED pill advert with a testimonial, free pills and no prescriptions needed, followed by filler text."
+meajor_test_33230,1.9,SPM-01;SPM-02,partial,SPM-03;SPM-02,partial,0,0,1,SPM-03,SPM-01,"Advert for a bulk-email marketing service under a work-from-home subject, with a remove line."
+meajor_test_10845,1.11,SPM-03,partial,BRD-01;BRD-03;LNK-02;GEN-01,partial,0,0,1,BRD-01;BRD-03;GEN-01;LNK-02,SPM-03,"Seller's eBay reply with order details and PayPal payment steps, asking for a shipping address and payment."
+meajor_test_95812,1.13,,none,,none,1,1,1,,,Meaningless word salad with a few schema links.
+meajor_test_73381,1.13,MED-01;SPM-01,partial,MED-01;SPM-01,partial,1,1,1,,,Subject offers cheap medicines but the body is religious sermon text.
+meajor_test_102139,1.10,BRD-02;BRD-03;URG-01;GEN-01,good,BRD-02;BRD-03;URG-01;GEN-01,good,1,1,1,,,Government-style payment pre-advice asking the beneficiary to confirm account details within 48 hours.
+meajor_test_95637,1.9,SPM-01;LNK-01,partial,SPM-03;LNK-01,partial,0,0,1,SPM-03,SPM-01,Shop advert for electronics at 20-30 percent below Bizrate prices with 7-day refund.
+meajor_test_78690,1.13,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for an enhancement patch promising an eternal sexual engine.
+meajor_test_74234,1.9,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a 'pound-melting' weight-loss product with testimonials.
+meajor_test_30773,1.6,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,Obfuscated spam offering cheap medications at up to 75% off with a link.
+meajor_test_70302,1.10,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,"Stock alert with symbol, one-day target price and a call to contact a broker."
+meajor_test_96696,1.10,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Advert for a penis enlargement patch claiming added length and girth, with a link."
+meajor_test_98313,1.10,SPM-03,partial,SPM-03,partial,1,1,1,,,OEM software advert claiming 75-90% savings with a list of masked titles.
+meajor_test_102716,1.9,BRD-01;LNK-02;SPM-03;GEN-01,partial,BRD-01;BRD-03;LNK-02;SPM-03;GEN-01,partial,0,1,1,BRD-03,,Refinance advert posing as an accepted application and asking the reader to fill in a web form.
+meajor_test_103898,1.12,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject offers top quality drugs at low prices over an unrelated body with a product link.
+meajor_test_52969,1.13,SPM-03;URG-01,partial,SPM-03;URG-01,partial,1,1,1,,,"Offer of a degree based on job skills with no study, to be taken up by a deadline by phone."
+meajor_test_37191,1.10,,none,,none,1,1,1,,,Unreadable symbols and random letters with no lure.
+meajor_test_45805,1.6,SPM-03;LNK-01,partial,SPM-01;LNK-01,partial,0,0,1,SPM-01,SPM-03,Advert for a hook-up site promising a date tonight.
+meajor_test_88407,1.12,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Advert for a new online pharmacy store with discounts and worldwide shipping.
+meajor_test_2098,1.12,,none,,none,1,1,1,,,Garbled symbols with only a bare-IP link and no readable lure.
+meajor_test_10271,1.6,,none,,none,1,1,1,,,Junk greeting text with only an image link.
+meajor_test_79752,1.11,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Pharmacy advert posing as a therapist's assistant giving tips on choosing a licensed online pharmacy.
+meajor_test_4928,1.10,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,"Online health store offering discounts up to 50% on masked drugs, with an order prompt."
+meajor_test_88942,1.13,SPM-03;LNK-01;URG-01,partial,SPM-03;LNK-01;URG-01,partial,1,1,1,,,Mortgage refinance advert urging action on a loan pre-approval.
+meajor_test_29643,1.5,,none,,none,1,1,1,,,Unreadable symbols with bare-IP and image links.
+meajor_test_39785,1.9,SPM-01;LNK-01;ATT-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,0,1,1,,ATT-01,"Newsletter announcing a new peer-to-peer software version with download links, ads and an unsubscribe line."
+meajor_test_17055,1.5,,none,,none,1,1,1,,,Garbled symbols and hex text with no lure.
+meajor_test_51151,1.8,,none,SPM-03;LNK-01,partial,0,0,0,LNK-01;SPM-03,,Pre-approval ticket notice asking the reader to register via a link.
+meajor_test_95870,1.10,,none,,none,1,1,1,,,Random technical and literary text with no lure.
+meajor_test_72557,1.11,,none,,none,1,1,1,,,Subject says save up to 70% on a masked product over unrelated religious text.
+meajor_test_2193,1.13,,none,,none,1,1,1,,,Unreadable symbols and hex text with image links.
+meajor_test_42771,1.5,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,"Advert for handbags, watches and shoes under an order-receipt subject."
+meajor_test_97972,1.12,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a penis enlargement patch with a link.
+meajor_test_86519,1.10,BRD-01;BRD-03;LNK-02;SPM-03;GEN-01,partial,SPM-03;BRD-03;LNK-02;URG-01,partial,0,0,1,URG-01,BRD-01;GEN-01,Refinance advert saying the application is accepted regardless of credit and asking to fill in a form.
+meajor_test_27843,1.7,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Cheap software advert with masked titles and prices.
+meajor_test_67475,1.13,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for titles such as Office 2007 'on special' with masked prices.
+meajor_test_96352,1.9,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Advert for genuine masked products ordered directly with free shipping.
+meajor_test_73543,1.11,SPM-01;LNK-01,partial,SPM-03;LNK-01,partial,0,0,1,SPM-03,SPM-01,Online casino advert promising dollars on registration that grow in games.
+meajor_test_69166,1.12,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Advert listing masked products with prices as low as a token amount.
+meajor_test_70880,1.10,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,"Stock alert with 500% profit potential, target price and a call to broker."
+meajor_test_49302,1.5,SPM-03;BRD-03;LNK-02;URG-01,partial,SPM-03;BRD-03;LNK-02;URG-01,partial,1,1,1,,,"Home-equity loan advert saying credit does not matter, with an expiring deal and a form."
+meajor_test_42417,1.12,MED-01;LNK-01;SPM-03;SPM-02,good,MED-01;LNK-01;SPM-03;SPM-02,good,1,1,1,,,"ED pill advert guaranteeing 36 hours and harder erections, with order and opt-out links."
+meajor_test_64166,1.10,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject about sex drive over unrelated body text with a link.
+meajor_test_73125,1.12,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for Swiss-made replica watches.
+meajor_test_45181,1.7,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Dating advert posing as a local match update about married women.
+meajor_test_2112,1.8,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,"Online pharmacy advert with 600 meds, free Rx and express shipping."
+meajor_test_65803,1.7,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,Online medicines store claiming to be FDA approved and listing many drug categories.
+meajor_test_8965,1.10,,none,,none,1,1,1,,,Garbled symbols with shop and counter links but no readable lure.
+meajor_test_101880,1.10,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;URG-01;SPM-03,partial,0,1,1,URG-01,,"Advert for a sexual enhancer with testimonials about calibre, extent and libido."
+meajor_test_103327,1.11,MED-01;MED-02;SPM-03,good,MED-01;MED-02;SPM-03,good,1,1,1,,,Online shop advert offering four free viagra pills and a free prescription consult.
+meajor_test_6192,1.10,ADV-01;BRD-03;URG-01;GEN-01,good,ADV-01;BRD-03;URG-01;GEN-01,good,1,1,1,,,Lottery winning notification with final-notice claim deadline and agent contact.
+meajor_test_84765,1.7,JOB-01;LNK-01,good,JOB-01;LNK-01,good,1,1,1,,,Job offer for an account manager handling customer transfers and money transactions for commission.
+meajor_test_66850,1.11,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Special-situation stock alert for a broadband company with an advertising disclaimer.
+meajor_test_87162,1.13,JOB-01;LNK-01,good,JOB-01;LNK-01,good,1,1,1,,,Job offer for an account manager handling customer transfers and money transactions for commission.
+meajor_test_62806,1.9,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Stock alert with a target price and an aggressive buy call.
+meajor_test_84211,1.11,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-03,partial,0,1,1,SPM-03,SPM-01,Advert for a weight-loss product with testimonials about quickly shedding pounds.
+meajor_test_29635,1.9,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,Obfuscated spam offering cheap medications at up to 70% off with a link.
+meajor_test_877,1.12,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Advert for 600 medications across categories at affordable prices.
+meajor_test_2394,1.12,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject offers 82% off vicodin over a word-salad body with a link.
+meajor_test_82104,1.12,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,"Online pharmacy advert for viagra, cialis and 30 more meds with a buy-now link."
+meajor_test_84637,1.9,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,"Bulk advert for a vibrating ring toy to improve the reader's love life, with a subscription footer."
+meajor_test_95291,1.9,,none,,none,1,1,1,,,Random unrelated words with no offer or request.
+meajor_test_36073,1.8,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,"Obfuscated advert for codeine, viagra, xanax, cialis and many more meds with a click-to-order link."
+meajor_test_67830,1.8,SPM-01,partial,SPM-01,partial,1,1,1,,,Subject lists software brands Corel and Autodesk over a body of unrelated quotations.
+meajor_test_72067,1.8,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,"Stock alert with current price, one-day target price and a bullish call to contact your broker."
+meajor_test_22775,1.5,STR-01;GEN-01,good,STR-01;URG-01;GEN-01,good,0,1,1,URG-01,,Dying widow wants to donate a large sum through the reader's ministry and awaits an urgent reply.
+meajor_test_9020,1.10,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,"Obfuscated price list for ambien, cialis, viagra and many more meds shipped worldwide today."
+meajor_test_46003,1.12,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,good,1,1,0,,,"Advert for top-selling Rx drugs with fast delivery and tracking, followed by unrelated literary filler."
+meajor_test_67158,1.8,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,"Advert saying financing is approved in minutes regardless of credit score, with remove-me links."
+meajor_test_72389,1.13,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,"Stock promotion saying a company is up 23% since Monday and to get on it Thursday, mixed with HVAC job-posting text."
+meajor_test_37478,1.6,,none,,none,1,1,1,,,Unreadable subject and random letters.
+meajor_test_83548,1.12,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,"Advert for researching online colleges that offer financial aid, with an enrolment advisor link."
+meajor_test_91313,1.7,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for Wondercum supplement promising five times more ejaculation and bigger orgasms.
+meajor_test_24694,1.9,SPM-01;BRD-03;SPM-02,partial,SPM-01;BRD-03;SPM-02,partial,1,1,1,,,"Debt-consolidation advert asking the reader to return a form with name, address, phone and debt size."
+meajor_test_81931,1.13,INV-01;SPM-03,good,INV-01;SPM-03,good,1,1,1,,,Stock alert with target price and 'profit guaranteed' wording.
+meajor_test_62631,1.11,MED-01;LNK-01;SPM-03;SPM-02,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,1,1,1,,,"Free trial offer of an anti-aging wrinkle cream said to be sold at Saks, with opt-out links."
+meajor_test_100804,1.11,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Online store ad saying you can buy any pill without prescriptions or doctors and save money.
+meajor_test_79505,1.6,,none,,none,1,1,1,,,Incoherent mix of quotations and fragments with no lure.
+meajor_test_50144,1.10,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,"Advert for ED drugs with 100mg pricing and a visit-us link, followed by filler text."
+meajor_test_77065,1.7,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,"OEM software advert promising 75-90% savings on Adobe, Office and AutoCAD titles."
+meajor_test_84486,1.11,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Refinance advert whose subject poses as a reply to your loan application.
+meajor_test_42827,1.8,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;LNK-01;SPM-01;SPM-02,good,1,1,1,,,"Advert for two ED medicines at $1.99 per dose, no prescription, discreet delivery, with an opt-out link."
+meajor_test_102499,1.12,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Herbal supplement ad claiming bigger semen volume, stronger climax and better libido."
+meajor_test_41175,1.10,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;LNK-01;SPM-01;SPM-02,good,1,1,1,,,"ED pill advert at 75% off with no prescription, discreet packaging and a mail-preference link."
+meajor_test_95945,1.11,INV-01;SPM-01,good,INV-01;SPM-03,good,0,1,1,SPM-03,SPM-01,"Penny-stock watch-list alert saying the stock is up and to get on it first thing, mixed with blog filler."
+meajor_test_5101,1.13,,none,,none,1,1,1,,,Unreadable symbols and random letters.
+meajor_test_103148,1.11,MED-01;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,0,1,1,MED-02,,"German advert for an ED product from 1.30 euro with online ordering, free doctor phone advice and testimonials."
+meajor_test_41484,1.11,STR-01;GEN-01,partial,STR-01;GEN-01,partial,1,1,1,,,Bank credit officer proposes sharing the fixed deposit of a dead Iraqi general with no next of kin.
+meajor_test_8305,1.9,,none,,none,1,1,1,,,Unreadable symbols and random letters.
+meajor_test_69834,1.11,,none,,none,1,1,1,,,French out-of-office auto-reply saying the person is away until a return date.
+meajor_test_63969,1.7,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-01,partial,0,1,1,SPM-01,SPM-03,Vague offer to cure yourself and improve health with big discounts and a click-here link.
+meajor_test_13114,1.10,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,"Cheap software CDs advert promising lower prices and discounts, with a shop link."
+meajor_test_63891,1.12,,none,,none,1,1,1,,,Random news-like words and garbled text with no offer.
+meajor_test_71988,1.10,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,"Sale advert for medications from licensed manufacturers, warning about underground pharmacies."
+meajor_test_39404,1.9,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Portuguese invitation to join a free Brazilian business and product directory.
+meajor_test_74431,1.11,SPM-01,partial,SPM-01,partial,1,1,1,,,Incoherent English and Italian fragments with no link.
+meajor_test_29878,1.9,,none,,none,1,1,1,,,Body holds only a charset declaration.
+meajor_test_71423,1.11,MED-01;MED-02;LNK-01;URG-01;SPM-03,good,MED-01;MED-02;LNK-01;URG-01;SPM-03,good,1,1,1,,,Canadian pharmacy advert for male enhancement pills warning of knockoffs and quoting size gains.
+meajor_test_41862,1.6,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a sperm-volume enhancer promising up to 500% more volume and stronger orgasms.
+meajor_test_41676,1.7,,none,,none,1,1,1,,,Random words and symbols with no offer.
+meajor_test_29399,1.6,SPM-03;LNK-01,partial,SPM-01;LNK-01,partial,0,0,1,SPM-01,SPM-03,Advert for hardcore adult photos with links to the site.
+meajor_test_17840,1.13,STR-01;URG-01;GEN-01,partial,STR-01;URG-01;GEN-01,partial,1,1,1,,,Audit official proposes sharing 15.2 million dollars of over-invoiced contract funds if the reader fronts as sub-contractor.
+meajor_test_44103,1.8,MED-01;LNK-01;URG-01;SPM-01,good,MED-01;LNK-01;URG-01;SPM-01,good,1,1,1,,,Quotation list followed by an ED pill offer with a link and a one-day sale.
+meajor_test_58095,1.12,STR-01;BRD-03;GEN-01,partial,STR-01;BRD-03;GEN-01,partial,1,1,1,,,Bank manager proposes moving a dead magnate's funds to the reader's account for a share.
+meajor_test_94623,1.12,,none,,none,1,1,1,,,Casual subject over unrelated random words.
+meajor_test_65814,1.12,BRD-01;BRD-02;LNK-02;GEN-01,good,BRD-01;BRD-02;LNK-02;GEN-01,good,1,1,1,,,"Bilingual notice posing as Desjardins about a transaction error, with a link to log in to verify the account."
+meajor_test_18581,1.13,,none,,none,1,1,1,,,Unreadable encoded text and random letters.
+meajor_test_38178,1.9,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Pharmacy advert offering up to 70% off pills with a price list and site link.
+meajor_test_17906,1.13,STR-01;BRD-03;URG-01;GEN-01,partial,STR-01;BRD-03;URG-01;GEN-01,partial,1,1,1,,,Chief accountant wants to move 36 million dollars from a dead foreigner's dormant account into the reader's account.
+meajor_test_37942,1.9,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Subject advertises best software prices over a filler body with one link.
+meajor_test_72654,1.10,INV-01;URG-01;SPM-01,good,INV-01;URG-01;SPM-01,good,1,1,1,,,Penny-stock tip with a target price telling the reader to call their broker right now.
+meajor_test_71130,1.10,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,Online drugstore advert claiming licensed plants and very low Canadian prices.
+meajor_test_63360,1.13,,none,,none,1,1,1,,,Free-quote subject over unrelated text about a ball game with image and tracking links.
+meajor_test_102924,1.9,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Replica luxury watch store advert offering 25% off two watches.
+meajor_test_63255,1.6,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Testimonial-heavy advert for a fat-melting slimming blend.
+meajor_test_33221,1.12,SPM-03;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,0,0,1,SPM-01,SPM-03,"Erotic story teaser asking the reader to click to continue, with a remove link."
+meajor_test_28879,1.8,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Cheap OEM software advert claiming prices several times below competitors.
+meajor_test_62170,1.13,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Replica watch advert with free gift box and low prices.
+meajor_test_57638,1.9,,none,,none,1,1,1,,,Nonsense subject and body with a placeholder link.
+meajor_test_3418,1.7,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Advert for a device that gives pay-per-view and adult channels for free.
+meajor_test_73759,1.13,INV-01;SPM-01,partial,INV-01;SPM-01,partial,1,1,1,,,Investor-alert subject over an unrelated literary passage with only an image link.
+meajor_test_29845,1.12,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Obfuscated Viagra/Cialis subject with a body offering medications at over 70% savings from an online shop.
+meajor_test_68048,1.8,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Filler text hiding an offer of cheap OEM software downloads or CDs.
+meajor_test_88465,1.12,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,Online generic-drug seller boasting low prices and 100% safety.
+meajor_test_4482,1.6,STR-01;BRD-03;URG-01;GEN-01,partial,STR-01;BRD-03;URG-01;GEN-01,partial,1,1,1,,,Bank staffer proposes moving a terrorist-listed customers' balance into the reader's account for a share.
+meajor_test_86142,1.10,MED-01;SPM-01,partial,MED-01;SPM-01,partial,1,1,1,,,Cialis discount subject over a religious sermon with no link.
+meajor_test_62085,1.11,MED-01;LNK-01;SPM-03,good,MED-01;LNK-01;SPM-03,good,1,1,1,,,ED drug advert claiming doctors choose it and 100% results.
+meajor_test_7399,1.13,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,College grants advert in image form with unsubscribe and forward footers.
+meajor_test_323,1.12,MED-01;MED-02;LNK-01;SPM-01;SPM-02,good,MED-01;MED-02;LNK-01;SPM-01;SPM-02,good,1,1,1,,,"Online drug store offering cheap Viagra and Cialis with no prescription, plus an unsubscribe link."
+meajor_test_33863,1.6,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,"Scratch-and-match free-gift promotion requiring referrals, with opt-out footers."
+meajor_test_103231,1.11,SPM-01,partial,SPM-01,partial,1,1,1,,,Short advert for very cheap masked products with order-now wording.
+meajor_test_83423,1.12,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Personal-style note pushing an automated system said to earn $3000 a day.
+meajor_test_66925,1.9,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Penny-stock bulletin for a power-line broadband company with a paid-advertisement disclaimer.
+meajor_test_98128,1.13,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Summer discount advert for affordable drugs with a link.
+meajor_test_2099,1.12,,none,,none,1,1,1,,,Garbled symbol-filled subject and body over a loan form site link.
+meajor_test_31276,1.7,JOB-01,good,JOB-01,good,1,1,1,,,Import-export group seeks representatives to handle payments through them for a fee.
+meajor_test_97574,1.10,,none,SPM-01,partial,0,0,0,SPM-01,,Design-service price subject over a poem with no link.
+meajor_test_2092,1.6,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Ordering medicines from home advert listing several masked drugs with a shop link.
+meajor_test_2959,1.10,MED-01;LNK-01;SPM-03;SPM-02,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,1,1,1,,,Obfuscated semen-volume booster advert with an opt-out link.
+meajor_test_1490,1.6,JOB-01;LNK-01;SPM-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,0,0,1,SPM-03,JOB-01;SPM-01,Work-from-home money-making advert with a CAN-SPAM remove notice.
+meajor_test_4406,1.11,MED-01;LNK-01;URG-01;SPM-01,partial,MED-01;LNK-01;SPM-01,good,0,1,0,,URG-01,"Medications online advert with 70% off, buy now."
+meajor_test_39410,1.7,,none,,none,1,1,1,,,Garbled symbol text with two Chinese-mail links.
+meajor_test_8656,1.8,,none,,none,1,1,1,,,Garbled subject and a nonsense body with a cab file link.
+meajor_test_66643,1.13,INV-01;SPM-03,good,INV-01;SPM-03,good,1,1,1,,,Penny-stock tip promising to double by end of week.
+meajor_test_43686,1.5,MED-01;LNK-01;SPM-03;SPM-02,good,MED-01;LNK-01;SPM-03;SPM-02,good,1,1,1,,,Obfuscated Cialis soft-tab advert with guaranteed 36-hour effect and an opt-out link.
+meajor_test_72295,1.13,INV-01;URG-01;SPM-01,good,INV-01;URG-01;SPM-01,good,1,1,1,,,Aggressive-buy stock alert with target price telling reader to call broker right now.
+meajor_test_68705,1.7,INV-01;SPM-03,good,INV-01;SPM-01,good,0,1,1,SPM-01,SPM-03,Stock tip claiming the stock is up 500% and urging readers to get in now.
+meajor_test_34630,1.8,,none,,none,1,1,1,,,Black Hawk Down opinion piece with news article links.
+meajor_test_9704,1.9,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;LNK-01;SPM-01;SPM-02,good,1,1,1,,,"ED medicines advert with no prescription needed and discreet packaging, with a preferences link."
+meajor_test_43511,1.8,MED-01;LNK-01;SPM-03;SPM-02,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,1,1,1,,,Penis enlargement product advert guaranteeing 1+ inch gain or money back.
+meajor_test_24522,1.12,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Hot-selling meds shop advert with masked drug names and a click-to-order link.
+meajor_test_84123,1.13,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Herbal penis enlargement pills advert with money-back guarantee and 3+ inch gains.
+meajor_test_38135,1.11,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Personal-style note luring readers to a dating and swingers site with an opt-out link.
+meajor_test_80174,1.12,JOB-01;LNK-01,good,JOB-01;LNK-01,good,1,1,1,,,Fake investment-firm account-manager vacancy handling bank transfers and forwarding mail.
+meajor_test_100903,1.10,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Online store advert for pills with no prescriptions or doctors.
+meajor_test_99967,1.12,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Order-drugs-online advert with 50% summer discount and fast discreet delivery.
+meajor_test_6517,1.13,STR-01;URG-01;GEN-01,partial,STR-01;URG-01;GEN-01,partial,1,1,1,,,Refugee woman asks the reader to receive her late father's deposit and adopt her.
+meajor_test_79928,1.12,,none,,none,1,1,1,,,HowStuffWorks computer newsletter with article links.
+meajor_test_92290,1.10,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,Price list of pills in various strengths with savings and one shop link.
+meajor_test_5236,1.8,BRD-01;BRD-02;BRD-03;LNK-02;GEN-01,good,BRD-01;BRD-02;BRD-03;LNK-02;GEN-01,good,1,1,1,,,Fake auction-site account verification notice asking the reader to confirm identity and card details or face suspension.
+meajor_test_96863,1.13,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for cheap OEM software with savings of 75-90 percent and instant download.
+meajor_test_97885,1.9,,none,,none,1,1,1,,,Random technical and literary sentences with no offer or request.
+meajor_test_79299,1.9,,none,,none,1,1,1,,,Nonsense keyword text about networking and apps with no readable lure.
+meajor_test_42731,1.8,SPM-03;SPM-02,partial,SPM-03;SPM-02,partial,1,1,1,,,Bulk message promising daily income from a financial community and asking the reader to phone.
+meajor_test_36724,1.13,INV-01;SPM-01;SPM-02,good,INV-01;SPM-01;SPM-02,good,1,1,1,,,"Penny-stock VOIP promotion telling readers to watch the stock Monday, with a paid-promotion disclosure."
+meajor_test_88201,1.7,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a penis enlargement patch with testimonials about girth and length.
+meajor_test_43680,1.11,BRD-01;BRD-03;LNK-02;SPM-03;GEN-01,partial,BRD-01;BRD-03;LNK-02;SPM-03;GEN-01,partial,1,1,1,,,Mortgage advert posing as a pre-approval confirmation with a form link and a database-deletion link.
+meajor_test_100914,1.11,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,good,1,1,0,,,Price list of pills in several strengths addressed 'for manager' with a see-more link.
+meajor_test_38306,1.9,SPM-03;LNK-01;URG-01,partial,SPM-03;LNK-01;URG-01,partial,1,1,1,,,Software special offer at about 80 dollars valid until a date while stock lasts.
+meajor_test_101813,1.12,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,"Online pharmacy advert for xanax, phentermine and other pills with no doctor approval."
+meajor_test_38201,1.6,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Pharmacy advert with a per-pill price list saving up to 70 percent.
+meajor_test_97867,1.10,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Mail bounce notice followed by an advert for handmade luxury goods with satisfaction guaranteed.
+meajor_test_9140,1.5,MED-01;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,0,1,1,MED-02,,Advert for popular meds shipped worldwide today with no long questioning form.
+meajor_test_3961,1.8,SPM-03;LNK-01;URG-01,partial,SPM-03;LNK-01;URG-01,partial,1,1,1,,,Half-price software offer valid until a date with stock limited and membership-renewal styling.
+meajor_test_8479,1.8,SPM-03;LNK-01;URG-01,partial,SPM-03;LNK-01;URG-01,partial,1,1,1,,,"Office software at half price, 60 dollars, with an offer valid until a date."
+meajor_test_77992,1.8,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Stock alert with a three-day target price and insider buying claim telling readers to contact a broker.
+meajor_test_78454,1.10,JOB-01;LNK-01,partial,JOB-01;LNK-01,partial,1,1,1,,,Subject invites the reader to fill an account manager vacancy; body is unreadable and links to a vacancy page.
+meajor_test_36556,1.7,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,"Hidden-spelling ad for cheap viagra and cialis after unrelated literary text, saving over 70 percent."
+meajor_test_36396,1.9,SPM-01;URG-01;SPM-02,partial,SPM-01;URG-01;SPM-02,partial,1,1,1,,,Greeting-card store loyalty promotion with bonus points and a valentine bear offer.
+meajor_test_42910,1.10,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for replica designer bags and watches followed by song lyrics.
+meajor_test_42733,1.7,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Advert for a hook-up dating site.
+meajor_test_95848,1.13,MED-01;LNK-01;URG-01;SPM-03,partial,MED-01;LNK-01;URG-01;SPM-03,partial,1,1,1,,,Advert for a PE enlargement patch with testimonials on size and length.
+meajor_test_46219,1.9,SPM-03,partial,SPM-03,partial,1,1,1,,,List of software titles with retail price versus our price and immediate download.
+meajor_test_48650,1.12,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Wholesale product list with prices per piece and instructions to unsubscribe.
+meajor_test_79683,1.9,SPM-03,partial,SPM-03,partial,1,1,1,,,Subject mentions paying for escorts while the body is a French novel excerpt about a party.
+meajor_test_63589,1.6,,none,,none,1,1,1,,,Keyword word salad about technology products with no clear offer.
+meajor_test_77542,1.7,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Advert for a weight-loss product with testimonials about appetite, mood and marriage."
+meajor_test_169,1.13,,none,,none,1,1,1,,,Emoji and symbols only.
+meajor_test_38191,1.10,MED-01;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,0,1,1,MED-02,,Pharmacy advert with per-pill prices of a few dollars and a link.
+meajor_test_101670,1.13,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a size-enhancement pellet under an unrelated celebrity subject.
+meajor_test_69405,1.8,,none,,none,1,1,1,,,Keyword word salad about technology news with no offer.
+meajor_test_80692,1.12,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Refinance advert claiming the loan has been approved with a respond-now link.
+meajor_test_87904,1.10,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Online pharmacy advert saving up to 85 percent with no prescription needed.
+meajor_test_58082,1.13,ADV-01;BRD-03;URG-01;GEN-01,good,ADV-01;BRD-03;URG-01;GEN-01,good,1,1,1,,,Lottery winner notice for a 2.5 million dollar prize asking the reader to contact a claims agent within a week.
+meajor_test_42179,1.9,,none,,none,1,1,1,,,Garbled non-Latin text and random letters with only image and form links.
+meajor_test_76649,1.12,,none,,none,1,1,1,,,Two random words with no offer.
+meajor_test_75609,1.7,MED-01;SPM-01,partial,MED-01;SPM-01,partial,1,1,1,,,Subject offers viagra at 0.87 dollars per pill over an unrelated religious body.
+meajor_test_73779,1.10,,none,,none,1,1,1,,,Short filler note with only an image link.
+meajor_test_41921,1.10,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Cheap software advert with normal versus our price and 315 more titles.
+meajor_test_86883,1.5,SPM-03;LNK-01;URG-01,partial,SPM-03;LNK-01;URG-01,partial,1,1,1,,,"Advert for top-brand Swiss watches at major discounts, special this week only."
+meajor_test_96849,1.11,SPM-03;SPM-02,partial,SPM-03;SPM-02,partial,1,1,1,,,Message about verified monthly earners in the biggest industry with an info line and opt-out link.
+meajor_test_76316,1.7,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Software shop advert with OEM products listed at retail price versus our price.
+meajor_test_45856,1.9,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a whole-food vitamin product with a risk-free trial.
+meajor_test_32096,1.13,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Forwarded-style adult subject over junk text with links to a site.
+meajor_test_81208,1.6,MED-01;LNK-01;URG-01;SPM-01,good,MED-01;LNK-01;URG-01;SPM-01,partial,1,1,0,,,Five-day special rebates on medicines with a link.
+meajor_test_66588,1.8,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,"Stock alert for a broadband over power line company, telling readers to add it to their radar, with a paid-advert disclaimer."
+meajor_test_28119,1.12,SPM-03;LNK-01;URG-01;SPM-02,partial,SPM-03;LNK-01;URG-01;SPM-02,partial,1,1,1,,,"Rewards-program gift promotion requiring survey and registration, posing as a thank-you confirmation."
+meajor_test_2022,1.9,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,"Word-salad email saying all medications are in one place, fast and cheap, with a viagra shop link."
+meajor_test_86190,1.8,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Online pharmacy advert saving up to 85 percent with no prescriptions needed.
+meajor_test_15730,1.11,BRD-01;BRD-02;BRD-03;LNK-02;GEN-01,good,BRD-01;BRD-02;LNK-02;URG-01;GEN-01,good,0,1,1,URG-01,BRD-03,Fake PayPal-style notice says the account is limited and asks the reader to log in via a link to restore access or face closure.
+meajor_test_24725,1.11,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,"Bulk advert for no-prescription erection, antidepressant and weight-loss pills with easy delivery and a money-back guarantee."
+meajor_test_99204,1.11,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for a replica luxury watch store with 25% off when buying two.
+meajor_test_45710,1.13,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Advert for software sold 2-6 times cheaper than retail with a remove-me link.
+meajor_test_58037,1.11,,none,,none,1,1,1,,,Subject and body are unreadable garbled characters; the only URL is not a readable lure.
+meajor_test_38413,1.10,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Pharmacy-style advert offering pills at up to 70% off with a site link.
+meajor_test_99869,1.5,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,Online drugstore lists medicines at low per-dose prices and asks the reader to click for discounts.
+meajor_test_75163,1.7,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Weight-loss product advert with testimonials of lost weight, better mood, energy and libido."
+meajor_test_101713,1.7,SPM-01;LNK-01;ATT-01,partial,,none,0,0,0,,ATT-01;LNK-01;SPM-01,Slogan subject over a literary filler body that says 'see attach'; the only URL gives no sign of an offer.
+meajor_test_10966,1.8,,none,,none,1,1,1,,,Garbled emoji-token text with company and phone placeholders and no readable offer.
+meajor_test_74918,1.12,MED-01;LNK-01;SPM-03,partial,MED-01;MED-02;LNK-01;SPM-03,good,0,1,0,MED-02,,Advert posing as a friend's tip about a pharmacy with cheaper generic brands.
+meajor_test_74717,1.12,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Weight-loss product advert with testimonials about losing 33 pounds, mood and bedroom benefits."
+meajor_test_87607,1.13,INV-01;SPM-03,good,INV-01;SPM-03,good,1,1,1,,,Penny stock promotion saying profit is guaranteed and telling the reader to call their broker.
+meajor_test_70234,1.9,,none,,none,1,1,1,,,Subject 'hot news' over a short benchmark-test text and an image link with nothing promoted.
+meajor_test_46083,1.13,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a medicines site with testimonials and a shipment-tracking line.
+meajor_test_68289,1.7,MED-01;LNK-01;URG-01;SPM-03,partial,MED-01;LNK-01;URG-01;SPM-03,partial,1,1,1,,,"Advert for male enhancement patches claiming size and drive go through the roof, limited time only."
+meajor_test_80553,1.12,STR-01;GEN-01,good,STR-01;GEN-01,good,1,1,1,,,A woman says she found the reader's picture and invites a personal reply.
+meajor_test_58365,1.10,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Stock profile and press release for an oil and gas company with a strong buy call and 'get in now'.
+meajor_test_94645,1.7,MED-01;LNK-01;URG-01;SPM-01,good,MED-01;MED-02;LNK-01;URG-01;SPM-01,good,0,1,1,MED-02,,Store advert for pharmaceutical products at 50% off during the summer period with discreet wrapping.
+meajor_test_57316,1.13,SPM-01,partial,SPM-01,partial,1,1,1,,,Russian advert for newest databases with prices; the body is garbled.
+meajor_test_77687,1.13,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for an appetite-suppressing diet pill claimed to be certified pure and completely safe.
+meajor_test_74922,1.5,JOB-01;LNK-01;SPM-03;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,0,0,1,,JOB-01,"Advert for a home-earnings opportunity claiming people earn big amounts per day, with a no-more-mail link."
+meajor_test_89084,1.13,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Repeated airfare advert saying fly anywhere cheaper than a travel agent.
+meajor_test_45212,1.13,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Casual note from a supposed acquaintance promising photos with a link to a photo album.
+meajor_test_45739,1.7,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Advert for getting paid to play online games with earnings claims and opt-out links.
+meajor_test_2539,1.13,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject advertises popular medications while the body is song lyrics with one link.
+meajor_test_95625,1.11,SPM-03,partial,SPM-03,partial,1,1,1,,,Phone-call advert for a pre-approved unsecured business loan with no credit worries.
+meajor_test_43334,1.10,,none,,none,1,1,1,,,Subject 'pictures' over random filler words with phone placeholders and an unexplained link.
+meajor_test_9482,1.9,,none,,none,1,1,1,,,Garbled Korean-style subject and a body of 'click click click' with many image links.
+meajor_test_51898,1.10,MED-01;LNK-01;SPM-03;SPM-02,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,1,1,1,,,"Advert for a body-fat product claiming to cut weight and wrinkles, restore hair and memory and ease stress, with an opt-out."
+meajor_test_63158,1.9,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Weight-loss product advert with testimonials about weight loss, mood, energy and renewed romance."
+meajor_test_41818,1.13,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for cheap OEM software special offers shipped worldwide.
+meajor_test_64685,1.7,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,"Stock alert with target price, strong buy and insider-buying claim, telling readers to call their broker."
+meajor_test_97232,1.5,,none,,none,1,1,1,,,Slogan subject over a literary filler body with 'see attach' and an unexplained link.
+meajor_test_100659,1.12,MED-01;LNK-01;URG-01;SPM-03,partial,MED-01;LNK-01;URG-01;SPM-03,partial,1,1,1,,,Advert for PE patches with testimonials about new size and libido and a special discount almost over.
+meajor_test_46846,1.10,SPM-03;BRD-03;LNK-02,partial,SPM-03;BRD-03;LNK-02,partial,1,1,1,,,"Loan broker advert with no proof of income needed, poor credit fine, asking the reader to give their details."
+meajor_test_9773,1.7,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Advert for replica Submariner watches and handbags with an unsubscribe link.
+meajor_test_38422,1.12,INV-01;SPM-01;SPM-02,good,INV-01;SPM-01;SPM-02,good,1,1,1,,,Penny-stock newsletter pick for an oil and gas company that discloses paid compensation and urges acting.
+meajor_test_99522,1.11,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,"Online pharmacy advert for Valium, Celebrex and others with no doctor approval needed, with prices and a click link."
+meajor_test_95724,1.13,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for Swiss watches from a low starting price with limited stock.
+meajor_test_66817,1.9,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,Canadian pharmacy advert saying it does not sell fakes and offering generic drugs at low prices with '100% safety'.
+meajor_test_47620,1.5,MED-01;LNK-01;SPM-01;SPM-02,partial,MED-01;LNK-01;SPM-01;SPM-02,partial,1,1,1,,,Short advert for a med product range with discreet delivery and an opt-out link.
+meajor_test_80419,1.11,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Weight-loss product advert with testimonials, saying no major sacrifice is needed."
+meajor_test_42257,1.6,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,"Advert for handbags, watches and jewellery under a subject posing as an account balance reply."
+meajor_test_37077,1.13,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Advert for a chip giving free pay-per-view channels with a money-back guarantee.
+meajor_test_2514,1.10,,none,,none,1,1,1,,,Garbled subject and body of encoded characters; the only links are a loan site and images.
+meajor_test_79185,1.10,BRD-01;BRD-03;LNK-02;SPM-03;GEN-01,partial,BRD-01;BRD-03;LNK-02;SPM-03;GEN-01,partial,1,1,1,,,Fake notice saying a house refinancing application was accepted and asking the reader to enter last info on a page.
+meajor_test_45431,1.13,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Advert for top-selling tablets with testimonials about cheaper medicines.
+meajor_test_73950,1.7,SPM-03;LNK-01;URG-01;SPM-02,partial,SPM-03;LNK-01;URG-01;SPM-02,partial,1,1,1,,,"Urgent-notice style advert for a free gift card that needs a survey, offers and referrals, with an unsubscribe line."
+meajor_test_27523,1.9,INV-01;LNK-01;SPM-01,partial,INV-01;SPM-03,partial,0,1,1,SPM-03,LNK-01;SPM-01,"Stock profile of a company claiming a treatment reverses HIV, with trading symbol and price data."
+meajor_test_83289,1.10,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for OEM software titles with retail versus own prices and a shop link.
+meajor_test_71064,1.7,MED-01;LNK-01;SPM-01,partial,MED-01;MED-02;LNK-01;SPM-01,good,0,1,0,MED-02,,"Subject and hidden text advertise an online pharmacy store with up to 85% off meds, inside literary filler."
+meajor_test_5509,1.10,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Megastore advert for cheap software titles available for download or on CDs.
+meajor_test_45053,1.13,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;LNK-01;SPM-01;SPM-02,good,1,1,1,,,"Erection pills advert with no prescription needed and discreet delivery, two shop links."
+meajor_test_78036,1.11,SPM-03,partial,SPM-03,partial,1,1,1,,,Bulk note promising an easy at-home job just returning phone calls.
+meajor_test_67122,1.10,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Advert for a free real estate wealth strategies kit promising properties using none of your own money.
+meajor_test_95176,1.5,,none,,none,1,1,1,,,Random technical sentences about code and networking.
+meajor_test_22658,1.11,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,"Short pitch for a masked product claiming great prices, no fees and confidentiality."
+meajor_test_85972,1.12,JOB-01;LNK-01,good,JOB-01;LNK-01,good,1,1,1,,,Account manager vacancy handling customer payments and Western Union transfers for a commission.
+meajor_test_62072,1.12,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Advert for a weight-loss product with testimonials about effortless weight loss, mood and energy."
+meajor_test_103184,1.9,,none,,none,1,1,1,,,Passage of novel-like dialogue with no offer or request.
+meajor_test_44508,1.12,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Advert for free access to a college-girl webcam site.
+meajor_test_41525,1.8,SPM-03;LNK-02,partial,SPM-03;BRD-03;LNK-02,partial,0,1,1,BRD-03,,Refinance advert with a subject posing as an account notice and bad credit not mattering.
+meajor_test_9083,1.11,SPM-01;SPM-02,partial,SPM-01;SPM-02,partial,1,1,1,,,"Portuguese advert for apartment rentals in Rio for travel agents and clients, with a remove-me line."
+meajor_test_65231,1.7,ATT-01,partial,ATT-01,partial,1,1,1,,,Short note from a job seeker referring to a posting and an attached resume.
+meajor_test_72382,1.8,SPM-03;LNK-01;URG-01;SPM-02,partial,SPM-03;LNK-01;URG-01;SPM-02,partial,1,1,1,,,"Advert posing as a notice that a gift card awaits, requiring survey and offers to earn it."
+meajor_test_90056,1.11,,none,,none,1,1,1,,,Fragment of garbled technical words with no offer.
+meajor_test_33873,1.13,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Mortgage refinance advert with links for an instant quote and opt-out lines.
+meajor_test_61877,1.12,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Penis enlargement formula advert promising guaranteed permanent gains of 3 inches.
+meajor_test_78413,1.13,SPM-01,partial,SPM-01,partial,1,1,1,,,Spanish advert for original and alternative toner cartridges with free delivery.
+meajor_test_59498,1.5,BRD-02;LNK-01;URG-01;GEN-01,partial,BRD-02;LNK-01;URG-01;GEN-01,partial,1,1,1,,,Portuguese e-card notice that a card is available for 30 days with a link to view it.
+meajor_test_90062,1.13,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a Megadik preparation said to increase your phallus.
+meajor_test_101801,1.13,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,Erection-drug testimonials praising a 50 mg tablet with a link to buy.
+meajor_test_81744,1.11,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,"Stock alert with strong buy rating and 5-day target, mixed with unrelated filler."
+meajor_test_39051,1.12,,none,,none,1,1,1,,,Unreadable garbled characters with no lure.
+meajor_test_71397,1.6,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Bull report stock alert with a target price and insider buying call to action.
+meajor_test_76062,1.9,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject offers viagra at $0.87 per pill over news filler with one link.
+meajor_test_742,1.12,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;LNK-01;SPM-01;SPM-02,good,1,1,1,,,"Erection pill advert with discreet delivery and no prescription needed, with two shop links."
+meajor_test_65051,1.9,INV-01;LNK-01;SPM-01;SPM-02,partial,INV-01;LNK-01;SPM-01;SPM-02,partial,1,1,1,,,Stock newsletter promoting small-cap picks and video reports.
+meajor_test_99086,1.5,JOB-01;BRD-03;LNK-01,good,JOB-01;BRD-03;LNK-01,good,1,1,1,,,Car centre regional assistant job: accept transfers and forward them via Western Union.
+meajor_test_70928,1.8,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject offers a special price on a viagra pill over news filler with one link.
+meajor_test_61716,1.8,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Subject about a criminal justice career over a near-empty body with tracking links.
+meajor_test_83583,1.12,,none,,none,1,1,1,,,Word salad of unrelated phrases with no offer.
+meajor_test_81902,1.10,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Stock alert with aggressive buy action and one-day target price.
+meajor_test_4556,1.8,MED-01;MED-02;LNK-01;SPM-01;SPM-02,good,MED-01;MED-02;LNK-01;SPM-01;SPM-02,good,1,1,1,,,Online price list of erection drugs with same-day shipping and order link.
+meajor_test_99518,1.9,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Advert inviting you to claim a gift card at no cost.
+meajor_test_71945,1.13,INV-01;SPM-01,good,INV-01;URG-01;SPM-01,good,0,1,1,URG-01,,"Stock alert saying a symbol will explode, to add it to your portfolio immediately."
+meajor_test_78129,1.9,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject offers top brand meds without prescription over news headlines.
+meajor_test_100909,1.12,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for replica watches with 25% discounts.
+meajor_test_95340,1.7,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Retail sitewide clearance advert with 50% off and unsubscribe line.
+meajor_test_8840,1.9,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Pharmacy offers of the month with a price list and shop link.
+meajor_test_67070,1.12,INV-01;SPM-01,good,INV-01;SPM-01,partial,1,1,0,,,Bull market report promoting a broadband over power line stock with disclaimers.
+meajor_test_44422,1.9,,none,,none,1,1,1,,,Unreadable garbled text with only image links.
+meajor_test_3076,1.8,STR-01;BRD-03;URG-01;GEN-01,partial,STR-01;BRD-03;URG-01;GEN-01,partial,1,1,1,,,Lawyer for a late general's widow proposes moving funds for a 10% share.
+meajor_test_71579,1.13,INV-01;URG-01;SPM-01,good,INV-01;URG-01;SPM-01,good,1,1,1,,,"Stock alert saying it is being promoted, to add to portfolio immediately."
+meajor_test_6836,1.13,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Advert for cheap software at 75% off with a shop link.
+meajor_test_44748,1.11,MED-01;SPM-01,good,MED-01;SPM-01,good,1,1,1,,,"Subject and short pitch sell cialis tablets to be erect in 15 minutes, hidden among quotes."
+meajor_test_34549,1.13,SPM-01;LNK-01;ATT-01;SPM-02,partial,SPM-01;BRD-03;LNK-01;ATT-01,partial,0,1,1,BRD-03,SPM-02,Advert for electric and gas industry maps with an order form to download.
+meajor_test_24792,1.9,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for help if you are unhappy with the size of your unit.
+meajor_test_38706,1.12,,none,,none,1,1,1,,,Gibberish letters and symbols with no lure.
+meajor_test_47990,1.8,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Advert for adult material with an obfuscated unsubscribe line and site links.
+meajor_test_14630,1.13,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a semen-volume and orgasm enhancement product with same-day shipping.
+meajor_test_88240,1.5,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for an enlargement patch backed by testimonials about new size and libido.
+meajor_test_90979,1.9,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,Erectile dysfunction treatment advert inviting the reader to visit an online store.
+meajor_test_62436,1.13,STR-01;GEN-01,good,STR-01;GEN-01,good,1,1,1,,,A woman claiming to be travelling nearby offers a picture and asks the reader to write to a private address.
+meajor_test_75239,1.11,,none,,none,1,1,1,,,Subject urges finding a girl for sex while the body is an unrelated fiction snippet.
+meajor_test_31201,1.8,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Resort vacation deals with bonus miles and an unsubscribe footer.
+meajor_test_78009,1.8,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,Canadian web pharmacy letter warning about fake drugs and urging purchase there at low prices.
+meajor_test_41844,1.7,,none,,none,1,1,1,,,Unreadable symbol-filled message with an image and a form link.
+meajor_test_27660,1.5,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject suggests a mail-order pharmacy and the body offers savings of over 70% on a product.
+meajor_test_44586,1.7,,none,,none,1,1,1,,,Garbled symbols and random letters with banner links.
+meajor_test_91444,1.13,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,"Advert for cheap, high-quality drugs inviting the reader to click and order."
+meajor_test_38323,1.13,ADV-01;BRD-03;URG-01;GEN-01,good,ADV-01;BRD-03;URG-01;GEN-01,good,1,1,1,,,Lottery winning notification for over one million euros with a claim process through an agent.
+meajor_test_61810,1.8,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Letter posing as advice from an anti-counterfeit organisation steering buyers to a licensed pharmacy.
+meajor_test_64564,1.13,,none,,none,1,1,1,,,Jumbled technical keywords with one site link.
+meajor_test_71790,1.11,SPM-03;LNK-02;URG-01,partial,SPM-03;BRD-03;LNK-02;URG-01,partial,0,1,1,BRD-03,,Real-estate cash loan offer regardless of credit with a short form and an expiring deal.
+meajor_test_44965,1.5,SPM-03;LNK-01;SPM-02,partial,BRD-01;BRD-03;LNK-02;SPM-03;GEN-01,partial,0,0,1,BRD-01;BRD-03;GEN-01;LNK-02,LNK-01;SPM-02,Refinance advert posing as an account summary with a pre-approval result and a form link.
+meajor_test_101618,1.8,JOB-01;BRD-03;LNK-01,good,JOB-01;BRD-03;LNK-01,good,1,1,1,,,Car-centre job offer to accept transfers into a bank account and forward funds by Western Union.
+meajor_test_64652,1.10,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Stock alert with a 5-day target price and 500% profit potential urging contact with a broker.
+meajor_test_51533,1.10,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,Refill reminder from a drug shop inviting the reader to order meds through a link.
+meajor_test_995,1.11,,none,,none,1,1,1,,,Word salad body with a single link and a subject of masked product tokens.
+meajor_test_44887,1.13,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for an ejaculation-volume and orgasm enhancement product with shipping.
+meajor_test_78008,1.5,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;URG-01;SPM-01,good,0,1,1,URG-01,,Canadian web pharmacy advert offering cheap generics and urging a visit right now.
+meajor_test_3283,1.10,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Subject asks about low-priced software over a word-salad body with a link.
+meajor_test_14854,1.13,STR-01;BRD-03;URG-01;GEN-01,partial,STR-01;BRD-03;URG-01;GEN-01,partial,1,1,1,,,Bank official proposes sharing an abandoned deposit by posing as next of kin of a dead customer.
+meajor_test_154,1.6,,none,,none,1,1,1,,,Garbled subject and body with an IP-hosted form and image links.
+meajor_test_1238,1.7,,none,,none,1,1,1,,,Collection of quotations and aphorisms with no offer.
+meajor_test_86305,1.12,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Advert for a couples' vibrating toy with an email preferences link.
+meajor_test_72308,1.9,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Stock alert with a one-day target price telling readers to call their broker.
+meajor_test_85089,1.8,INV-01;SPM-01,good,INV-01;SPM-03,good,0,1,1,SPM-03,SPM-01,Press-release style stock bulletin urging readers to buy the stock first thing Monday.
+meajor_test_97642,1.8,JOB-01;BRD-03;LNK-01,good,JOB-01;BRD-03;LNK-01,good,1,1,1,,,Car-centre job offer to accept transfers into a bank account and forward funds by Western Union or MoneyGram.
+meajor_test_22548,1.13,,none,,none,1,1,1,,,Garbled symbols with encoded links and no readable lure.
+meajor_test_3817,1.7,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,"Advert for cheap popular software with 'my price, normal price, you save' comparisons."
+meajor_test_63161,1.6,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject offers soft Viagra at a low price over an unrelated news-text body.
+meajor_test_19868,1.12,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;LNK-01;SPM-01;SPM-02,good,1,1,1,,,ED pill advert with no prescription needed and a link to stop further mailings.
+meajor_test_66952,1.8,SPM-03;LNK-01;URG-01,partial,SPM-03;LNK-01;URG-01,partial,1,1,1,,,Advert selling international lottery tickets with one day left and a chance to change your life.
+meajor_test_27589,1.13,,none,,none,1,1,1,,,Garbled symbols and numbers with image and PHP links.
+meajor_test_6171,1.11,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,"Wholesale software advert claiming prices several times cheaper than competitors, with an opt-out line."
+meajor_test_940,1.10,,none,,none,1,1,1,,,Garbled symbols with a marketing page link and no readable lure.
+meajor_test_55386,1.6,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,0,1,1,SPM-02,,Advert for a fat-burning product that suppresses appetite and slims the body in a week.
+meajor_test_73185,1.12,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Promoted stock alert with a one-day target price telling readers to contact their broker.
+meajor_test_88780,1.13,SPM-01,partial,SPM-03,partial,0,0,1,SPM-03,SPM-01,Subject offers a design software package for $269 over unrelated quotations.
+meajor_test_101606,1.10,BRD-01;BRD-03;LNK-02;SPM-03;GEN-01,partial,BRD-01;BRD-03;LNK-02;SPM-03;GEN-01,partial,1,1,1,,,"Loan advert posing as a confirmation that the reader's request was received, asking to fill a registration form."
+meajor_test_76484,1.9,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject offers soft Cialis over an unrelated news-text body.
+meajor_test_71251,1.10,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Replica luxury watch store advert with 25% off for two watches.
+meajor_test_96516,1.10,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Subject promises gradual penis enlargement and the body just points to a link.
+meajor_test_56678,1.8,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a pill that increases semen output five times with a money-back guarantee.
+meajor_test_44083,1.13,,none,,none,1,1,1,,,Garbled symbols and encodings with CD-shop links and no readable lure.
+meajor_test_37601,1.12,SPM-01;LNK-01;ATT-01;URG-01;SPM-02,partial,SPM-01;LNK-01;ATT-01;URG-01;SPM-02,partial,1,1,1,,,Offer of a free PDF trial issue and a discounted yearly subscription to an energy-trading newsletter.
+meajor_test_37010,1.8,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01;SPM-02,good,0,1,1,SPM-02,,ED pills at 75% off with no prescription and a link to be taken off the list.
+meajor_test_82130,1.7,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Online drugstore advert that opens with a warning about fake medicines and promotes its cheaper generic drugs.
+meajor_test_33450,1.6,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Solicitation for a credit-building credit card with an apply link and opt-out instructions.
+meajor_test_1074,1.7,,none,,none,1,1,1,,,Garbled symbols and characters with no readable content.
+meajor_test_61607,1.13,MED-01;SPM-01,partial,MED-01;SPM-01,partial,1,1,1,,,Subject advertises cheap medicines but the body is unrelated scripture-like text.
+meajor_test_62029,1.10,,none,,none,1,1,1,,,Rambling text about technology and art with no offer or request.
+meajor_test_81482,1.13,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Drugstore advert urging the reader to order cheap medications with fast delivery.
+meajor_test_80997,1.12,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-01,good,0,1,1,SPM-01,SPM-03,Online pharmacy advert warning about fake drugs and offering 100% generic medicines.
+meajor_test_64787,1.13,,none,,none,1,1,1,,,Scrambled shopping-site vocabulary with no coherent offer.
+meajor_test_37473,1.5,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;LNK-01;SPM-01;SPM-02,good,1,1,1,,,"Price list of drug categories (antidepressants, pain relief, weight loss) with a shop link and removal link."
+meajor_test_103798,1.10,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,"Advert for cheap meds (sexual health, sleep, pain relief, weight loss) at $1.80 per pill with two shop links."
+meajor_test_50971,1.12,SPM-01,partial,SPM-01,partial,1,1,1,,,Individual sells close-out blank printed circuit boards by mail order.
+meajor_test_46530,1.11,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Cut-price OEM software advert with a link to the shop and a stop-mailings link.
+meajor_test_80166,1.10,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Replica watch store advert promising 90% savings.
+meajor_test_79568,1.10,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for a sex toy dressed as a forwarded personal note.
+meajor_test_24664,1.6,SPM-01;LNK-01;URG-01;SPM-02,partial,SPM-01;LNK-01;URG-01;SPM-02,partial,1,1,1,,,Holiday shopping advert with a free gift offer and an order deadline.
+meajor_test_95082,1.13,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Summer discount advert for generic drugs at half price that can be ordered online.
+meajor_test_37215,1.13,,none,,none,1,1,1,,,Unreadable symbols and random letters with only tracking and image links.
+meajor_test_20182,1.8,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Disney Store promotional email for Monsters Inc gifts with a store link and unsubscribe note.
+meajor_test_48494,1.11,MED-01;LNK-01;SPM-03;SPM-02,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,1,1,1,,,Hoodia weight-loss supplement advert promising pounds falling off every week.
+meajor_test_7115,1.11,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,"Obfuscated advert for Viagra, Ambien, Cialis and other meds with same-day shipping."
+meajor_test_79159,1.6,BRD-01;BRD-03;LNK-02;SPM-03;GEN-01,partial,BRD-01;BRD-03;LNK-02;SPM-03;GEN-01,partial,1,1,1,,,Refinance advert claiming the reader's application was accepted and asking for details on a page.
+meajor_test_70555,1.6,,none,,none,1,1,1,,,Italian literary prose with no offer or request.
+meajor_test_51093,1.9,SPM-03;LNK-01;URG-01,partial,SPM-03;LNK-01;URG-01,partial,1,1,1,,,"Mortgage advert claiming approval at 2.9% fixed with no credit factor, to be confirmed on a website."
+meajor_test_104077,1.13,MED-01;LNK-01;SPM-03;SPM-02,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,1,1,1,,,"Male enhancement product advert promising 3+ inches gain, with an opt-out link."
+meajor_test_89901,1.10,JOB-01;BRD-03;LNK-01,good,JOB-01;BRD-03;LNK-01,good,1,1,1,,,Car-centre regional assistant job that asks the reader to receive payments and forward them minus a fee.
+meajor_test_61592,1.5,INV-01;SPM-01,good,INV-01;URG-01;SPM-01,good,0,1,1,URG-01,,Sub-one-cent penny stock tip with a target price and a call to act right away.
+meajor_test_1921,1.6,,none,,none,1,1,1,,,Garbled characters with only image and event links.
+meajor_test_2489,1.13,MED-01;LNK-01;SPM-03;SPM-02,good,MED-01;LNK-01;SPM-03;SPM-02,good,1,1,1,,,Disguised follow-up note selling hydrocodone pills with order links.
+meajor_test_96148,1.11,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Short 'direct pharmacy' advert promising no waiting rooms and no prior prescription.
+meajor_test_66194,1.5,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Education-help subject over unrelated martial-arts text with a link.
+meajor_test_90894,1.5,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Work-from-home business advert promising unlimited income with no skills or selling.
+meajor_test_57886,1.11,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Oil and gas stock bulletin with a strong buy recommendation and press release.
+meajor_test_90529,1.9,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Advert asking if the reader is on the list for government surplus funds.
+meajor_test_62595,1.12,,none,,none,1,1,1,,,Mail-server bounce for a full mailbox with no link or attachment.
+meajor_test_94943,1.5,MED-01;SPM-01,partial,MED-01;SPM-01,partial,1,1,1,,,Subject offers medications at 70% off over an empty body.
+meajor_test_6366,1.13,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;MED-02;LNK-01;SPM-01;SPM-02,good,0,1,1,MED-02,,Advert for cheap prescription tablets online with a stop-mailing link.
+meajor_test_42333,1.12,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Wholesale-price software advert with a shop link and removal link.
+meajor_test_91983,1.11,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Canadian discount pharmacy advert for cheaper medications.
+meajor_test_42605,1.11,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,"Gift shop advert for handbags, watches and jewelry over filler text."
+meajor_test_73359,1.9,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,German stock tip announcing that a share will take off and urging investors not to miss it.
+meajor_test_81547,1.9,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,"Lawsuit solicitation for people who took an antipsychotic drug, with links and stop-announcement wording."
+meajor_test_42956,1.7,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;LNK-01;SPM-01;SPM-02,good,1,1,1,,,Erection pill advert saying no prescription required and directly from the manufacturer.
+meajor_test_9510,1.8,,none,,none,1,1,1,,,Garbled subject and random letters with only image links.
+meajor_test_67658,1.7,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,"Broadband-over-power-line stock alert saying it is just beginning, with a paid-advertisement disclosure."
+meajor_test_1410,1.12,,none,,none,1,1,1,,,Garbled characters with only a cam site link and image.
+meajor_test_91097,1.7,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,Pill price list with quantities and savings and a shop link.
+meajor_test_9821,1.12,MED-01;LNK-01;SPM-03,good,MED-01;LNK-01;SPM-03,good,1,1,1,,,Fake Cialis refill-ready notice asking the reader to confirm through a link.
+meajor_test_47536,1.8,MED-01;LNK-01;SPM-03;SPM-02,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,1,1,1,,,"Hoodia diet advert built on a news-style testimonial, with an opt-out line."
+meajor_test_74255,1.7,STR-01;GEN-01,good,STR-01;GEN-01,good,1,1,1,,,A woman says she found the reader's picture online and wants to talk and meet.
+meajor_test_103068,1.13,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,"Obfuscated pharmacy advert for Xanax, Valium and phentermine with no doctor approval and a certified-pharmacy claim."
+meajor_test_63821,1.10,INV-01;URG-01;SPM-03,good,INV-01;URG-01;SPM-01,good,0,1,1,SPM-01,SPM-03,Penny-stock bull report urging an aggressive buy and a call to the broker right now.
+meajor_test_87582,1.12,INV-01;URG-01;SPM-01,good,INV-01;URG-01;SPM-01,good,1,1,1,,,German-language stock tip claiming 236% in five days and urging readers to buy before it is too late.
+meajor_test_72312,1.9,,none,,none,1,1,1,,,Subject points to quotewizard.com but the body is junk text with image and tracking links.
+meajor_test_27148,1.7,STR-01;BRD-03;GEN-01,partial,STR-01;BRD-03;GEN-01,partial,1,1,1,,,"Self-described ministry official proposes sharing a contract payout and asks for the reader's name, address and phone."
+meajor_test_44856,1.10,BRD-02;LNK-02;GEN-01,good,BRD-02;LNK-02;GEN-01,good,1,1,1,,,Fake eBay powerseller congratulation asking the reader to update their account through a link on a bare IP address with eBay's sign-in path.
+meajor_test_903,1.5,,none,,none,1,1,1,,,Garbled text with a Korean loan-form link and images.
+meajor_test_2888,1.12,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for cheap popular software titles with retail-vs-our-price comparisons.
+meajor_test_96988,1.11,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for replica luxury watches at low prices.
+meajor_test_85633,1.7,SPM-03,partial,SPM-03;URG-01,partial,0,1,1,URG-01,,"Work-from-home pitch to make money by returning phone calls, asking for a quick reply and a call to a number."
+meajor_test_2883,1.5,,none,,none,1,1,1,,,Random word list with a junk link and signature tokens.
+meajor_test_67531,1.12,INV-01;SPM-03,good,INV-01;SPM-01,good,0,1,1,SPM-01,SPM-03,Penny-stock alert for a broadband-over-power-line company with an ad disclaimer and a call to ring a broker.
+meajor_test_93739,1.7,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Replica watch store advert promising 90% savings.
+meajor_test_81440,1.7,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Adult-site advert with explicit subject over filler text and a link to the site.
+meajor_test_45007,1.7,STR-01;URG-01;GEN-01,partial,STR-01;GEN-01,partial,0,1,1,,URG-01,Bank officer proposes the reader pose as next of kin to a dead client's deposit for a 70/30 split.
+meajor_test_4317,1.12,SPM-03;LNK-02,partial,SPM-03;BRD-03;LNK-02,partial,0,1,1,BRD-03,,Loan advert saying bad credit does not matter and asking the reader to follow a link to process an application.
+meajor_test_39593,1.7,MED-01;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,0,1,1,MED-02,,"Garbled online-pharmacy advert for Viagra, Cialis and Valium at up to 70% off, mixed with news filler."
+meajor_test_76987,1.12,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Replica watch store advert offering 25% off for two watches.
+meajor_test_64815,1.13,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Subject offers pre-qualification over a junk body with a site link.
+meajor_test_26984,1.10,,none,,none,1,1,1,,,A signature block of an executive with the subject 'option price sheet' and no request.
+meajor_test_67147,1.12,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,Stock alert for a broadband-over-power-line company with an ad disclaimer and a 'trade smart and win' call.
+meajor_test_85863,1.8,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Weight-loss testimonial claiming 30 pounds lost with an unnamed product and a link.
+meajor_test_95405,1.12,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Penis enlargement pill advert claiming 3+ inches, permanent results and a money-back guarantee."
+meajor_test_83335,1.11,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject offers inexpensive medications shipped worldwide; body holds only a link.
+meajor_test_32467,1.9,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Garbled pharmacy advert for ED drugs and others at up to 80% off with an order link.
+meajor_test_78586,1.11,MED-01;SPM-01,partial,MED-01;SPM-01,partial,1,1,1,,,Subject offers medications at 70% off over a religious sermon body with no link.
+meajor_test_39974,1.11,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Personal-style note about a lonely woman's webpage asking the reader to verify age at a link.
+meajor_test_55338,1.10,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,"Casino advert promising fortunes, free bonus and a download link."
+meajor_test_41132,1.13,ADV-01;BRD-03;URG-01;GEN-01,good,ADV-01;BRD-03;URG-01;GEN-01,good,1,1,1,,,Email lottery winning notice with a payout and instructions to contact an agent within a deadline.
+meajor_test_721,1.11,SPM-03;LNK-01;URG-01;SPM-02,partial,SPM-03;LNK-01;URG-01;SPM-02,partial,1,1,1,,,Academic software store advert listing Office and Norton titles at 80-92% off with instant download.
+meajor_test_68205,1.7,MED-01;LNK-01;URG-01;SPM-03,partial,MED-01;LNK-01;URG-01;SPM-03,partial,1,1,1,,,"Advert for enlargement patches whose size and drive go 'through the roof', offered for a limited time only."
+meajor_test_40689,1.10,MED-01;LNK-01;SPM-03;SPM-02,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,1,1,1,,,"Advert for a penis-stretching device claiming permanent length gains and curvature correction, with a stop-mail form."
+meajor_test_100514,1.8,STR-01;GEN-01,partial,STR-01;GEN-01,good,1,1,0,,,Young woman asks the reader to email her to chat and see her pictures.
+meajor_test_21886,1.8,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Vacation package newsletter with ski and resort discounts and an unsubscribe note.
+meajor_test_85983,1.5,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Advert for a penis enlargement product that adds length and girth.
+meajor_test_51668,1.11,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Replica IWC and other watches advertised from a low price.
+meajor_test_36466,1.12,INV-01;SPM-01;SPM-02,good,INV-01;SPM-01;SPM-02,good,1,1,1,,,"VOIP penny-stock promotion saying gains of 100-200% are not unheard of, with paid-promotion disclosure and a stop-mailings note."
+meajor_test_19909,1.7,,none,,none,1,1,1,,,"Garbled subject, token-only body, and truncated encoded links."
+meajor_test_4797,1.5,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Replica watches for men and ladies from a low price via a special link.
+meajor_test_39216,1.10,MED-01;LNK-01;SPM-03;SPM-02,good,MED-01;LNK-01;SPM-03;SPM-02,good,1,1,1,,,Obfuscated hydrocodone price list posing as a 'pain specialist' appointment follow-up with a link.
+meajor_test_72208,1.10,MED-01;SPM-01,partial,MED-01;SPM-01,partial,1,1,1,,,Subject touts generic Cialis over a religious sermon body with no link.
+meajor_test_86498,1.8,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;LNK-01;SPM-03,good,0,1,1,,MED-02,"Letter warning that only one of 53 web drugstores sells true generics, under a Viagra subject, with a link."
+meajor_test_5943,1.5,MED-01;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,0,1,1,MED-02,,"Obfuscated online drug shop listing Viagra, Ambien and Cialis prices with same-day shipping."
+meajor_test_76653,1.9,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Online drugstore pitch about cheap Canadian drugs that invites the reader to buy.
+meajor_test_96340,1.8,SPM-03;BRD-03;LNK-02;URG-01,partial,SPM-03;BRD-03;LNK-02;URG-01,partial,1,1,1,,,"Loan advert titled as an accepted application, saying credit does not matter, with a form and an expiring deal."
+meajor_test_36904,1.9,,none,,none,1,1,1,,,Garbled symbols and tokens with one DVD site link.
+meajor_test_61764,1.8,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,"Casino network advert with bonus and 85 games, 'satisfaction is guaranteed'."
+meajor_test_56674,1.8,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,Shop selling ED drugs at 100mg with prices and a visit link.
+meajor_test_4171,1.12,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,partial,1,1,0,,,Subject sells vicidon at special prices over a body that only has a link.
+meajor_test_41504,1.10,,none,,none,1,1,1,,,Random words under the subject 'it's not a joke'.
+meajor_test_38579,1.7,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Obfuscated advert for 150 hot-selling meds shipped worldwide with a click-to-order link.
+meajor_test_85725,1.10,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,Online pharmacy spam listing many pills 'as low as' a price with 'certified' shipping to all countries and a buy-now link.
+meajor_test_103489,1.6,SPM-01,partial,SPM-01,partial,1,1,1,,,Generic cheapest-prices shop advert with masked product followed by unrelated German news headlines.
+meajor_test_87576,1.5,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,"Pharmacy spam for sexual-performance drugs claiming legal, licensed products at lowest prices, followed by transliterated Russian filler."
+meajor_test_67723,1.13,INV-01;URG-01;SPM-01,good,INV-01;URG-01;SPM-01,good,1,1,1,,,"Penny-stock alert for a broadband-over-power-line company calling it a sector to be in, with a call to broker and risk disclaimers."
+meajor_test_42707,1.9,INV-01;SPM-03;SPM-02,good,INV-01;SPM-03;SPM-02,good,1,1,1,,,Stock alert styled as a press release for a foamed-aluminum company with short and 12-month target prices and a 'next hot pick' call.
+meajor_test_77330,1.8,,none,,none,1,1,1,,,Subject asks if you contacted the sender on MSN over a body of random word salad.
+meajor_test_37821,1.7,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Garbled advert tagged 'adv-epson' with image links to Taiwanese sites.
+meajor_test_62585,1.9,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,"Bulk advert inviting the reader to book travel in spare time, with opt-out address."
+meajor_test_56615,1.7,ADV-01;BRD-03;URG-01;GEN-01,good,ADV-01;BRD-03;URG-01;GEN-01,good,1,1,1,,,Lottery notice saying the email address won an award and must contact an agent with full details.
+meajor_test_70965,1.7,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,"Stock alert calling a ticker a very aggressive buy that is going to explode, with a call to broker."
+meajor_test_7198,1.10,STR-01;GEN-01,partial,STR-01;GEN-01,partial,1,1,1,,,Former presidential aide offers 30 percent of a hidden 15 million dollar fund if the reader helps claim and invest it.
+meajor_test_33103,1.12,SPM-01;LNK-01;URG-01;SPM-02,partial,SPM-01;LNK-01;URG-01;SPM-02,partial,1,1,1,,,Online bookstore newsletter promoting book categories and a 40 percent off sale ending soon.
+meajor_test_28568,1.5,STR-01;GEN-01,partial,STR-01;URG-01;GEN-01,partial,0,1,1,URG-01,,Officials of a petroleum committee propose moving 21.5 million dollars through the reader's account for a share.
+meajor_test_221,1.8,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Cheap software advert claiming 2-10 times lower prices than competitors with special offers and a removal link.
+meajor_test_93952,1.12,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,Price list of pill packages (50 and 100 mg) with savings figures and a link.
+meajor_test_47682,1.13,,none,,none,1,1,1,,,Subject 'ad' over emoji-only body with a tracking link.
+meajor_test_7755,1.8,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,Obfuscated Cialis-style ED pill advert promising a hard erection with info-site links.
+meajor_test_69266,1.13,STR-01;LNK-01;GEN-01,good,SPM-03;LNK-01,partial,0,0,0,SPM-03,GEN-01;STR-01,"Woman's personal-style note inviting the reader to a relationship, with a dating-site link."
+meajor_test_932,1.6,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;LNK-01;SPM-01,good,0,1,1,,SPM-02,"Obfuscated list of cheap meds such as Viagra, Valium and Xanax with a link and 'no removal required' remark."
+meajor_test_81565,1.11,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,OEM software advert promising 75-90 percent savings with price lists and links.
+meajor_test_65360,1.13,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,Online pharmacy advert warning about fake medications and urging purchase of its own generics.
+meajor_test_44981,1.8,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Advert for a Mexican guest house offering a discounted nightly rate to those who mention the ad.
+meajor_test_4913,1.11,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Subject offers 66 percent off Vicodin over a body of random words and contact tokens.
+meajor_test_70116,1.11,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Subject offers a credit card for people with less than perfect credit over a body of image junk.
+meajor_test_1852,1.12,,none,,none,1,1,1,,,Garbled subject and emoji body with only a form link.
+meajor_test_79081,1.6,SPM-03;LNK-01;URG-01,partial,SPM-03;LNK-01;URG-01,partial,1,1,1,,,Advert for replica gift items and brand pens with a big discount if the reader hurries.
+meajor_test_90861,1.8,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Diet pill advert offering an appetite suppressant that burns fat and helps lose weight fast.
+meajor_test_914,1.11,ADV-01;BRD-03;URG-01;GEN-01,good,ADV-01;BRD-03;URG-01;GEN-01,good,1,1,1,,,Lottery winner notice for a one million dollar payout with a claim deadline and legal fees for the winner.
+meajor_test_4445,1.9,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Replica watches for men and ladies from a low price with a promotional link.
+meajor_test_91250,1.8,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Male enhancement product advert quoting testimonials about girth, length and libido and a free sample."
+meajor_test_19512,1.12,,none,,none,1,1,1,,,Garbled subject over random letter body with tracking links.
+meajor_test_6678,1.9,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,"Online drug shop spam for Ambien, Cialis, Viagra and others with a 'you pay and we ship' offer."
+meajor_test_41161,1.10,MED-01;LNK-01;SPM-03;SPM-02,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,1,1,1,,,Slogan saying your woman needs an 8 inch man with a learn-how link and notification opt-out.
+meajor_test_336,1.6,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Cheap PC games and software with 'my price versus normal' comparison and a site link.
+meajor_test_68950,1.11,MED-01;LNK-01;URG-01;SPM-03,partial,MED-01;LNK-01;URG-01;SPM-03,partial,1,1,1,,,"Enhancement patch advert claiming size and drive go through the roof, for a limited time only."
+meajor_test_29763,1.9,,none,,none,1,1,1,,,Garbled subject and random letters with a bare-IP form link.
+meajor_test_91674,1.13,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Online drug store advert promising half-price pharmaceuticals shipped worldwide.
+meajor_test_94848,1.6,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,OEM software advert promising 75-90 percent savings with top-item price lists.
+meajor_test_75830,1.5,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,"Online pharmacy offering meds per dose, 'you pay and we ship, no question asked', with a doctor-founded claim."
+meajor_test_30635,1.10,STR-01;BRD-03;GEN-01,partial,STR-01;BRD-03;GEN-01,partial,1,1,1,,,"Civil servants ask a foreigner to receive and share a large transfer, requesting names, address and phone/fax."
+meajor_test_90041,1.13,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,Canadian online drug source announcing a discount to a valued member.
+meajor_test_3605,1.13,,none,,none,1,1,1,,,Garbled subject and random letters with image links.
+meajor_test_1417,1.12,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,German adult webcam link list wishing happy new year with an unsubscribe line.
+meajor_test_39056,1.10,SPM-01;LNK-01,partial,SPM-03;LNK-01,partial,0,0,1,SPM-03,SPM-01,Fashion store advert posing as a friendly 'take a look at this' note.
+meajor_test_88338,1.7,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for over 1000 branded watches from a Swiss retailer 'from' a low price.
+meajor_test_102299,1.9,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,Weight-loss product advert with testimonials promising slimness with no great effort.
+meajor_test_8651,1.8,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Advert for meeting 'sexy wives' online with an opt-out link.
+meajor_test_45452,1.13,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;LNK-01;SPM-01;SPM-02,good,1,1,1,,,"ED pill advert with no prescription, per-dose prices and an unsubscribe link."
+meajor_test_79766,1.13,INV-01;SPM-01,partial,INV-01;SPM-01,good,1,1,0,,,"Stock tip for an oil and gas company hidden inside literary text, urging readers to check the deal."
+meajor_test_44018,1.12,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Cheap software advert at 2-6 times below retail with a preferences link.
+meajor_test_97110,1.7,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,Price list of pills in several strengths with per-pill prices and a link to buy.
+meajor_test_30716,1.7,MED-01;LNK-01;SPM-01,good,MED-01;LNK-01;SPM-01,good,1,1,1,,,"Obfuscated spam offering cheap viagra/cialis style medications up to 75% off, hidden in literary filler."
+meajor_test_16749,1.10,,none,,none,1,1,1,,,A forwarded humorous chain message about menopausal women fighting terrorists.
+meajor_test_52232,1.10,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,"Spaced-out drug names (viagra, cialis, levitra style) with a link, followed by novel filler text."
+meajor_test_6175,1.11,,none,,none,1,1,1,,,Meaningless word salad with a phone/email placeholder line.
+meajor_test_42666,1.7,,none,,none,1,1,1,,,Unreadable symbols and gibberish with only image and form links on a loan domain.
+meajor_test_34534,1.8,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,"An online medical store advert listing treatments including erection dysfunction and inviting orders, padded with fairy-tale text."
+meajor_test_87532,1.13,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,A retailer html advert for a memorial day weekend sale with many tracking and image links.
+meajor_test_2569,1.8,MED-01;LNK-01;URG-01;SPM-03,partial,MED-01;LNK-01;URG-01;SPM-03;SPM-02,partial,0,1,1,SPM-02,,"Obfuscated advert for a penis enlargement product promising 3 inches or money back, plus enlargement patches."
+meajor_test_142,1.6,,none,,none,1,1,1,,,Unreadable Korean-encoded text with image and event-page links.
+meajor_test_71148,1.13,MED-01;MED-02;LNK-01;SPM-03,good,MED-01;MED-02;LNK-01;SPM-03,good,1,1,1,,,"Advert posing as advice on saving money with licensed Canadian web pharmacies, pointing the reader to its own shop."
+meajor_test_74577,1.6,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,A solicitation for a free one-year membership whose body is only opt-in and postal-address boilerplate.
+meajor_test_31296,1.12,SPM-03;LNK-01,partial,SPM-03;LNK-01;SPM-02,partial,0,1,1,SPM-02,,"Bulk advert for an automated online system promising a six-figure income from home, with fairy-tale filler."
+meajor_test_4506,1.8,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,Advert for authentic-sounding replica Rolex and other brand wristwatches.
+meajor_test_87021,1.12,,none,,none,1,1,1,,,Meaningless word salad under a forwarded-referral subject.
+meajor_test_91666,1.10,MED-01;LNK-01;SPM-03;SPM-02,partial,MED-01;LNK-01;SPM-03;SPM-02,partial,1,1,1,,,Advert for a penis-size product recommended by a 'male protection organization' with a 6+3 bottle discount and order link.
+meajor_test_44667,1.9,,none,,none,1,1,1,,,Html shell with unreadable Korean text and image links.
+meajor_test_64327,1.6,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Advert for a free fabric softener sample giveaway that needs a survey and sponsor offers.
+meajor_test_22672,1.5,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Spam selling popular software titles as 2-10 times cheaper than competitors.
+meajor_test_103546,1.7,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,"Drug-shop advert with huge summer discounts, cheapest prices on quality drugs and an order link."
+meajor_test_32277,1.11,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Invitation to join a survey panel for a chance to win cash prizes.
+meajor_test_99286,1.8,,none,,none,1,1,1,,,Word salad of unrelated technical and literary sentences.
+meajor_test_47224,1.12,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Spaced-out viagra/cialis style drug names with a link over fantasy-novel filler.
+meajor_test_43302,1.12,,none,,none,1,1,1,,,Unreadable Korean-encoded text with image and form links.
+meajor_test_82563,1.11,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Advert for discounted Canadian-sourced drugs with an order-now click link.
+meajor_test_67496,1.11,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,"Vague advert for health 'preparations' for real men and a click link, mixed with parenting text."
+meajor_test_82810,1.10,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Herbal impotence remedy advert claiming it makes the user's organ a scarf, with a link."
+meajor_test_65294,1.8,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,"Online drug store advert with up to 85% off, free shipping and no prescriptions."
+meajor_test_64631,1.8,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,Vague advert urging use of 'preparations' for health problems with a click link.
+meajor_test_41339,1.10,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,Short advert for a children's computer and art product with an online photo album link.
+meajor_test_89460,1.11,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Credit-card offer for people with no or bad credit plus rewards-program sweepstakes boilerplate.
+meajor_test_66044,1.11,JOB-01;LNK-01,partial,JOB-01;LNK-01,partial,1,1,1,,,"Subject announces new company vacancies over a body of placeholder tokens, with a vacancy link."
+meajor_test_41987,1.13,MED-01;LNK-01;SPM-01;SPM-02,good,MED-01;LNK-01;SPM-01;SPM-02,good,1,1,1,,,"Advert for a fast-acting erection pill, no prescription asked, with a stop-mailings link."
+meajor_test_82231,1.7,INV-01;SPM-01,good,INV-01;SPM-01,good,1,1,1,,,"Penny stock alert with target price and 'strong buy', telling the reader to call a broker."
+meajor_test_41239,1.9,SPM-03;LNK-01;URG-01,partial,SPM-03;LNK-01;URG-01,partial,1,1,1,,,Software bundles at low prices disguised under a 'system alert / confirm your account' subject.
+meajor_test_31393,1.12,SPM-03;LNK-01;SPM-02,partial,SPM-03;LNK-01;SPM-02,partial,1,1,1,,,Spam selling popular software titles 2-6 times cheaper than retail.
+meajor_test_90097,1.13,MED-01;LNK-01;SPM-03,partial,MED-01;LNK-01;SPM-03,partial,1,1,1,,,"Advert for a homoeopathic preparation said to extend the male organ, with a site link."
+meajor_test_93110,1.5,SPM-03,partial,SPM-03,partial,1,1,1,,,Personal-style note boasting daily earnings and asking the reader to call to learn how.
+meajor_test_5082,1.10,,none,,none,1,1,1,,,Unreadable Korean-encoded subject with gibberish body and image links.
+meajor_test_928,1.10,SPM-03;LNK-01,partial,SPM-03;LNK-01,partial,1,1,1,,,"Spam selling cheap popular software with 'my price, normal, you save' comparisons."
+meajor_test_18582,1.11,SPM-01;LNK-01,partial,SPM-01;LNK-01,partial,1,1,1,,,Subject offers a free plasma TV while the body is a poem and gibberish; links lead to a plasma offer page.
+meajor_test_35364,1.10,INV-01;SPM-01;SPM-02,good,INV-01;SPM-01;SPM-02,good,1,1,1,,,"Penny stock report on a Chinese pharmaceutical exporter, with paid-promotion disclosure and a call to watch it trade."
+meajor_test_42472,1.8,MED-01;LNK-01;SPM-01,partial,MED-01;LNK-01;SPM-01,partial,1,1,1,,,"Teaser about buying drugs online so one can have sex whenever wanted, with a link."
+meajor_test_99804,1.8,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,Advert for cheap drugs at 50% off with fast delivery and no counterfeits.
+meajor_test_38663,1.8,MED-01;MED-02;LNK-01;SPM-01,good,MED-01;MED-02;LNK-01;SPM-01,good,1,1,1,,,"Online drug store advert for pain relief, no prescription needed, secure ordering."
+meajor_test_37141,1.9,,none,,none,1,1,1,,,Meaningless word salad with contact placeholders.
+meajor_test_27588,1.11,SPM-01;LNK-01;SPM-02,partial,SPM-01;LNK-01;SPM-02,partial,1,1,1,,,"Advert for finding an online school, with category links and opt-out wording."

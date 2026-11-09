@@ -1,0 +1,20 @@
+{
+  // ค่า: path ของ config vector database; ผล: เลือกโมเดล embedding และ collection ที่ใช้ค้น (เปลี่ยนชั่วคราวได้ด้วย --vector-config)
+  "vector_config": "part2/vector_database/config_vector_database.json",
+  // ค่า: ข้อความใดก็ได้ รวมถึง ""; ผล: ข้อความที่เติมหน้าอีเมลทุกฉบับก่อน embed; "" = ใช้เนื้ออีเมลอย่างเดียว (ค่าหลัก) ข้อความยาวเหมือนกันทุกฉบับจะดึงทุกอีเมลไปหา chunk ทั่วไป
+  "action_plan_query": "",
+  // ค่า: จำนวนเต็ม ≥ 1; ผล: จำนวน chunk ที่ดึงต่ออีเมล = k ของ Recall@k และ nDCG@k; 5 = จำนวน chunk สูงสุดในเฉลย
+  "top_k": 5,
+  // ค่า: จำนวนเต็ม ≥ 0 (0 = ไม่ตัด); ผล: ตัด subject+body ก่อน embed; input ถูกตัดที่ BODY_CAP แล้ว จึงใช้ 0
+  "max_email_chars": 0,
+  // ค่า: จำนวนเต็ม ≥ 0; ผล: จำนวน URL แรกที่ต่อท้ายข้อความค้น (0 = ไม่ใช้ URL)
+  "max_urls": 3,
+  // ค่า: dev, test, fold1–fold10, calibration_100, pilot_200, all; ผล: ชุดอีเมลที่ค้นและวัด; ปรับค่าบน dev เท่านั้น แล้วรายงานผลบน fold1 (ชุดทดสอบหลัก)
+  "eval_set": "dev",
+  // ค่า: path; ผล: อีเมลที่ตัดความยาวแล้ว (ชุดเดียวกับที่ใช้ติดป้าย)
+  "input_file": "part2/labels/model_input.jsonl",
+  // ค่า: path; ผล: เฉลย chunk ต่ออีเมล (สร้างด้วย part2/labels/build_gold.py)
+  "gold_file": "part2/labels/gold.csv",
+  // ค่า: path; ผล: ไฟล์ผลรายอีเมล; summary_RAG.json ถูกเขียนข้างกันโดยอัตโนมัติ
+  "result_file": "part2/RAG/result_RAG.json"
+}

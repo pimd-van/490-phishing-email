@@ -1,0 +1,26 @@
+{
+  "computed_at": "2026-10-25",
+  "n_rows": 6973,
+  "low_confidence": false,
+  "policy": {
+    "body_trunc_share": 0.01,
+    "url_loss_share": 0.05,
+    "body_floor": 2000,
+    "body_ceiling": 20000,
+    "body_round": 500,
+    "url_floor": 5,
+    "url_ceiling": 50,
+    "url_chars": 200
+  },
+  "BODY_CAP": 6500,
+  "URL_CAP": 10,
+  "stats": {
+    "body_len_max": 32759,
+    "body_len_p99": 6253,
+    "rows_body_over_cap": 43,
+    "unique_urls_max": 166,
+    "unique_urls_cap_raw": 10,
+    "rows_urls_over_cap": 340
+  },
+  "input_sha256": "4591f469e256bc75dcdb9abae9715d0693e939e815a3a921bcb9507a0c1bc441"
+}

@@ -1,0 +1,28 @@
+{
+  // ค่า: ชื่อโมเดล SentenceTransformer; ผล: เปลี่ยน embedding ของเอกสารและ query; ต้องสร้าง Chroma และรัน RAG ใหม่. BGE-M3 อ่านได้ 8,192 tokens และรองรับหลายภาษา (อีเมลยาวได้ ~1,500 tokens และมี 327 แถวไม่ใช่ภาษาอังกฤษ)
+  "embedding_model": "BAAI/bge-m3",
+  // ค่า: ข้อความใดก็ได้ รวมถึง ""; ผล: เติมหน้า query เท่านั้น; BGE-M3 ไม่ต้องใช้ prefix จึงเป็น ""; โมเดล bge-large-en-v1.5 ใช้ prefix (ดู config_vector_database_bge_large.json)
+  "query_prefix": "",
+  // ค่า: ชื่อ Chroma ยาว 3–512 ตัวอักษร; ผล: เปลี่ยน collection ที่สร้างและอ่าน; แต่ละ config ทดลองใช้ชื่อไม่ซ้ำกันจึงอยู่ใน .chroma เดียวกันได้
+  "collection_name": "phishing_kb20_bge_m3",
+  // ค่า: "file_stem" หรือ "letter"; ผล: file_stem = 1 ไฟล์ = 1 chunk และ ID = ชื่อไฟล์ (BRD-01) ให้ตรงกับเฉลย; letter = แบบเดิม (a1, a2)
+  "id_mode": "file_stem",
+  // ค่า: path ของ sources.json; ผล: ต้องมีรายการของทุกไฟล์ใน document_dir
+  "sources_file": "part2/vector_database/sources.json",
+  // ค่า: จำนวนเต็มบวก; ผล: ใช้แบ่งเอกสารยาว ในโหมด file_stem ทุก chunk สั้นกว่า 150 tokens จึงไม่ถูกแบ่ง
+  "chunk_size_tokens": 400,
+  // ค่า: 0 ถึง chunk_size_tokens-1; ผล: ข้อความซ้ำตรงรอยต่อ (ไม่มีผลในโหมด file_stem)
+  "chunk_overlap_tokens": 60,
+  // ค่า: จำนวนเต็มบวก; ผล: มากขึ้นเร็วขึ้นแต่ใช้หน่วยความจำมากขึ้น ทั้งตอนสร้างฐานและตอน RAG
+  "embedding_batch_size": 16,
+  // ค่า: 0 (ใช้ค่าของโมเดล) หรือจำนวนเต็มบวก; ผล: ความยาวสูงสุดของข้อความที่ embed (ทั้ง chunk และอีเมล); 2048 พออ่านอีเมลที่ตัดแล้วทั้งฉบับและเร็วกว่า 8192 มาก
+  "max_seq_length": 2048,
+  // ค่า: path โฟลเดอร์ที่มีไฟล์ .md/.txt ชั้นบน; ผล: เปลี่ยนเอกสารที่นำเข้า
+  "document_dir": "part2/vector_database/document",
+  // ค่า: path โฟลเดอร์; ผล: ตำแหน่ง Chroma ที่ RAG และ LLM อ่านร่วมกัน
+  "database_dir": "part2/RAG/.chroma",
+  // ค่า: path ไฟล์ผล; ผล: รายการ chunk_id, token, content ที่สร้าง
+  "result_file": "part2/vector_database/result_vector_database.json",
+  // ค่า: "" หรือ path ของ mapping ID; ผล: ใช้เฉพาะ KB ทดลองที่ ID ไม่ตรงกับเฉลย 20 chunk
+  "gold_id_map": ""
+}

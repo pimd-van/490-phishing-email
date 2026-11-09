@@ -1,0 +1,323 @@
+{
+  "schema_version": "2.0",
+  "updated": "2026-10-24",
+  "kb_version": "20 chunks, rules v1.5",
+  "licence_read_date": "2026-10-24",
+  "sources": [
+    {
+      "source_id": "S01",
+      "title": "How to Recognize and Avoid Phishing Scams",
+      "publisher": "US Federal Trade Commission (consumer.ftc.gov)",
+      "organization_type": "US government regulator",
+      "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+      "url_verified": true,
+      "page_date": "published 2019-05-03; modified 2024-10-11",
+      "accessed": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+      "language": "en",
+      "chunks_primary": [
+        "BRD-01",
+        "AFT-01"
+      ],
+      "chunks_secondary": [
+        "LNK-02",
+        "GEN-01"
+      ],
+      "gold_rows_using_any_chunk": 10,
+      "license": {
+        "license_type": "US federal government work; public domain for most website material",
+        "policy_url": "https://www.ftc.gov/policy-notices/website-policy",
+        "attribution": "Requested where feasible",
+        "risk": "low",
+        "caveat": "Policy page does not name consumer.ftc.gov explicitly; third-party content excluded"
+      },
+      "license_note": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+      "why_credible": "US consumer-protection regulator; page published 2019-05-03, modified 2024-10-11",
+      "impact_evidence": "FTC 2024 data: imposter scams were the most reported category ([FTC, Mar 2025](https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024)). FBI IC3 2024: about 193,000 phishing complaints, out of about 860,000 complaints and over $16 billion in losses ([Axios, 23 Apr 2025](https://axios.com/2025/04/23/fbi-internet-crime-loss-record-high-2024), secondary report)",
+      "weaknesses": "US-centric. The page has no content on spam marking, prizes or money-transfer requests (checked)"
+    },
+    {
+      "source_id": "S02",
+      "title": "Phishing (Small Business Cybersecurity Corner)",
+      "publisher": "NIST",
+      "organization_type": "US government standards agency",
+      "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+      "url_verified": true,
+      "page_date": "published 2021-10-22; updated 2025-08-19",
+      "accessed": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+      "language": "en",
+      "chunks_primary": [
+        "BRD-03",
+        "GEN-02"
+      ],
+      "chunks_secondary": [
+        "SPM-02",
+        "URG-01"
+      ],
+      "gold_rows_using_any_chunk": 27,
+      "license": {
+        "license_type": "Public information unless marked as copyrighted",
+        "policy_url": "https://www.nist.gov/oism/copyrights",
+        "attribution": "Credit requested",
+        "risk": "low",
+        "caveat": "Check the page carries no copyright marking"
+      },
+      "license_note": "NIST site policy (nist.gov/oism/copyrights, read 2026-10-24): information on NIST sites is public information except material marked as copyrighted; credit requested. Paraphrased, not copied.",
+      "why_credible": "US federal standards agency; page 2021-10-22, updated 2025-08-19",
+      "impact_evidence": "Verizon DBIR 2025: phishing was 16% of breaches and the third most common initial-access vector; about 60% of breaches involve the human element ([HIPAA Journal summary](https://www.hipaajournal.com/verizon-dbir-2025/))",
+      "weaknesses": "Aimed at small businesses; reuse terms not verified; the statistic is from a third party"
+    },
+    {
+      "source_id": "S03",
+      "title": "Protect yourself from phishing",
+      "publisher": "Microsoft Support",
+      "organization_type": "Commercial platform vendor",
+      "url": "https://support.microsoft.com/en-us/security/protect-yourself-from-phishing",
+      "url_verified": true,
+      "page_date": "last updated 2026-09-11 (as seen)",
+      "accessed": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+      "language": "en",
+      "chunks_primary": [
+        "BRD-02",
+        "LNK-01",
+        "ATT-01",
+        "URG-01",
+        "AFT-02"
+      ],
+      "chunks_secondary": [],
+      "gold_rows_using_any_chunk": 67,
+      "license": {
+        "license_type": "(c) Microsoft; Terms of use allow personal, non-commercial use of Documents without modification",
+        "policy_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+        "attribution": "Keep the (c) Microsoft notice with the citation",
+        "risk": "medium",
+        "caveat": "support.microsoft.com not named in the terms; chunks are paraphrases; author decided to keep the source; confirm with the advisor before publishing"
+      },
+      "license_note": "(c) Microsoft. Terms of use (microsoft.com/en-us/legal/terms-of-use, read 2026-10-24) allow personal, non-commercial use of Documents without modification and do not name support.microsoft.com. Copyright risk judged medium. Chunks are paraphrases, not copied. Author decided on 2026-10-24 to keep this source. Confirm with the advisor before publishing the KB.",
+      "why_credible": "Operator of a very large email platform; page updated 2026-09-11",
+      "impact_evidence": "Kaspersky blocked over 893 million phishing attempts in 2024, up 26% from about 710 million, often impersonating well-known brands ([Kaspersky, 19 Feb 2025](https://www.kaspersky.com/about/press-releases/2025_kaspersky-reports-nearly-900-million-phishing-attempts-in-2024-as-cyber-threats-increase)). This supports brand impersonation in general; no Microsoft-specific statistic was found",
+      "weaknesses": "Commercial vendor; copyright terms unverified; keep chunks paraphrased"
+    },
+    {
+      "source_id": "S04",
+      "title": "Phishing: spot and report scam emails, texts, websites and calls",
+      "publisher": "UK NCSC",
+      "organization_type": "UK government cyber agency",
+      "url": "https://www.ncsc.gov.uk/collection/phishing-scams",
+      "url_verified": true,
+      "page_date": "no date shown",
+      "accessed": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+      "language": "en",
+      "chunks_primary": [
+        "LNK-02",
+        "GEN-01"
+      ],
+      "chunks_secondary": [
+        "AFT-01"
+      ],
+      "gold_rows_using_any_chunk": 10,
+      "license": {
+        "license_type": "Crown copyright under Open Government Licence v3.0",
+        "policy_url": "https://www.ncsc.gov.uk/terms-and-conditions",
+        "attribution": "Required: acknowledge the source and link to the OGL (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)",
+        "risk": "low",
+        "caveat": "Third-party images and logos excluded"
+      },
+      "license_note": "Crown copyright; reuse under Open Government Licence v3.0 (ncsc.gov.uk/terms-and-conditions, read 2026-10-24). Acknowledge the source and link to the OGL (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). Third-party images and logos excluded. Companion page: https://www.ncsc.gov.uk/section/respond-recover/phishing",
+      "why_credible": "UK government cyber agency; content under Open Government Licence v3.0 (verified)",
+      "impact_evidence": "NCSC's Suspicious Email Reporting Service had over 10.5 million reports and 76,000 scams taken down by March 2022 ([NCSC, 18 Mar 2022](https://www.ncsc.gov.uk/news/nation-of-digital-defenders-blow-the-whistle-on-over-10-million-suspect-emails))",
+      "weaknesses": "Figures are from 2022; UK reporting channels; the page was not re-read in the latest round"
+    },
+    {
+      "source_id": "S05",
+      "title": "Don't pay for a prize (scam)",
+      "publisher": "US FTC Consumer Alert",
+      "organization_type": "US government regulator",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2025/06/dont-pay-prize-scam",
+      "url_verified": true,
+      "page_date": "published 2025-06-26; modified 2025-08-14",
+      "accessed": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+      "language": "en",
+      "chunks_primary": [
+        "ADV-01"
+      ],
+      "chunks_secondary": [],
+      "gold_rows_using_any_chunk": 3,
+      "license": {
+        "license_type": "US federal government work; public domain for most website material",
+        "policy_url": "https://www.ftc.gov/policy-notices/website-policy",
+        "attribution": "Requested where feasible",
+        "risk": "low",
+        "caveat": "Policy page does not name consumer.ftc.gov explicitly; third-party content excluded"
+      },
+      "license_note": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+      "why_credible": "Same regulator as S01; page 2025-06-26, modified 2025-08-14",
+      "impact_evidence": "A 2021 trade report said losses to sweepstakes, lottery and prize scams were rising per FTC data, with no amounts in the excerpt I could read ([MLex, 2 Mar 2021](https://www.mlexwatch.com/ftcwatch/amp/articles/1802177)). No current loss figure was found",
+      "weaknesses": "Weakest evidence of the set; prize scams are not a top FTC category in the 2024 release"
+    },
+    {
+      "source_id": "S06",
+      "title": "Navigating the world of online pharmacies (Q&A)",
+      "publisher": "US FDA",
+      "organization_type": "US government regulator",
+      "url": "https://www.fda.gov/drugs/news-events-human-drugs/navigating-world-online-pharmacies-cdr-lysette-deshields",
+      "url_verified": true,
+      "page_date": "no date shown",
+      "accessed": "2026-10-23 or 2026-10-24 (licence read 2026-10-24)",
+      "language": "en",
+      "chunks_primary": [
+        "MED-01",
+        "MED-02"
+      ],
+      "chunks_secondary": [],
+      "gold_rows_using_any_chunk": 31,
+      "license": {
+        "license_type": "Not copyrighted; public domain unless otherwise noted",
+        "policy_url": "https://www.fda.gov/about-fda/about-website/website-policies",
+        "attribution": "Not required by the policy as read; cite the page",
+        "risk": "low",
+        "caveat": "Check the page has no third-party material"
+      },
+      "license_note": "FDA website policies (fda.gov/about-fda/about-website/website-policies, read 2026-10-24): content is not copyrighted and is in the public domain unless otherwise noted. Paraphrased.",
+      "why_credible": "US drug regulator",
+      "impact_evidence": "USTR 2024 Notorious Markets report as reported by CBS (9 Jan 2025): of about 35,000 online pharmacies, 96% broke the law and about 20 new illegal sites appear daily ([CBS News](https://www.cbsnews.com/amp/texas/news/online-pharmacies-illegal-selling-ineffective-drugs); the USTR report itself was not opened). Historically, pharmaceutical spam was about 59.1% of all spam in Jan 2011 and up to 85% in May 2010 ([Dark Reading on MessageLabs](https://www.darkreading.com/cyber-risk/symantec-low-spam-levels-a-result-of-shifts-in-botnets-pharmaceutical-spam-gangs))",
+      "weaknesses": "Justified by health-safety risk and distinct official guidance, not by current frequency: the FTC 2024 category list does not mention pharmacy. Spam figures are old"
+    },
+    {
+      "source_id": "S07",
+      "title": "How To Get Less Spam in Your Email",
+      "publisher": "US FTC",
+      "organization_type": "US government regulator",
+      "url": "https://consumer.ftc.gov/node/78364",
+      "url_verified": true,
+      "page_date": "published 2021-05-04; modified 2024-10-21",
+      "accessed": "2026-10-24",
+      "language": "en",
+      "chunks_primary": [
+        "SPM-01",
+        "SPM-02",
+        "SPM-03"
+      ],
+      "chunks_secondary": [],
+      "gold_rows_using_any_chunk": 73,
+      "license": {
+        "license_type": "US federal government work; public domain for most website material",
+        "policy_url": "https://www.ftc.gov/policy-notices/website-policy",
+        "attribution": "Requested where feasible",
+        "risk": "low",
+        "caveat": "Policy page does not name consumer.ftc.gov explicitly; third-party content excluded"
+      },
+      "license_note": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+      "why_credible": "Same regulator as S01; page 2021-05-04, modified 2024-10-21",
+      "impact_evidence": "Kaspersky: spam was 47% of global email traffic in corporate mailboxes in 2024 (+1.27 points), mostly unsolicited advertising and not always malicious ([Kaspersky, 19 Feb 2025](https://www.kaspersky.com/about/press-releases/2025_kaspersky-reports-nearly-900-million-phishing-attempts-in-2024-as-cyber-threats-increase))",
+      "weaknesses": "URL checked 2026-10-24: the node link resolves to this article. The page recommends unsubscribing through the email provider and does not warn about unsubscribing from unknown senders"
+    },
+    {
+      "source_id": "S08",
+      "title": "With people losing big to investment scams, learn how to spot and avoid them",
+      "publisher": "US FTC Consumer Advice",
+      "organization_type": "US government regulator",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2026/04/people-losing-big-investment-scams-learn-how-spot-and-avoid-them",
+      "url_verified": true,
+      "page_date": "published 2026-04-14 (byline 2026-04-16); modified 2026-04-16",
+      "accessed": "2026-10-24",
+      "language": "en",
+      "chunks_primary": [
+        "INV-01"
+      ],
+      "chunks_secondary": [],
+      "gold_rows_using_any_chunk": 8,
+      "license": {
+        "license_type": "US federal government work; public domain for most website material",
+        "policy_url": "https://www.ftc.gov/policy-notices/website-policy",
+        "attribution": "Requested where feasible",
+        "risk": "low",
+        "caveat": "Policy page does not name consumer.ftc.gov explicitly; third-party content excluded"
+      },
+      "license_note": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+      "why_credible": "Same regulator as S01; published 2026-04-14, modified 2026-04-16 (opened and read)",
+      "impact_evidence": "FTC reports more than $7.9 billion lost to investment scams in 2025 with a median individual loss above $10,000 (same article). FTC 2024 data ranked investment first by money lost, $5.7 billion ([FTC, Mar 2025](https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024))",
+      "weaknesses": "The article describes contact through social media, messaging apps and ads, and does not mention email or unsolicited tips, so support for email stock-tip scenarios is partial"
+    },
+    {
+      "source_id": "S09",
+      "title": "Job Scams",
+      "publisher": "US FTC Consumer Advice",
+      "organization_type": "US government regulator",
+      "url": "https://consumer.ftc.gov/articles/job-scams",
+      "url_verified": true,
+      "page_date": "published 2020-12-08; modified 2026-08-13",
+      "accessed": "2026-10-24",
+      "language": "en",
+      "chunks_primary": [
+        "JOB-01"
+      ],
+      "chunks_secondary": [],
+      "gold_rows_using_any_chunk": 5,
+      "license": {
+        "license_type": "US federal government work; public domain for most website material",
+        "policy_url": "https://www.ftc.gov/policy-notices/website-policy",
+        "attribution": "Requested where feasible",
+        "risk": "low",
+        "caveat": "Policy page does not name consumer.ftc.gov explicitly; third-party content excluded"
+      },
+      "license_note": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+      "why_credible": "Same regulator as S01; published 2020-12-08, modified 2026-08-13 (opened and read)",
+      "impact_evidence": "FTC 2024 data: business and job opportunities were the third category by money lost, $750.6 million ([FTC, Mar 2025](https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024))",
+      "weaknesses": "Covers fake checks, reshipping and pay-to-work; forwarding bank transfers is the same pattern but not stated literally"
+    },
+    {
+      "source_id": "S10",
+      "title": "What To Know About Romance Scams",
+      "publisher": "US FTC Consumer Advice",
+      "organization_type": "US government regulator",
+      "url": "https://consumer.ftc.gov/articles/what-know-about-romance-scams",
+      "url_verified": true,
+      "page_date": "no date shown (page read 2026-10-24)",
+      "accessed": "2026-10-24",
+      "language": "en",
+      "chunks_primary": [
+        "STR-01"
+      ],
+      "chunks_secondary": [],
+      "gold_rows_using_any_chunk": 2,
+      "license": {
+        "license_type": "US federal government work; public domain for most website material",
+        "policy_url": "https://www.ftc.gov/policy-notices/website-policy",
+        "attribution": "Requested where feasible",
+        "risk": "low",
+        "caveat": "Policy page does not name consumer.ftc.gov explicitly; third-party content excluded"
+      },
+      "license_note": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied.",
+      "why_credible": "US consumer-protection regulator (FTC)",
+      "impact_evidence": "FBI IC3 2025 annual report: Confidence/Romance 23,159 complaints and $929,287,469 lost; FTC reported $3.5 billion lost to imposter scams in 2025 (press release 2026-06-15). IC3 figures read through a summarizing tool; verify the table in the PDF before citing.",
+      "weaknesses": "US complaints, not email-specific, under-reported."
+    },
+    {
+      "source_id": "S11",
+      "title": "Contacted about long-lost relative's life insurance policy or an inheritance? It's a scam",
+      "publisher": "US FTC Consumer Alert",
+      "organization_type": "US government regulator",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2024/06/contacted-about-long-lost-relatives-life-insurance-policy-or-inheritance-its-scam",
+      "url_verified": true,
+      "page_date": "alert dated 2024-07-05 (page metadata: published 2024-06-06, modified 2024-09-09)",
+      "accessed": "2026-10-24",
+      "language": "en",
+      "chunks_primary": [],
+      "chunks_secondary": [
+        "STR-01"
+      ],
+      "gold_rows_using_any_chunk": 2,
+      "license": {
+        "license_type": "US federal government work; public domain for most website material",
+        "policy_url": "https://www.ftc.gov/policy-notices/website-policy",
+        "attribution": "Requested where feasible",
+        "risk": "low",
+        "caveat": "Policy page does not name consumer.ftc.gov explicitly; third-party content excluded"
+      },
+      "license_note": "US federal government work. FTC website policy (ftc.gov/policy-notices/website-policy, read 2026-10-24) says most material on its website is in the public domain; attribution requested where feasible; third-party content excluded; the policy page does not name consumer.ftc.gov explicitly. Paraphrased, not copied. The alert is about mailed letters from a fake law firm; the chunk generalises to any unsolicited message.",
+      "why_credible": "US consumer-protection regulator (FTC)",
+      "impact_evidence": "FBI IC3 2025 annual report: Advanced Fee 7,762 complaints and $155,910,852 lost (verify in the PDF before citing).",
+      "weaknesses": "The alert is about mailed letters from a fake law firm; STR-01 generalises the pattern to any unsolicited message."
+    }
+  ]
+}

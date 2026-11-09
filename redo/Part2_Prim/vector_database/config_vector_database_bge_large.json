@@ -1,0 +1,18 @@
+{
+  // การทดลองเทียบ: โมเดลเดิมของเพื่อน (อังกฤษอย่างเดียว อ่านได้ 512 tokens) กับ KB 20 chunk ชุดเดียวกัน
+  "embedding_model": "BAAI/bge-large-en-v1.5",
+  // BGE v1.5 แนะนำ prefix นี้สำหรับ query สั้น
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "collection_name": "phishing_kb20_bge_large",
+  "id_mode": "file_stem",
+  "sources_file": "part2/vector_database/sources.json",
+  "chunk_size_tokens": 400,
+  "chunk_overlap_tokens": 60,
+  "embedding_batch_size": 16,
+  // เพดานของโมเดลนี้คือ 512 tokens อีเมลที่ยาวกว่านี้ถูกตัดท้าย
+  "max_seq_length": 512,
+  "document_dir": "part2/vector_database/document",
+  "database_dir": "part2/RAG/.chroma",
+  "result_file": "part2/vector_database/result_vector_database_bge_large.json",
+  "gold_id_map": ""
+}
