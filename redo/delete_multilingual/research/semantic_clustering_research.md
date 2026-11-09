@@ -75,7 +75,7 @@
 
 | ขั้นตอน | สิ่งที่ทำ | เหตุผลจากงานวิจัย |
 |---|---|---|
-| ข้อมูล | `redo/dataset/svm_handoff.csv` 6,995 อีเมล | ชุดที่ Linear SVM ทำนายว่าเป็น phishing |
+| ข้อมูล | `redo/delete_multilingual/dataset/svm_handoff.csv` 6,995 อีเมล | ชุดที่ Linear SVM ทำนายว่าเป็น phishing |
 | ข้อความ | `Subject: ...\nBody: ...` แทน URL ด้วย `token_url` | ไม่ให้ URL สุ่มทำให้อีเมลธีมเดียวกันห่างกัน |
 | Embedding | BAAI/bge-m3, dense, normalize, ยาวสุด 2,048 tokens | ใช้ใน Yakymovych & Singh, รองรับหลายภาษา และตรงกับ Part 2 |
 | Vector DB | Chroma (cosine) + `vectors.npz` | reuse ได้ทั้งตอน RAG และงานวิเคราะห์ |

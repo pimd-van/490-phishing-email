@@ -2,7 +2,7 @@
 
 Outputs (in --out):
   svm_handoff.csv             test emails that LinearSVC predicts as phishing,
-                              same columns as part2/part2_handoff.csv but with
+                              same columns as legacy_logistic_regression/part2/part2_handoff.csv but with
                               svm_result + SVM TF-IDF contributions in xai
   test_metrics.csv            held-out test metrics for every model
   svm_vs_lr_rows.csv          rows where LinearSVC and the LR handoff disagree
@@ -28,7 +28,7 @@ from benchmark_text import clean_text, metrics, predict_knn_in_blocks
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--input", required=True)
-ap.add_argument("--lr-handoff", required=True, help="existing part2/part2_handoff.csv")
+ap.add_argument("--lr-handoff", required=True, help="existing legacy_logistic_regression/part2/part2_handoff.csv")
 ap.add_argument("--out", required=True)
 args = ap.parse_args()
 out = Path(args.out); out.mkdir(parents=True, exist_ok=True)

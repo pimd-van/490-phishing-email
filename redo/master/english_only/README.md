@@ -36,14 +36,16 @@ Cluster IDs are integers assigned in descending cluster size. The sample has 633
 
 ## Reproduce
 
+The multilingual archive contains the exact historical inputs required to reproduce vector reuse. The same two files can be recovered from commit `40218e9` using their original paths `redo/dataset/svm_handoff.csv` and `redo/semantic_clustering/svm_bge_m3/vectors.npz`.
+
 Run on Linux with Python 3.12 from the repository root. Install [requirements.txt](requirements.txt) in a benchmark environment. The embedding step can use a separate environment with those requirements, `sentence-transformers==5.7.0`, `transformers==5.19.0`, `huggingface-hub==2.2.0`, and PyTorch 2.8.0. The VM used the `2.8.0+cu128` build for CUDA. Use `--device cpu` if running without CUDA. A Git checkout with `core.autocrlf=false` preserves the prior handoff's original line endings for checksum verification.
 
 ```bash
 source_csv=/path/to/major_cleaned_preprocessed.csv
 scripts=redo/master/english_only/scripts
 out=/path/to/new-english-only-run
-prior_handoff=redo/dataset/svm_handoff.csv
-prior_vectors=redo/semantic_clustering/svm_bge_m3/vectors.npz
+prior_handoff=redo/delete_multilingual/dataset/svm_handoff.csv
+prior_vectors=redo/delete_multilingual/semantic_clustering/svm_bge_m3/vectors.npz
 
 export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
 python "$scripts/benchmark_english.py" --source "$source_csv" --out "$out"

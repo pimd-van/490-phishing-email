@@ -3,7 +3,6 @@
 import argparse
 import json
 from pathlib import Path
-import sys
 
 import numpy as np
 import pandas as pd
@@ -18,9 +17,7 @@ from sklearn.svm import LinearSVC
 from sklearn.tree import DecisionTreeClassifier
 import xgboost
 
-# Share the historical cleaning, metric and bounded KNN implementations.
-sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "scripts"))
-from benchmark_text import EXPECTED_MD5, clean_text, md5sum, metrics, predict_knn_in_blocks, sha256
+from benchmark_helpers import EXPECTED_MD5, clean_text, md5sum, metrics, predict_knn_in_blocks, sha256
 
 LANGUAGE_TAGS = ("en", "en;en", "en;en;en")
 SEED = 42

@@ -32,7 +32,7 @@ LIME's local `surrogate_r2` is **0.7802** for this row. The account lock and unl
 
 The training code for the original Part 1 run was not committed. `scripts/recompute_shap_lime.py` reconstructs its verified text-only split (70/15/15, seed 42), TF-IDF (5,000 unigram/bigram features, sublinear TF), and default `LogisticRegression()` from the official MeAJOR v2.0 CSV. The reconstructed model predicts phishing for exactly the same 6,972 test IDs as the original handoff. The script reads the historical handoff but does not edit it. One malformed historical row remains as it was; the separate XAI file still covers its ID using the source dataset. Small differences between old and reconstructed probabilities remain possible; see [the recheck](part1_text_only_recheck.md).
 
-To reproduce the separate XAI file:
+To reproduce the separate XAI file, run from `legacy_logistic_regression/`.
 
 ```powershell
 py -3.13 -m venv .venv

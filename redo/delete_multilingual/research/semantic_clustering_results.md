@@ -3,7 +3,7 @@
 รันบน VM 490-18 เมื่อ 5–6 พ.ย. 2026 วิธีที่เลือกและงานวิจัยอ้างอิงอยู่ใน
 [`semantic_clustering_research.md`](semantic_clustering_research.md)
 
-- ข้อมูล: อีเมล 6,995 ฉบับที่ Linear SVM ทำนายว่าเป็น phishing (`redo/dataset/svm_handoff.csv`)
+- ข้อมูล: อีเมล 6,995 ฉบับที่ Linear SVM ทำนายว่าเป็น phishing (`redo/delete_multilingual/dataset/svm_handoff.csv`)
 - Embedding: BAAI/bge-m3 (dense, normalize, ยาวสุด 2,048 tokens) ค่ากลางความยาว 257 tokens ถูกตัด 61 ฉบับ
   ใช้ CPU 49 นาที เพราะ PyTorch บน VM ไม่ได้ build มาให้ใช้ CUDA
 - Clustering: Ward บนเวกเตอร์ normalize ตัดต้นไม้เดียวกันเป็น **8 กลุ่มแม่** และ **20 กลุ่มย่อย**
@@ -11,7 +11,7 @@
 - ชื่อกลุ่ม: qwen2.5:7b ผ่าน Ollama ตั้งชื่อจากคำเด่นและ 5 อีเมลที่ใกล้ centroid ของกลุ่มที่สุด
   ชื่อเหล่านี้ยังไม่ได้ให้คนตรวจทาน
 - หน้าแสดงผล: [กลุ่มอีเมล phishing ของ SVM](https://claude.ai/artifact/GjzAga3Uvi8hgiaT8XvExB)
-  (ไฟล์ [`redo/semantic_clustering/svm_clusters.html`](../redo/semantic_clustering/svm_clusters.html))
+  (ไฟล์ [`redo/delete_multilingual/semantic_clustering/svm_clusters.html`](../semantic_clustering/svm_clusters.html))
 
 ## การเลือกจำนวนกลุ่ม
 
@@ -105,7 +105,7 @@ Life Advice Quotes, Religious Salvation และ Nuclear Talks แสดงว�
 | `viz_data.json` | พิกัด t-SNE และข้อมูลที่หน้าแสดงผลใช้ |
 | `svm_clustering.py` | สคริปต์ทั้งหมด (`--stage embed|cluster|profile|sample|viz|all`) |
 
-ไฟล์อยู่ที่ [`redo/semantic_clustering/svm_bge_m3/`](../redo/semantic_clustering/svm_bge_m3/) ใน repo นี้
+ไฟล์อยู่ที่ [`redo/delete_multilingual/semantic_clustering/svm_bge_m3/`](../semantic_clustering/svm_bge_m3/) ใน repo นี้
 ส่วน Chroma ฉบับเต็มอยู่บน VM 490-18 ที่ `~/benchmark_runs/semantic_clustering/out/chroma`
 และบนเครื่อง Windows ที่ `C:\pimd\ย้าย\pimdej\490\semantic_clustering\svm_bge_m3\chroma`
 ถ้าไม่มี ให้สร้างใหม่จาก `vectors.npz` ได้ในไม่กี่วินาทีโดยไม่ต้อง embed ใหม่:
@@ -113,9 +113,9 @@ Life Advice Quotes, Religious Salvation และ Nuclear Talks แสดงว�
 ```python
 import csv, json, chromadb, numpy as np
 csv.field_size_limit(1 << 30)
-z = np.load("redo/semantic_clustering/svm_bge_m3/vectors.npz")
-rows = {r["id"]: r for r in csv.DictReader(open("redo/dataset/svm_handoff.csv", encoding="utf-8-sig", newline=""))}
-col = chromadb.PersistentClient(path="redo/semantic_clustering/svm_bge_m3/chroma").get_or_create_collection(
+z = np.load("redo/delete_multilingual/semantic_clustering/svm_bge_m3/vectors.npz")
+rows = {r["id"]: r for r in csv.DictReader(open("redo/delete_multilingual/dataset/svm_handoff.csv", encoding="utf-8-sig", newline=""))}
+col = chromadb.PersistentClient(path="redo/delete_multilingual/semantic_clustering/svm_bge_m3/chroma").get_or_create_collection(
     "svm_handoff_bge_m3", metadata={"hnsw:space": "cosine"})
 for i in range(0, len(z["ids"]), 500):
     ids = z["ids"][i:i + 500].tolist()

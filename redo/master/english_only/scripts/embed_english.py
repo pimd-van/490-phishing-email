@@ -5,7 +5,7 @@ import csv
 import json
 import os
 from pathlib import Path
-import sys
+import re
 import time
 
 import numpy as np
@@ -13,8 +13,23 @@ import pandas as pd
 
 from benchmark_english import EXPECTED_MD5, LANGUAGE_TAGS, md5sum, sha256
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "semantic_clustering" / "svm_bge_m3"))
-from svm_clustering import MAX_TOKENS, MODEL, email_text, read_rows
+MODEL = "BAAI/bge-m3"
+MAX_TOKENS = 2048
+URL = re.compile(r"https?://[^\s<>\"]+", re.I)
+csv.field_size_limit(1 << 30)
+
+
+def read_rows(path):
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
+    assert len({r["id"] for r in rows}) == len(rows)
+    return rows
+
+
+def email_text(r):
+    s = " ".join(URL.sub(" token_url ", r["subject"]).split())
+    b = " ".join(URL.sub(" token_url ", r["body"]).split())
+    return f"Subject: {s}\nBody: {b}"
 
 MODEL_REVISION = "5617a9f61b028005a4858fdac845db406aefb181"
 TEXT_FORMAT = "Subject: <subject>\\nBody: <body>, URLs -> token_url"
