@@ -24,3 +24,4 @@ redo/Part2_Prim/RAG/.chroma/
 **/human_review_possible_minors.csv
 **/Part2_Prim/labels/labels_round1.csv
 **/Part2_Prim/labels/model_input.jsonl
+legacy/vm_uncommitted_*/
