@@ -112,7 +112,7 @@ random.Random(42).shuffle(ids)
 
 **แนวทาง Local LLM (แนวคิดตั้งต้น ยังไม่ใช่ข้อสรุป)**
 
-Local LLM ต้องอธิบายว่าอีเมลนี้มีเป้าหมายอะไร และให้ action plan ว่าผู้รับควรทำอะไรต่อ ระบบวัดผลเดิมอยู่ใน [Part2_Prim](../Part2_Prim/README_part2.md) และ [rubric](../Part2_Prim/LLM/human_eval/rubric_TH.md) ใช้เป็นฐานได้ แต่ path ในไฟล์เหล่านั้นยังอ้าง `part2/` ต้องปรับก่อนรัน
+Local LLM ต้องอธิบายว่าอีเมลนี้มีเป้าหมายอะไร และให้ action plan ว่าผู้รับควรทำอะไรต่อ [Part2_Prim](../Part2_Prim/README_part2.md) และ [rubric](../Part2_Prim/LLM/human_eval/rubric_TH.md) เอามาให้ดูเป็นตัวอย่างว่างานก่อนเคยทำอย่างไร จึงไม่ต้องสนใจ path ในไฟล์เหล่านั้น
 
 สรุปการประเมิน
 
